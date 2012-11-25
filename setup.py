@@ -28,6 +28,7 @@ setup(name='tbfac.content',
           'setuptools',
           'plone.app.dexterity',
           'plone.namedfile [blobs]',
+          'plone.app.referenceablebehavior',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
