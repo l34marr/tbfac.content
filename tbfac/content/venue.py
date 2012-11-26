@@ -19,13 +19,12 @@ from z3c.relationfield.schema import RelationList, RelationChoice
 from plone.formwidget.contenttree import ObjPathSourceBinder
 
 from tbfac.content import MessageFactory as _
-from tbfac.content.venue import IVenue
 
 # Interface class; used to define content-type schema.
 
-class IActivityInfo(form.Schema, IImageScaleTraversable):
+class IVenue(form.Schema, IImageScaleTraversable):
     """
-    TBFAC ActivityInfo Type
+    TBFAC Venue Type
     """
     
     # If you want a schema-defined interface, delete the form.model
@@ -34,67 +33,10 @@ class IActivityInfo(form.Schema, IImageScaleTraversable):
     # models/activityinfo.xml to define the content type
     # and add directives here as necessary.
     
-    #form.model("models/activityinfo.xml")
+    #form.model("models/venue.xml")
 
-    curator = schema.TextLine(
-        title=_(u'Curator'),
-        required=False,
-    )
-
-    organizer = schema.TextLine(
-        title=_(u'Organizer'),
-        required=False,
-    )
-
-    category = schema.List(
-        title=_(u'Category'),
-        value_type=schema.Choice(
-            values=[_(u'Show'), _(u'Dancing'), _(u'Music'), _(u'Drama'), _(u'Opera')]
-        ),
-        required=False,
-    )
- 
-    startDate = schema.Date(
-        title=_(u'Start Date'),
-    )
-
-    endDate = schema.Date(
-        title=_(u'End Date'),
-        required=False,
-    )
-
-    dateDetails = schema.Text(
-        title=_(u'Date Details'),
-        required=False,
-    )
-
-    venue = RelationList(
-        title=_(u'Venue'),
-        value_type=RelationChoice(
-            source=ObjPathSourceBinder(
-                object_provides=IVenue.__identifier__
-            ),
-        ),
-        required=False,
-    )
-
-    text = RichText(
-        title=_(u'Body'),
-        required=False,
-    )
-
-    contactPhone = schema.TextLine(
-        title=_(u'Contact Phone'),
-        required=False,
-    )
-
-    contactName = schema.TextLine(
-        title=_(u'Contact Name'),
-        required=False,
-    )
-
-    eventURL = schema.TextLine(
-        title=_(u'Event URL'),
+    address = schema.TextLine(
+        title=_(u'Address'),
         required=False,
     )
 
@@ -108,8 +50,8 @@ class IActivityInfo(form.Schema, IImageScaleTraversable):
 # methods and properties. Put methods that are mainly useful for rendering
 # in separate view classes.
 
-class ActivityInfo(dexterity.Item):
-    grok.implements(IActivityInfo)
+class Venue(dexterity.Item):
+    grok.implements(IVenue)
     
     # Add your class methods and properties here
 
@@ -124,14 +66,8 @@ class ActivityInfo(dexterity.Item):
 # of this type by uncommenting the grok.name line below or by
 # changing the view class name and template filename to View / view.pt.
 
-class View(grok.View):
-    grok.context(IActivityInfo)
+class SampleView(grok.View):
+    grok.context(IVenue)
     grok.require('zope2.View')
-    grok.name('view')
-
-    def update(self):
-        """Prepare information for the template
-        """
-        self.startDateFormatted = self.context.startDate.strftime("%d %b %Y")
-        self.endDateFormatted = self.context.endDate.strftime("%d %b %Y")
-
+    
+    # grok.name('view')

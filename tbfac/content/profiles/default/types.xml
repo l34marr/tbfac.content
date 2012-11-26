@@ -10,5 +10,6 @@
   <!-- -*- extra stuff goes here -*- -->
   <object name="tbfac.ActivityFolder" meta_type="Dexterity FTI" />
   <object name="tbfac.ActivityInfo" meta_type="Dexterity FTI" />
+  <object name="tbfac.Venue" meta_type="Dexterity FTI" />
   <object name="tbfac.ActivityReview" meta_type="Dexterity FTI" />
 </object>

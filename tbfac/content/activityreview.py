@@ -34,7 +34,7 @@ class IActivityReview(form.Schema, IImageScaleTraversable):
     # models/activityreview.xml to define the content type
     # and add directives here as necessary.
     
-    form.model("models/activityreview.xml")
+    #form.model("models/activityreview.xml")
 
 
 # Custom content-type class; objects created for this content type will

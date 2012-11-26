@@ -13,6 +13,7 @@
   <property name="allowed_content_types">
      <element value="Image" />
      <element value="tbfac.ActivityInfo" />
+     <element value="tbfac.Venue" />
   </property>
   <property name="allow_discussion">False</property>
 

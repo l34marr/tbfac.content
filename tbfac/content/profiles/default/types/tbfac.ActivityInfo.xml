@@ -16,11 +16,12 @@
 
   <!-- schema and class used for content items -->
   <property name="schema">tbfac.content.activityinfo.IActivityInfo</property> 
-  <property name="klass">tbfac.content.activityinfo.ActivityInfo</property>
+  <property name="klass">plone.dexterity.content.Item</property>
+  <property name="add_permission">tbfac.AddActivityInfo</property>
 
   <property name="behaviors">
      <element value="plone.app.content.interfaces.INameFromTitle" />
-     <element value="plone.app.dexterity.behaviors.metadata.IBasic"/>
+     <element value="plone.app.dexterity.behaviors.metadata.IBasic" />
    </property>
 
   <!-- View information -->
@@ -31,8 +32,6 @@
    <element value="view"/>
   </property>
   <property name="default_view_fallback">False</property>
-  <property name="add_permission">cmf.AddPortalContent</property>
-
 
   <!-- Method aliases -->
   <alias from="(Default)" to="(dynamic view)" />
@@ -49,4 +48,5 @@
     url_expr="string:${object_url}/edit" visible="True">
     <permission value="Modify portal content" />
   </action>
+
 </object>
