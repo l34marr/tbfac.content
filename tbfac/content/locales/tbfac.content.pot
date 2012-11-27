@@ -1,0 +1,132 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2012-11-27 09:16+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: tbfac.content\n"
+
+#: ./profiles/default/types/tbfac.Activity.xml
+msgid "Activity"
+msgstr ""
+
+#: ./info_templates/view.pt:56
+#: ./venue.py:39
+msgid "Address"
+msgstr ""
+
+#: ./info.py:84
+msgid "Body"
+msgstr ""
+
+#: ./info.py:52
+#: ./info_templates/view.pt:29
+msgid "Category"
+msgstr ""
+
+#: ./info.py:94
+#: ./info_templates/view.pt:72
+msgid "Contact Name"
+msgstr ""
+
+#: ./info.py:89
+#: ./info_templates/view.pt:68
+msgid "Contact Phone"
+msgstr ""
+
+#: ./info.py:42
+#: ./info_templates/view.pt:19
+msgid "Curator"
+msgstr ""
+
+#: ./info.py:54
+msgid "Dancing"
+msgstr ""
+
+#: ./info.py:69
+#: ./info_templates/view.pt:46
+msgid "Date Details"
+msgstr ""
+
+#: ./info.py:54
+msgid "Drama"
+msgstr ""
+
+#: ./info.py:64
+#: ./info_templates/view.pt:38
+msgid "End Date"
+msgstr ""
+
+#: ./info.py:99
+#: ./info_templates/view.pt:76
+msgid "Event URL"
+msgstr ""
+
+#: ./profiles/default/types/tbfac.Info.xml
+msgid "Info"
+msgstr ""
+
+#: ./info.py:104
+#: ./venue.py:44
+msgid "Lead Image"
+msgstr ""
+
+#: ./info.py:54
+msgid "Music"
+msgstr ""
+
+#: ./info.py:54
+msgid "Opera"
+msgstr ""
+
+#: ./info.py:47
+#: ./info_templates/view.pt:23
+msgid "Organizer"
+msgstr ""
+
+#: ./profiles/default/types/tbfac.Review.xml
+msgid "Review"
+msgstr ""
+
+#: ./info.py:54
+msgid "Show"
+msgstr ""
+
+#: ./info.py:60
+#: ./info_templates/view.pt:35
+msgid "Start Date"
+msgstr ""
+
+#: ./profiles/default/types/tbfac.Activity.xml
+msgid "TBFAC Activity Type"
+msgstr ""
+
+#: ./profiles/default/types/tbfac.Info.xml
+msgid "TBFAC Info Type"
+msgstr ""
+
+#: ./profiles/default/types/tbfac.Review.xml
+msgid "TBFAC Review Type"
+msgstr ""
+
+#: ./profiles/default/types/tbfac.Venue.xml
+msgid "TBFAC Venue Type"
+msgstr ""
+
+#: ./info.py:74
+#: ./info_templates/view.pt:53
+#: ./profiles/default/types/tbfac.Venue.xml
+msgid "Venue"
+msgstr ""
+

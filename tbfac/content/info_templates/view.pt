@@ -32,9 +32,12 @@
 </div>
 <div class="row">
   <div class="cell width-full position-0">
-  <tal:field i18n:translate="">Date</tal:field>:
+  <tal:field i18n:translate="">Start Date</tal:field>:
   <span tal:replace="context/startDate">Value</span>
-  <span tal:condition="context/endDate"> - <span tal:replace="context/endDate" /></span>
+  <span tal:condition="context/endDate"> -
+  <tal:field i18n:translate="">End Date</tal:field>:
+  <span tal:replace="context/endDate">Value</span>
+  </span>
   </div>
 </div>
 <div class="row"

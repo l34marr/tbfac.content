@@ -1,0 +1,129 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: tbfac.content\n"
+"POT-Creation-Date: 2012-11-27 09:16+0000\n"
+"PO-Revision-Date: 2012-11-27 17:17+0800\n"
+"Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: zh-tw\n"
+"Language-Name: Traditional Chinese\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: tbfac.content\n"
+
+#: ./profiles/default/types/tbfac.Activity.xml
+msgid "Activity"
+msgstr "展演活動"
+
+#: ./info_templates/view.pt:56
+#: ./venue.py:39
+msgid "Address"
+msgstr "活動地址"
+
+#: ./info.py:84
+msgid "Body"
+msgstr "內文"
+
+#: ./info.py:52
+#: ./info_templates/view.pt:29
+msgid "Category"
+msgstr "活動類別"
+
+#: ./info.py:94
+#: ./info_templates/view.pt:72
+msgid "Contact Name"
+msgstr "活動聯絡人"
+
+#: ./info.py:89
+#: ./info_templates/view.pt:68
+msgid "Contact Phone"
+msgstr "活動聯絡電話"
+
+#: ./info.py:42
+#: ./info_templates/view.pt:19
+msgid "Curator"
+msgstr "展演人/單位"
+
+#: ./info.py:54
+msgid "Dancing"
+msgstr "舞蹈"
+
+#: ./info.py:69
+#: ./info_templates/view.pt:46
+msgid "Date Details"
+msgstr "詳細活動與日期"
+
+#: ./info.py:54
+msgid "Drama"
+msgstr "戲劇"
+
+#: ./info.py:64
+#: ./info_templates/view.pt:38
+msgid "End Date"
+msgstr "結束展演日期"
+
+#: ./info.py:99
+#: ./info_templates/view.pt:76
+msgid "Event URL"
+msgstr "活動網址"
+
+#: ./profiles/default/types/tbfac.Info.xml
+msgid "Info"
+msgstr "展演訊息"
+
+#: ./info.py:104
+#: ./venue.py:44
+msgid "Lead Image"
+msgstr "標題圖片"
+
+#: ./info.py:54
+msgid "Music"
+msgstr "音樂"
+
+#: ./info.py:54
+msgid "Opera"
+msgstr "戲曲"
+
+#: ./info.py:47
+#: ./info_templates/view.pt:23
+msgid "Organizer"
+msgstr "主辦人/單位"
+
+#: ./profiles/default/types/tbfac.Review.xml
+msgid "Review"
+msgstr "短評"
+
+#: ./info.py:54
+msgid "Show"
+msgstr "展覽"
+
+#: ./info.py:60
+#: ./info_templates/view.pt:35
+msgid "Start Date"
+msgstr "首次展演日期"
+
+#: ./profiles/default/types/tbfac.Activity.xml
+msgid "TBFAC Activity Type"
+msgstr "展演活動"
+
+#: ./profiles/default/types/tbfac.Info.xml
+msgid "TBFAC Info Type"
+msgstr "展演訊息"
+
+#: ./profiles/default/types/tbfac.Review.xml
+msgid "TBFAC Review Type"
+msgstr "短評"
+
+#: ./profiles/default/types/tbfac.Venue.xml
+msgid "TBFAC Venue Type"
+msgstr "展演地點"
+
+#: ./info.py:74
+#: ./info_templates/view.pt:53
+#: ./profiles/default/types/tbfac.Venue.xml
+msgid "Venue"
+msgstr "活動地點"
+
