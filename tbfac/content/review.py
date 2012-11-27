@@ -23,9 +23,9 @@ from tbfac.content import MessageFactory as _
 
 # Interface class; used to define content-type schema.
 
-class IActivityReview(form.Schema, IImageScaleTraversable):
+class IReview(form.Schema, IImageScaleTraversable):
     """
-    TBFAC ActivityReview Type
+    TBFAC Review Type
     """
     
     # If you want a schema-defined interface, delete the form.model
@@ -42,8 +42,8 @@ class IActivityReview(form.Schema, IImageScaleTraversable):
 # methods and properties. Put methods that are mainly useful for rendering
 # in separate view classes.
 
-class ActivityReview(dexterity.Item):
-    grok.implements(IActivityReview)
+class Review(dexterity.Item):
+    grok.implements(IReview)
     
     # Add your class methods and properties here
 
@@ -59,7 +59,7 @@ class ActivityReview(dexterity.Item):
 # changing the view class name and template filename to View / view.pt.
 
 class SampleView(grok.View):
-    grok.context(IActivityReview)
+    grok.context(IReview)
     grok.require('zope2.View')
     
     # grok.name('view')
