@@ -7,28 +7,77 @@
       i18n:domain="tbfac.content">
 <body>
 
-<tal:comment tal:condition="nothing">
-    This is a sample view template. It will not be used for rendering the
-    content unless activated by creation of a view class with a matching name.
-    
-    Note that we're using Plone 4 macros. Replace them with Plone 3 macros
-    if needed.
-</tal:comment>
-
 <metal:main fill-slot="content-core">
   <metal:content-core define-macro="content-core">
 
-    <h2>
-        Rendered from 
-        info_templates/<span tal:replace="template/id" />
-    </h2>
+<div style="float: right"
+ tal condition="context/image">
+  <img tal:replace="structure context/@@images/image/mini" />
+</div>
+<div class="row">
+  <div class="cell width-1:4 position-0">
+  <tal:field i18n:translate="">Curator</tal:field>:
+  <span tal:replace="context/curator">Name</span>
+  </div>
+  <div class="cell width-1:4 position-1:4">
+  <tal:field i18n:translate="">Organizer</tal:field>:
+  <span tal:replace="context/organizer">Name</span>
+  </div>
+</div>
+<div class="row">
+  <div class="cell width-full position-0">
+  <tal:field i18n:translate="">Category</tal:field>:
+  <span tal:replace="context/category">Value</span>
+  </div>
+</div>
+<div class="row">
+  <div class="cell width-full position-0">
+  <tal:field i18n:translate="">Date</tal:field>:
+  <span tal:replace="context/startDate">Value</span>
+  <span tal:condition="context/endDate"> - <span tal:replace="context/endDate" /></span>
+  </div>
+</div>
+<div class="row"
+ tal:condition="context/dateDetails">
+  <div class="cell width-full position-0">
+  <tal:field i18n:translate="">Date Details</tal:field>:
+  <span tal:replace="context/dateDetails">Text</span>
+  </div>
+</div>
+<div class="row">
+  <div class="cell width-full position-0">
+  <tal:venues repeat="venue view/venueInfo">
+  <tal:field i18n:translate="">Venue</tal:field>:
+    <a tal:attributes="href venue/url"
+       tal:content="venue/title">String</a>
+  <tal:field i18n:translate="">Address</tal:field>:
+    <span tal:replace="venue/address">String</span>
+  </tal:venues>
+  </div>
+</div>
+<div class="row">
+  <span class="cell width-full position-0"
+   tal:condition="context/text"
+   tal:content="structure context/text/output">Text</span>
+</div>
+<div class="row">
+  <div class="cell width-1:4 position-0">
+  <tal:field i18n:translate="">Contact Phone</tal:field>:
+  <span tal:replace="context/contactPhone">Text</span>
+  </div>
+  <div class="cell width-1:4 position-1:4">
+  <tal:field i18n:translate="">Contact Name</tal:field>:
+  <span tal:replace="context/contactName">Name</span>
+  </div>
+  <div class="cell width-1:2 position-1:2">
+  <tal:field i18n:translate="">Event URL</tal:field>:
+  <a tal:attributes="href context/eventURL"
+     tal:content="context/eventURL">Text</a>
+  </div>
+</div>
 
-
-    <div tal:content="context/Title">Title inserted here</div>
-    
   </metal:content-core>
 </metal:main>
 
 </body>
 </html>
-

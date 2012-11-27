@@ -21,6 +21,8 @@ from plone.formwidget.contenttree import ObjPathSourceBinder
 from tbfac.content import MessageFactory as _
 from tbfac.content.venue import IVenue
 
+from plone.memoize.instance import memoize
+
 # Interface class; used to define content-type schema.
 
 class IInfo(form.Schema, IImageScaleTraversable):
@@ -135,4 +137,17 @@ class View(grok.View):
         self.startDateFormatted = self.context.startDate.strftime("%d %b %Y")
         if self.context.endDate is not None:
             self.endDateFormatted = self.context.endDate.strftime("%d %b %Y")
+
+    @memoize
+    def venueInfo(self):
+        venues = []
+        if self.context.venue is not None:
+            for ref in self.context.venue:
+                obj = ref.to_object
+                venues.append({
+                    'url': obj.absolute_url(),
+                    'title': obj.title,
+                    'address': obj.address
+                })
+        return venues
 
