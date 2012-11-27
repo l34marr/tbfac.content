@@ -6,18 +6,18 @@
     <!-- Define new permissions -->
     
     <permission
-        id="tbfac.AddActivityFolder"
-        title="TBFAC: Add Activity Folder"
+        id="tbfac.AddActivity"
+        title="TBFAC: Add Activity"
         />
 
     <permission
-        id="tbfac.AddActivityInfo"
-        title="TBFAC: Add ActivityInfo"
+        id="tbfac.AddInfo"
+        title="TBFAC: Add Info"
         />
 
     <permission
-        id="tbfac.AddActivityReview"
-        title="TBFAC: Add ActivityReview"
+        id="tbfac.AddReview"
+        title="TBFAC: Add Review"
         />
 
 </configure>

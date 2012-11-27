@@ -1,23 +1,23 @@
 <?xml version="1.0"?>
-<object name="tbfac.ActivityInfo"
+<object name="tbfac.Info"
    meta_type="Dexterity FTI"
    i18n:domain="tbfac.content" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
 
   <!-- Basic metadata -->
-  <property name="title" i18n:translate="">ActivityInfo</property>
+  <property name="title" i18n:translate="">Info</property>
   <property name="description"
-    i18n:translate="">TBFAC ActivityInfo Type</property>
+    i18n:translate="">TBFAC Info Type</property>
   <property name="icon_expr">string:${portal_url}/document_icon.png</property>
-  <property name="factory">tbfac.content.activityinfo</property>
+  <property name="factory">tbfac.content.info</property>
   <property name="global_allow">True</property>
   <property name="filter_content_types">False</property>  
   <property name="allowed_content_types" />
   <property name="allow_discussion">False</property>
 
   <!-- schema and class used for content items -->
-  <property name="schema">tbfac.content.activityinfo.IActivityInfo</property> 
+  <property name="schema">tbfac.content.info.IInfo</property> 
   <property name="klass">plone.dexterity.content.Item</property>
-  <property name="add_permission">tbfac.AddActivityInfo</property>
+  <property name="add_permission">tbfac.AddInfo</property>
 
   <property name="behaviors">
      <element value="plone.app.content.interfaces.INameFromTitle" />

@@ -23,18 +23,18 @@ from tbfac.content.venue import IVenue
 
 # Interface class; used to define content-type schema.
 
-class IActivityInfo(form.Schema, IImageScaleTraversable):
+class IInfo(form.Schema, IImageScaleTraversable):
     """
-    TBFAC ActivityInfo Type
+    TBFAC Info Type
     """
     
     # If you want a schema-defined interface, delete the form.model
     # line below and delete the matching file in the models sub-directory.
     # If you want a model-based interface, edit
-    # models/activityinfo.xml to define the content type
+    # models/info.xml to define the content type
     # and add directives here as necessary.
     
-    #form.model("models/activityinfo.xml")
+    #form.model("models/info.xml")
 
     curator = schema.TextLine(
         title=_(u'Curator'),
@@ -108,15 +108,15 @@ class IActivityInfo(form.Schema, IImageScaleTraversable):
 # methods and properties. Put methods that are mainly useful for rendering
 # in separate view classes.
 
-class ActivityInfo(dexterity.Item):
-    grok.implements(IActivityInfo)
+class Info(dexterity.Item):
+    grok.implements(IInfo)
     
     # Add your class methods and properties here
 
 
 # View class
 # The view will automatically use a similarly named template in
-# activityinfo_templates.
+# info_templates.
 # Template filenames should be all lower case.
 # The view will render when you request a content object with this
 # interface with "/@@sampleview" appended.
@@ -125,7 +125,7 @@ class ActivityInfo(dexterity.Item):
 # changing the view class name and template filename to View / view.pt.
 
 class View(grok.View):
-    grok.context(IActivityInfo)
+    grok.context(IInfo)
     grok.require('zope2.View')
     grok.name('view')
 
@@ -133,5 +133,6 @@ class View(grok.View):
         """Prepare information for the template
         """
         self.startDateFormatted = self.context.startDate.strftime("%d %b %Y")
-        self.endDateFormatted = self.context.endDate.strftime("%d %b %Y")
+        if self.context.endDate is not None:
+            self.endDateFormatted = self.context.endDate.strftime("%d %b %Y")
 

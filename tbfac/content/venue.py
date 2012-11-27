@@ -30,7 +30,7 @@ class IVenue(form.Schema, IImageScaleTraversable):
     # If you want a schema-defined interface, delete the form.model
     # line below and delete the matching file in the models sub-directory.
     # If you want a model-based interface, edit
-    # models/activityinfo.xml to define the content type
+    # models/venue.xml to define the content type
     # and add directives here as necessary.
     
     #form.model("models/venue.xml")
@@ -58,7 +58,7 @@ class Venue(dexterity.Item):
 
 # View class
 # The view will automatically use a similarly named template in
-# activityinfo_templates.
+# venue_templates.
 # Template filenames should be all lower case.
 # The view will render when you request a content object with this
 # interface with "/@@sampleview" appended.

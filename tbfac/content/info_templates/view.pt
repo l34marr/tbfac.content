@@ -20,7 +20,7 @@
 
     <h2>
         Rendered from 
-        activityinfo_templates/<span tal:replace="template/id" />
+        info_templates/<span tal:replace="template/id" />
     </h2>
 
 
