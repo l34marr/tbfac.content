@@ -16,7 +16,7 @@ msgstr ""
 
 #: ./profiles/default/types/tbfac.Activity.xml
 msgid "Activity"
-msgstr "展演活動"
+msgstr "展演"
 
 #: ./info_templates/view.pt:56
 #: ./venue.py:39
@@ -111,7 +111,7 @@ msgstr "首次展演日期"
 
 #: ./profiles/default/types/tbfac.Activity.xml
 msgid "TBFAC Activity Type"
-msgstr "展演活動"
+msgstr "展演資訊"
 
 #: ./profiles/default/types/tbfac.Info.xml
 msgid "TBFAC Info Type"
