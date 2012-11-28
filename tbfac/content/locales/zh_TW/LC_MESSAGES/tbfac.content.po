@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tbfac.content\n"
-"POT-Creation-Date: 2012-11-27 09:16+0000\n"
-"PO-Revision-Date: 2012-11-27 17:17+0800\n"
+"POT-Creation-Date: 2012-11-28 02:33+0000\n"
+"PO-Revision-Date: 2012-11-28 10:34+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +23,7 @@ msgstr "展演活動"
 msgid "Address"
 msgstr "活動地址"
 
-#: ./info.py:84
+#: ./info.py:89
 msgid "Body"
 msgstr "內文"
 
@@ -32,12 +32,12 @@ msgstr "內文"
 msgid "Category"
 msgstr "活動類別"
 
-#: ./info.py:94
+#: ./info.py:99
 #: ./info_templates/view.pt:72
 msgid "Contact Name"
 msgstr "活動聯絡人"
 
-#: ./info.py:89
+#: ./info.py:94
 #: ./info_templates/view.pt:68
 msgid "Contact Phone"
 msgstr "活動聯絡電話"
@@ -54,7 +54,7 @@ msgstr "舞蹈"
 #: ./info.py:69
 #: ./info_templates/view.pt:46
 msgid "Date Details"
-msgstr "詳細活動與日期"
+msgstr "詳細時間說明"
 
 #: ./info.py:54
 msgid "Drama"
@@ -65,16 +65,20 @@ msgstr "戲劇"
 msgid "End Date"
 msgstr "結束展演日期"
 
-#: ./info.py:99
+#: ./info.py:104
 #: ./info_templates/view.pt:76
 msgid "Event URL"
 msgstr "活動網址"
+
+#: ./info.py:84
+msgid "Fee Details"
+msgstr "費用說明"
 
 #: ./profiles/default/types/tbfac.Info.xml
 msgid "Info"
 msgstr "展演訊息"
 
-#: ./info.py:104
+#: ./info.py:109
 #: ./venue.py:44
 msgid "Lead Image"
 msgstr "標題圖片"

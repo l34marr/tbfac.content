@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-11-27 09:16+0000\n"
+"POT-Creation-Date: 2012-11-28 02:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgstr ""
 msgid "Address"
 msgstr ""
 
-#: ./info.py:84
+#: ./info.py:89
 msgid "Body"
 msgstr ""
 
@@ -35,12 +35,12 @@ msgstr ""
 msgid "Category"
 msgstr ""
 
-#: ./info.py:94
+#: ./info.py:99
 #: ./info_templates/view.pt:72
 msgid "Contact Name"
 msgstr ""
 
-#: ./info.py:89
+#: ./info.py:94
 #: ./info_templates/view.pt:68
 msgid "Contact Phone"
 msgstr ""
@@ -68,16 +68,20 @@ msgstr ""
 msgid "End Date"
 msgstr ""
 
-#: ./info.py:99
+#: ./info.py:104
 #: ./info_templates/view.pt:76
 msgid "Event URL"
+msgstr ""
+
+#: ./info.py:84
+msgid "Fee Details"
 msgstr ""
 
 #: ./profiles/default/types/tbfac.Info.xml
 msgid "Info"
 msgstr ""
 
-#: ./info.py:104
+#: ./info.py:109
 #: ./venue.py:44
 msgid "Lead Image"
 msgstr ""

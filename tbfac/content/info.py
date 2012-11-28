@@ -80,6 +80,11 @@ class IInfo(form.Schema, IImageScaleTraversable):
         required=False,
     )
 
+    feeDetails = RichText(
+        title=_(u'Fee Details'),
+        required=False,
+    )
+
     text = RichText(
         title=_(u'Body'),
         required=False,
