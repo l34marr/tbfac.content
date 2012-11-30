@@ -38,11 +38,6 @@ class IInfo(form.Schema, IImageScaleTraversable):
     
     #form.model("models/info.xml")
 
-    curator = schema.TextLine(
-        title=_(u'Curator'),
-        required=False,
-    )
-
     organizer = schema.TextLine(
         title=_(u'Organizer'),
         required=False,
@@ -67,6 +62,7 @@ class IInfo(form.Schema, IImageScaleTraversable):
 
     dateDetails = schema.Text(
         title=_(u'Date Details'),
+        description=_(u'Date Details Description'),
         required=False,
     )
 
@@ -80,13 +76,19 @@ class IInfo(form.Schema, IImageScaleTraversable):
         required=False,
     )
 
-    feeDetails = RichText(
-        title=_(u'Fee Details'),
+    text = RichText(
+        title=_(u'Body'),
         required=False,
     )
 
-    text = RichText(
-        title=_(u'Body'),
+    feeDetails = RichText(
+        title=_(u'Fee Details'),
+        description=_(u'Fee Details Description'),
+        required=False,
+    )
+
+    ticketURL = schema.TextLine(
+        title=_(u'Ticket URL'),
         required=False,
     )
 

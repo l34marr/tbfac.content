@@ -15,9 +15,6 @@
   <img tal:replace="structure context/@@images/image/mini" />
 </div>
 <p>
-  <tal:field i18n:translate="">Curator</tal:field>:
-  <span tal:replace="context/curator">Name</span>
-  <br />
   <tal:field i18n:translate="">Organizer</tal:field>:
   <span tal:replace="context/organizer">Name</span>
   <br />
@@ -54,15 +51,21 @@
     <span tal:replace="venue/address">String</span>
   </tal:venues>
 </p>
-<tal:feeDetails condition="context/feeDetails">
-  <tal:field i18n:translate="">Fee Details</tal:field>:
-  <span tal:replace="structure context/feeDetails/output">Text</span>
-</tal:feeDetails>
 <tal:text condition="context/text">
   <tal:field i18n:translate="">Body</tal:field>:
   <span tal:replace="structure context/text/output">Text</span>
 </tal:text>
+<tal:feeDetails condition="context/feeDetails">
+  <tal:field i18n:translate="">Fee Details</tal:field>:
+  <span tal:replace="structure context/feeDetails/output">Text</span>
+</tal:feeDetails>
 <p>
+  <tal:ticketURL condition="context/ticketURL">
+  <tal:field i18n:translate="">Ticket URL</tal:field>:
+  <a tal:attributes="href context/ticketURL"
+     tal:content="context/ticketURL">Text</a>
+  </tal:ticketURL>
+  <br />
   <tal:contactPhone condition="context/contactPhone">
   <tal:field i18n:translate="">Contact Phone</tal:field>:
   <span tal:replace="context/contactPhone">Text</span>

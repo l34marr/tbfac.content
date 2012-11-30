@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-11-28 02:33+0000\n"
+"POT-Creation-Date: 2012-11-30 10:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,81 +21,86 @@ msgstr ""
 msgid "Activity"
 msgstr ""
 
-#: ./info_templates/view.pt:56
+#: ./info_templates/view.pt:50
 #: ./venue.py:39
 msgid "Address"
 msgstr ""
 
-#: ./info.py:89
+#: ./info.py:80
+#: ./info_templates/view.pt:55
 msgid "Body"
 msgstr ""
 
-#: ./info.py:52
-#: ./info_templates/view.pt:29
+#: ./info.py:47
+#: ./info_templates/view.pt:23
 msgid "Category"
 msgstr ""
 
-#: ./info.py:99
-#: ./info_templates/view.pt:72
+#: ./info.py:101
+#: ./info_templates/view.pt:75
 msgid "Contact Name"
 msgstr ""
 
-#: ./info.py:94
-#: ./info_templates/view.pt:68
+#: ./info.py:96
+#: ./info_templates/view.pt:70
 msgid "Contact Phone"
 msgstr ""
 
-#: ./info.py:42
-#: ./info_templates/view.pt:19
-msgid "Curator"
-msgstr ""
-
-#: ./info.py:54
+#: ./info.py:49
 msgid "Dancing"
 msgstr ""
 
-#: ./info.py:69
-#: ./info_templates/view.pt:46
+#: ./info.py:64
+#: ./info_templates/view.pt:40
 msgid "Date Details"
 msgstr ""
 
-#: ./info.py:54
+#: ./info.py:65
+msgid "Date Details Description"
+msgstr ""
+
+#: ./info.py:49
 msgid "Drama"
 msgstr ""
 
-#: ./info.py:64
-#: ./info_templates/view.pt:38
+#: ./info.py:59
+#: ./info_templates/view.pt:35
 msgid "End Date"
 msgstr ""
 
-#: ./info.py:104
-#: ./info_templates/view.pt:76
+#: ./info.py:106
+#: ./info_templates/view.pt:80
 msgid "Event URL"
 msgstr ""
 
-#: ./info.py:84
+#: ./info.py:85
+#: ./info_templates/view.pt:59
 msgid "Fee Details"
+msgstr ""
+
+#: ./info.py:86
+msgid "Fee Details Description"
 msgstr ""
 
 #: ./profiles/default/types/tbfac.Info.xml
 msgid "Info"
 msgstr ""
 
-#: ./info.py:109
+#: ./info.py:111
 #: ./venue.py:44
 msgid "Lead Image"
 msgstr ""
 
-#: ./info.py:54
+#: ./info.py:49
 msgid "Music"
 msgstr ""
 
-#: ./info.py:54
+#: ./info.py:49
 msgid "Opera"
 msgstr ""
 
-#: ./info.py:47
-#: ./info_templates/view.pt:23
+#: ./info.py:42
+#: ./info_templates/view.pt:18
 msgid "Organizer"
 msgstr ""
 
@@ -103,12 +108,12 @@ msgstr ""
 msgid "Review"
 msgstr ""
 
-#: ./info.py:54
+#: ./info.py:49
 msgid "Show"
 msgstr ""
 
-#: ./info.py:60
-#: ./info_templates/view.pt:35
+#: ./info.py:55
+#: ./info_templates/view.pt:31
 msgid "Start Date"
 msgstr ""
 
@@ -128,8 +133,13 @@ msgstr ""
 msgid "TBFAC Venue Type"
 msgstr ""
 
-#: ./info.py:74
-#: ./info_templates/view.pt:53
+#: ./info.py:91
+#: ./info_templates/view.pt:64
+msgid "Ticket URL"
+msgstr ""
+
+#: ./info.py:70
+#: ./info_templates/view.pt:46
 #: ./profiles/default/types/tbfac.Venue.xml
 msgid "Venue"
 msgstr ""

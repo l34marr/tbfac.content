@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tbfac.content\n"
-"POT-Creation-Date: 2012-11-28 02:33+0000\n"
-"PO-Revision-Date: 2012-11-28 10:34+0800\n"
+"POT-Creation-Date: 2012-11-30 10:13+0000\n"
+"PO-Revision-Date: 2012-11-30 18:14+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -18,81 +18,86 @@ msgstr ""
 msgid "Activity"
 msgstr "展演"
 
-#: ./info_templates/view.pt:56
+#: ./info_templates/view.pt:50
 #: ./venue.py:39
 msgid "Address"
 msgstr "活動地址"
 
-#: ./info.py:89
+#: ./info.py:80
+#: ./info_templates/view.pt:55
 msgid "Body"
 msgstr "內文"
 
-#: ./info.py:52
-#: ./info_templates/view.pt:29
+#: ./info.py:47
+#: ./info_templates/view.pt:23
 msgid "Category"
 msgstr "活動類別"
 
-#: ./info.py:99
-#: ./info_templates/view.pt:72
+#: ./info.py:101
+#: ./info_templates/view.pt:75
 msgid "Contact Name"
 msgstr "活動聯絡人"
 
-#: ./info.py:94
-#: ./info_templates/view.pt:68
+#: ./info.py:96
+#: ./info_templates/view.pt:70
 msgid "Contact Phone"
 msgstr "活動聯絡電話"
 
-#: ./info.py:42
-#: ./info_templates/view.pt:19
-msgid "Curator"
-msgstr "展演人/單位"
-
-#: ./info.py:54
+#: ./info.py:49
 msgid "Dancing"
 msgstr "舞蹈"
 
-#: ./info.py:69
-#: ./info_templates/view.pt:46
+#: ./info.py:64
+#: ./info_templates/view.pt:40
 msgid "Date Details"
 msgstr "詳細時間說明"
 
-#: ./info.py:54
+#: ./info.py:65
+msgid "Date Details Description"
+msgstr "例：5/15 (五) ～ 5/16 (六)，19:30；5/16 (六) ～ 5/17 (日)，14:30。"
+
+#: ./info.py:49
 msgid "Drama"
 msgstr "戲劇"
 
-#: ./info.py:64
-#: ./info_templates/view.pt:38
+#: ./info.py:59
+#: ./info_templates/view.pt:35
 msgid "End Date"
 msgstr "結束展演日期"
 
-#: ./info.py:104
-#: ./info_templates/view.pt:76
+#: ./info.py:106
+#: ./info_templates/view.pt:80
 msgid "Event URL"
 msgstr "活動網址"
 
-#: ./info.py:84
+#: ./info.py:85
+#: ./info_templates/view.pt:59
 msgid "Fee Details"
 msgstr "費用說明"
+
+#: ./info.py:86
+msgid "Fee Details Description"
+msgstr "例：500元。2012/11/15前早鳥優惠：400元；持台新信用卡刷卡享有85折優惠。"
 
 #: ./profiles/default/types/tbfac.Info.xml
 msgid "Info"
 msgstr "展演訊息"
 
-#: ./info.py:109
+#: ./info.py:111
 #: ./venue.py:44
 msgid "Lead Image"
 msgstr "標題圖片"
 
-#: ./info.py:54
+#: ./info.py:49
 msgid "Music"
 msgstr "音樂"
 
-#: ./info.py:54
+#: ./info.py:49
 msgid "Opera"
 msgstr "戲曲"
 
-#: ./info.py:47
-#: ./info_templates/view.pt:23
+#: ./info.py:42
+#: ./info_templates/view.pt:18
 msgid "Organizer"
 msgstr "主辦人/單位"
 
@@ -100,12 +105,12 @@ msgstr "主辦人/單位"
 msgid "Review"
 msgstr "短評"
 
-#: ./info.py:54
+#: ./info.py:49
 msgid "Show"
 msgstr "展覽"
 
-#: ./info.py:60
-#: ./info_templates/view.pt:35
+#: ./info.py:55
+#: ./info_templates/view.pt:31
 msgid "Start Date"
 msgstr "首次展演日期"
 
@@ -125,8 +130,13 @@ msgstr "短評"
 msgid "TBFAC Venue Type"
 msgstr "展演地點"
 
-#: ./info.py:74
-#: ./info_templates/view.pt:53
+#: ./info.py:91
+#: ./info_templates/view.pt:64
+msgid "Ticket URL"
+msgstr "售票網址"
+
+#: ./info.py:70
+#: ./info_templates/view.pt:46
 #: ./profiles/default/types/tbfac.Venue.xml
 msgid "Venue"
 msgstr "活動地點"
