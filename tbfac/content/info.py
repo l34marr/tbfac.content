@@ -70,7 +70,10 @@ class IInfo(form.Schema, IImageScaleTraversable):
         title=_(u'Venue'),
         value_type=RelationChoice(
             source=ObjPathSourceBinder(
-                object_provides=IVenue.__identifier__
+                object_provides=IVenue.__identifier__,
+                navigation_tree_query={
+                    'path': {'query': '/taishin/venues'}
+                },
             ),
         ),
         required=False,
