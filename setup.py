@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.1'
+version = '0.2'
 
 setup(name='tbfac.content',
       version=version,
@@ -27,6 +27,7 @@ setup(name='tbfac.content',
       install_requires=[
           'setuptools',
           'plone.app.dexterity',
+          'plone.app.event [ploneintegration,archetypes,dexterity]',
           'plone.namedfile [blobs]',
           'plone.app.referenceablebehavior',
           # -*- Extra requirements: -*-
@@ -39,7 +40,7 @@ setup(name='tbfac.content',
       # The next two lines may be deleted after you no longer need
       # addcontent support from paster and before you distribute
       # your package.
-      setup_requires=["PasteScript"],
-      paster_plugins = ["ZopeSkel"],
+      # setup_requires=["PasteScript"],
+      # paster_plugins = ["ZopeSkel"],
 
       )
