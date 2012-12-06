@@ -51,15 +51,6 @@ class IInfo(form.Schema, IImageScaleTraversable):
         required=False,
     )
  
-    startDate = schema.Date(
-        title=_(u'Start Date'),
-    )
-
-    endDate = schema.Date(
-        title=_(u'End Date'),
-        required=False,
-    )
-
     dateDetails = schema.Text(
         title=_(u'Date Details'),
         description=_(u'Date Details Description'),
