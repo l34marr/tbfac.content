@@ -135,9 +135,11 @@ class View(grok.View):
     def update(self):
         """Prepare information for the template
         """
-        self.startDateFormatted = self.context.startDate.strftime("%d %b %Y")
-        if self.context.endDate is not None:
-            self.endDateFormatted = self.context.endDate.strftime("%d %b %Y")
+        pass
+        #(pull this data from the plone.app.events behaviour instead)
+        #self.startDateFormatted = self.context.startDate.strftime("%d %b %Y")
+        #if self.context.endDate is not None:
+        #    self.endDateFormatted = self.context.endDate.strftime("%d %b %Y")
 
     @memoize
     def venueInfo(self):
