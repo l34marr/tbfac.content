@@ -37,13 +37,17 @@ class IInfo(form.Schema, IImageScaleTraversable):
     # and add directives here as necessary.
     
     #form.model("models/info.xml")
-    ## The hardest part if figuring out the interface that holds the field
-    ### I'm guessing IOccurence based on the code here: https://github.com/plone/plone.event/blob/master/plone/event/interfaces.py
-    ### Okay tha guess was wrong so perhaps it is this code then https://github.com/plone/plone.app.event/blob/master/plone/app/event/dx/behaviors.py
-    ### makes more sense.
-    ### it works!!, so now just need to say what fields should end up after* 
+    ## The hardest part is figuring out the interface that holds 
+    ### behaviour field
+    ### I initially got distracted by IOccurence, based on the code here: 
+    ### https://github.com/plone/plone.event/blob/master/plone/event/interfaces.py
+    ### This actual code is here:
+    ### https://github.com/plone/plone.app.event/blob/master/plone/app/event/dx/behaviors.py
+    ### and provides the following fields:
     ### IEventBasic.start, IEventBasic.end, IEventBasic.whole_day, IEventBasic.timezone
-    ###
+    ### since IEventBasic.timezone is declared last in the behaviour
+    ### we can force our fields to occur after timezone
+    ### using the form.order_after() directive
     form.order_after(organizer='IEventBasic.timezone')
     form.order_after(dateDetails='IEventBasic.timezone')
     form.order_after(venue='IEventBasic.timezone')
