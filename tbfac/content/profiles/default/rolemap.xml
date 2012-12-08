@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<rolemap>
+  <roles>
+    <role name="Advisor"/>
+  </roles>
+  <permissions>
+    <permission name="TBFAC: Add recommendation"
+                acquire="True">
+      <role name="Advisor"/>
+      <role name="Manager"/>
+    </permission>
+  </permissions>
+</rolemap>

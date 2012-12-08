@@ -20,4 +20,9 @@
         title="TBFAC: Add Review"
         />
 
+    <permission
+       id="tbfac.AddRecommendation"
+       title="TBFAC: Add recommendation"
+       />
+
 </configure>

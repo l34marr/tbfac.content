@@ -4,6 +4,7 @@ from plone.directives import dexterity, form
 from zope import schema
 from zope.schema.interfaces import IContextSourceBinder
 from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
+from zope.annotation.interfaces import IAttributeAnnotatable
 
 from zope.interface import invariant, Invalid
 
@@ -134,7 +135,7 @@ class IInfo(form.Schema, IImageScaleTraversable, IEvent):
 # in separate view classes.
 
 class Info(dexterity.Item):
-    grok.implements(IInfo)
+    grok.implements(IInfo, IAttributeAnnotatable)
     
     # Add your class methods and properties here
 
