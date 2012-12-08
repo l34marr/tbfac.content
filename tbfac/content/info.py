@@ -12,6 +12,7 @@ from z3c.form import group, field
 from plone.namedfile.interfaces import IImageScaleTraversable
 from plone.namedfile.field import NamedImage, NamedFile
 from plone.namedfile.field import NamedBlobImage, NamedBlobFile
+from plone.event.interfaces import IEvent
 
 from plone.app.textfield import RichText
 
@@ -25,7 +26,7 @@ from plone.memoize.instance import memoize
 
 # Interface class; used to define content-type schema.
 
-class IInfo(form.Schema, IImageScaleTraversable):
+class IInfo(form.Schema, IImageScaleTraversable, IEvent):
     """
     TBFAC Info Type
     """
@@ -37,8 +38,8 @@ class IInfo(form.Schema, IImageScaleTraversable):
     # and add directives here as necessary.
     
     #form.model("models/info.xml")
-    ## The hardest part is figuring out the interface that holds 
-    ### behaviour field
+    ## The hardest part is figuring out the interface
+    ### provided by the behaviour field
     ### I initially got distracted by IOccurence, based on the code here: 
     ### https://github.com/plone/plone.event/blob/master/plone/event/interfaces.py
     ### This actual code is here:
