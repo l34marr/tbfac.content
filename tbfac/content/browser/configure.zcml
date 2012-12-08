@@ -20,4 +20,9 @@
         permission="tbfac.AddRecommendation"
         />
 
+    <browser:resource
+        file="js/main.js"
+        name="tbfac.content_main.js"
+        />
+
 </configure>

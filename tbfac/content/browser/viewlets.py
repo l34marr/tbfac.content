@@ -31,7 +31,6 @@ class RecommendationsView(BrowserView):
 
     def toggleRecommendation(self):
         """Recommend or unrecommend object"""
-        # TODO: implement ajax version
         context = aq_inner(self.context)
         viewlet = RecommendationsViewlet(context, self.request, None, None)
         viewlet = viewlet.__of__(context)
@@ -40,4 +39,10 @@ class RecommendationsView(BrowserView):
             viewlet.adapted.unrecommend(viewlet.userid)
         else:
             viewlet.adapted.recommend(viewlet.userid)
-        return self.request.response.redirect(context.absolute_url())
+        
+        if self.request.form.get('ajax') == '1':
+            # one more time update viewlet to get updated data after last action
+            viewlet.update()
+            return viewlet.render()
+        else:
+            return self.request.response.redirect(context.absolute_url())
