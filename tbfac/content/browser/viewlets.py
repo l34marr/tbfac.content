@@ -32,9 +32,7 @@ class RecommendationsView(BrowserView):
     def toggleRecommendation(self):
         """Recommend or unrecommend object"""
         context = aq_inner(self.context)
-        viewlet = RecommendationsViewlet(context, self.request, None, None)
-        viewlet = viewlet.__of__(context)
-        viewlet.update()
+        viewlet = self._getViewlet()
         if viewlet.recommended_by_me:
             viewlet.adapted.unrecommend(viewlet.userid)
         else:
@@ -46,3 +44,13 @@ class RecommendationsView(BrowserView):
             return viewlet.render()
         else:
             return self.request.response.redirect(context.absolute_url())
+
+    def renderViewlet(self):
+        return self._getViewlet().render()
+
+    def _getViewlet(self):
+        context = aq_inner(self.context)
+        viewlet = RecommendationsViewlet(context, self.request, None, None)
+        viewlet = viewlet.__of__(context)
+        viewlet.update()
+        return viewlet

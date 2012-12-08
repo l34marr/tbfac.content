@@ -20,6 +20,14 @@
         permission="tbfac.AddRecommendation"
         />
 
+    <browser:page
+        for="..behaviors.recommendations.IRecommendable"
+        name="recommendations_macro"
+        class=".viewlets.RecommendationsView"
+        attribute="renderViewlet"
+        permission="zope.Public"
+        />
+
     <browser:resource
         file="js/main.js"
         name="tbfac.content_main.js"
