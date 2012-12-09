@@ -7,7 +7,9 @@
   <property name="title" i18n:translate="">Activity</property>
   <property name="description"
     i18n:translate="">TBFAC Activity Type</property>
-  <property name="icon_expr">string:${portal_url}/folder_icon.png</property>
+  <!--<property name="icon_expr">string:${portal_url}/folder_icon.png</property>-->
+   <property name="content_icon">++resource++tbfac.content/activity.png</property>
+
   <property name="global_allow">True</property>
   <property name="filter_content_types">True</property>  
   <property name="allowed_content_types">

@@ -12,7 +12,7 @@ from z3c.form import group, field
 from plone.namedfile.interfaces import IImageScaleTraversable
 from plone.namedfile.field import NamedImage, NamedFile
 from plone.namedfile.field import NamedBlobImage, NamedBlobFile
-from plone.event.interfaces import IEvent
+from plone.event.interfaces import IEvent, IEventRecurrence
 
 from plone.app.textfield import RichText
 
@@ -26,7 +26,7 @@ from plone.memoize.instance import memoize
 
 # Interface class; used to define content-type schema.
 
-class IInfo(form.Schema, IImageScaleTraversable, IEvent):
+class IInfo(form.Schema, IImageScaleTraversable, IEvent, IEventRecurrence):
     """
     TBFAC Info Type
     """
@@ -157,11 +157,10 @@ class View(grok.View):
     def update(self):
         """Prepare information for the template
         """
-        pass
-        #(pull this data from the plone.app.events behaviour instead)
-        #self.startDateFormatted = self.context.startDate.strftime("%d %b %Y")
-        #if self.context.endDate is not None:
-        #    self.endDateFormatted = self.context.endDate.strftime("%d %b %Y")
+        #pass
+        self.startDateFormatted = self.context.start.strftime("%d %b %Y")
+        if self.context.end is not None:
+            self.endDateFormatted = self.context.end.strftime("%d %b %Y")
 
     @memoize
     def venueInfo(self):
