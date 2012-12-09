@@ -1,0 +1,18 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:grok="http://namespaces.zope.org/grok"
+    i18n_domain="tbfac.content">
+
+    <include package="plone.behavior" file="meta.zcml" />
+
+    <plone:behavior
+        title="Recommendations"
+        description="Advisors can Recommend content objects"
+        provides=".recommendations.IRecommendations"
+        factory=".recommendations.Recommendations"
+        for="zope.annotation.interfaces.IAttributeAnnotatable"
+        marker=".recommendations.IRecommendable"
+        />
+
+</configure>
