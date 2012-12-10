@@ -27,7 +27,7 @@ from plone.memoize.instance import memoize
 
 # Interface class; used to define content-type schema.
 
-class IInfo(form.Schema, IImageScaleTraversable, IEvent, IEventRecurrence):
+class IInfo(form.Schema, IImageScaleTraversable):
     """
     TBFAC Info Type
     """
@@ -39,27 +39,6 @@ class IInfo(form.Schema, IImageScaleTraversable, IEvent, IEventRecurrence):
     # and add directives here as necessary.
     
     #form.model("models/info.xml")
-    ## The hardest part is figuring out the interface
-    ### provided by the behaviour field
-    ### I initially got distracted by IOccurence, based on the code here: 
-    ### https://github.com/plone/plone.event/blob/master/plone/event/interfaces.py
-    ### This actual code is here:
-    ### https://github.com/plone/plone.app.event/blob/master/plone/app/event/dx/behaviors.py
-    ### and provides the following fields:
-    ### IEventBasic.start, IEventBasic.end, IEventBasic.whole_day, IEventBasic.timezone
-    ### since IEventBasic.timezone is declared last in the behaviour
-    ### we can force our fields to occur after timezone
-    ### using the form.order_after() directive
-    form.order_after(organizer='IEventBasic.timezone')
-    form.order_after(dateDetails='IEventBasic.timezone')
-    form.order_after(venue='IEventBasic.timezone')
-    form.order_after(text='IEventBasic.timezone')
-    form.order_after(feeDetails='IEventBasic.timezone')
-    form.order_after(ticketURL='IEventBasic.timezone')
-    form.order_after(contactPhone='IEventBasic.timezone')
-    form.order_after(contactName='IEventBasic.timezone')
-    form.order_after(eventURL='IEventBasic.timezone')
-    form.order_after(image='IEventBasic.timezone')
     
     organizer = schema.TextLine(
         title=_(u'Organizer'),
@@ -71,6 +50,15 @@ class IInfo(form.Schema, IImageScaleTraversable, IEvent, IEventRecurrence):
         value_type=schema.Choice(
             values=[_(u'Show'), _(u'Dancing'), _(u'Music'), _(u'Drama'), _(u'Opera')]
         ),
+        required=False,
+    )
+
+    startDate = schema.Date(
+        title=_(u'Start Date'),
+    )
+
+    endDate = schema.Date(
+        title=_(u'End Date'),
         required=False,
     )
  
