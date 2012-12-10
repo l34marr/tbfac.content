@@ -29,11 +29,11 @@
 </p>
 <p>
   <tal:field i18n:translate="">Start Date</tal:field>:
-  <span tal:replace="context/start">Value</span>
-  <tal:end condition="context/end">
+  <span tal:replace="context/startDate">Value</span>
+  <tal:end condition="context/endDate">
   &nbsp;&nbsp;
   <tal:field i18n:translate="">End Date</tal:field>:
-  <span tal:replace="context/end">Value</span>
+  <span tal:replace="context/endDate">Value</span>
   </tal:end>
   
   <br />

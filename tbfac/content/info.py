@@ -13,7 +13,6 @@ from z3c.form import group, field
 from plone.namedfile.interfaces import IImageScaleTraversable
 from plone.namedfile.field import NamedImage, NamedFile
 from plone.namedfile.field import NamedBlobImage, NamedBlobFile
-from plone.event.interfaces import IEvent, IEventRecurrence
 
 from plone.app.textfield import RichText
 
@@ -147,9 +146,9 @@ class View(grok.View):
         """Prepare information for the template
         """
         #pass
-        self.startDateFormatted = self.context.start.strftime("%d %b %Y")
-        if self.context.end is not None:
-            self.endDateFormatted = self.context.end.strftime("%d %b %Y")
+        self.startDateFormatted = self.context.startDate.strftime("%d %b %Y")
+        if self.context.endDate is not None:
+            self.endDateFormatted = self.context.endDate.strftime("%d %b %Y")
 
     @memoize
     def venueInfo(self):
