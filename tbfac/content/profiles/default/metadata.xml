@@ -2,9 +2,5 @@
   <version>1</version>
     <dependencies>
         <dependency>profile-plone.app.dexterity:default</dependency>
-        <dependency>profile-plone.app.event:default</dependency>
-       <!-- don't need to install to inherit behaviour
-             <dependency>profile-plone.app.event.dx:default</dependency>
-       -->
     </dependencies>
 </metadata>

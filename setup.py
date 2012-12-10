@@ -27,7 +27,7 @@ setup(name='tbfac.content',
       install_requires=[
           'setuptools',
           'plone.app.dexterity',
-          'plone.app.event [ploneintegration,archetypes,dexterity]',
+          # 'plone.app.event [ploneintegration,archetypes,dexterity]',
           'plone.namedfile [blobs]',
           'plone.app.referenceablebehavior',
           # -*- Extra requirements: -*-
