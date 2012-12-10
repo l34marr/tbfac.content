@@ -52,11 +52,11 @@ class IInfo(form.Schema, IImageScaleTraversable):
         required=False,
     )
 
-    startDate = schema.Date(
+    start = schema.Date(
         title=_(u'Start Date'),
     )
 
-    endDate = schema.Date(
+    end = schema.Date(
         title=_(u'End Date'),
         required=False,
     )
@@ -146,9 +146,9 @@ class View(grok.View):
         """Prepare information for the template
         """
         #pass
-        self.startDateFormatted = self.context.startDate.strftime("%d %b %Y")
+        self.startDateFormatted = self.context.start.strftime("%d %b %Y")
         if self.context.endDate is not None:
-            self.endDateFormatted = self.context.endDate.strftime("%d %b %Y")
+            self.endDateFormatted = self.context.end.strftime("%d %b %Y")
 
     @memoize
     def venueInfo(self):

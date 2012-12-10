@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<import-steps>
+    <import-step
+        id="tbfac-content-various"
+        version="20121210-01"
+        handler="tbfac.content.setuphandlers.importVarious"
+        title="Additional TBFAC Content Types Setup">
+    </import-step>
+</import-steps>
