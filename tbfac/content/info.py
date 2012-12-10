@@ -147,7 +147,7 @@ class View(grok.View):
         """
         #pass
         self.startDateFormatted = self.context.start.strftime("%d %b %Y")
-        if self.context.endDate is not None:
+        if self.context.end is not None:
             self.endDateFormatted = self.context.end.strftime("%d %b %Y")
 
     @memoize
