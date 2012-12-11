@@ -1,5 +1,7 @@
 from five import grok
 from plone.directives import dexterity, form
+from plone.indexer import indexer
+from DateTime import DateTime
 
 from zope import schema
 from zope.schema.interfaces import IContextSourceBinder
@@ -23,6 +25,7 @@ from tbfac.content import MessageFactory as _
 from tbfac.content.venue import IVenue
 
 from plone.memoize.instance import memoize
+from Products.ATContentTypes.utils import dt2DT
 
 # Interface class; used to define content-type schema.
 
@@ -52,11 +55,11 @@ class IInfo(form.Schema, IImageScaleTraversable):
         required=False,
     )
 
-    start = schema.Date(
+    startDate = schema.Date(
         title=_(u'Start Date'),
     )
 
-    end = schema.Date(
+    endDate = schema.Date(
         title=_(u'End Date'),
         required=False,
     )
@@ -121,8 +124,9 @@ class IInfo(form.Schema, IImageScaleTraversable):
 # methods and properties. Put methods that are mainly useful for rendering
 # in separate view classes.
 
+    
 class Info(dexterity.Item):
-    grok.implements(IInfo, IAttributeAnnotatable)
+    grok.implements(IInfo, IAttributeAnnotatable)        
     
     # Add your class methods and properties here
 
@@ -137,6 +141,25 @@ class Info(dexterity.Item):
 # of this type by uncommenting the grok.name line below or by
 # changing the view class name and template filename to View / view.pt.
 
+# add custom indexers to store the start and end values
+# in Zope DateTime Format to maintain compatibility with
+# The current CalendarTool and portlet
+
+@indexer(IInfo)
+def startIndexer(obj):
+    if obj.startDate is None:
+        return None
+    return DateTime(obj.startDate.isoformat())
+grok.global_adapter(startIndexer, name="start")
+
+@indexer(IInfo)
+def endIndexer(obj):
+    if obj.endDate is None:
+        return None
+    return DateTime(obj.endDate.isoformat())
+grok.global_adapter(endIndexer, name="end")
+
+
 class View(grok.View):
     grok.context(IInfo)
     grok.require('zope2.View')
@@ -145,10 +168,12 @@ class View(grok.View):
     def update(self):
         """Prepare information for the template
         """
-        #pass
-        self.startDateFormatted = self.context.start.strftime("%d %b %Y")
-        if self.context.end is not None:
-            self.endDateFormatted = self.context.end.strftime("%d %b %Y")
+        pass
+        self.startDateFormatted = self.context.startDate.strftime("%d %b %Y")
+        
+        if self.context.endDate is not None:
+            self.endDateFormatted = self.context.endDate.strftime("%d %b %Y")
+            
 
     @memoize
     def venueInfo(self):
