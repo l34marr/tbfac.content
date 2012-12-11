@@ -6,7 +6,6 @@ from DateTime import DateTime
 from zope import schema
 from zope.schema.interfaces import IContextSourceBinder
 from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
-from zope.annotation.interfaces import IAttributeAnnotatable
 
 from zope.interface import invariant, Invalid
 
@@ -126,7 +125,7 @@ class IInfo(form.Schema, IImageScaleTraversable):
 
     
 class Info(dexterity.Item):
-    grok.implements(IInfo, IAttributeAnnotatable)        
+    grok.implements(IInfo)
     
     # Add your class methods and properties here
 
