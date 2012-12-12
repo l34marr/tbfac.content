@@ -12,6 +12,7 @@
 
   <!-- Include files -->
   <include file="permissions.zcml" />
+  <include file="implements.zcml" />
   <include package=".behaviors" />
   <include package=".browser" />
 
