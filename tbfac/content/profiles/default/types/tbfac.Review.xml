@@ -9,7 +9,7 @@
     i18n:translate="">TBFAC Review Type</property>
   <property name="icon_expr">string:${portal_url}/document_icon.png</property>
   <property name="factory">tbfac.content.review</property>
-  <property name="global_allow">False</property>
+  <property name="global_allow">True</property>
   <property name="filter_content_types">False</property>  
   <property name="allowed_content_types" />
   <property name="allow_discussion">False</property>
