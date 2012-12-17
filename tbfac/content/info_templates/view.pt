@@ -58,7 +58,7 @@
 </tal:text>
 <tal:feeDetails condition="context/feeDetails">
   <tal:field i18n:translate="">Fee Details</tal:field>:
-  <span tal:replace="structure context/feeDetails/output">Text</span>
+  <span tal:replace="context/feeDetails">Text</span>
 </tal:feeDetails>
 <p>
   <tal:ticketURL condition="context/ticketURL">

@@ -19,7 +19,7 @@ class RecommendationsViewlet(ViewletBase):
         self.recommendations = adapted.numberOfRecommends()
         user = getSecurityManager().getUser()
         self.userid = user.getId()
-        self.advisor = user.has_permission('TBFAC: Add recommendation', context)
+        self.advisor = user.has_permission('TBFAC: Add Recommendation', context)
         self.recommended_by_me = False
         if self.advisor and adapted.isRecommendedBy(self.userid):
             self.recommended_by_me = True

@@ -4,7 +4,6 @@
   <span class="isRecommended"
         title="Recommendations: %d"
         tal:attributes="title python:attrs['title'] % view.recommendations"
-        i18n:translate="title is_recommended_title"
         tal:condition="python:view.recommended and not view.advisor">[<tal:i18n i18n:translate="">recommended</tal:i18n>]</span>
 
   <a class="recommendAction"

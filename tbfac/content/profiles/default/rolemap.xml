@@ -4,7 +4,7 @@
     <role name="Advisor"/>
   </roles>
   <permissions>
-    <permission name="TBFAC: Add recommendation"
+    <permission name="TBFAC: Add Recommendation"
                 acquire="True">
       <role name="Advisor"/>
       <role name="Manager"/>

@@ -21,8 +21,13 @@
         />
 
     <permission
-       id="tbfac.AddRecommendation"
-       title="TBFAC: Add recommendation"
-       />
+        id="tbfac.AddNominator"
+        title="TBFAC: Add Nominator"
+        />
+
+    <permission
+        id="tbfac.AddRecommendation"
+        title="TBFAC: Add Recommendation"
+        />
 
 </configure>
