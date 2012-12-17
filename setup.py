@@ -30,7 +30,8 @@ setup(name='tbfac.content',
           # 'plone.app.event [ploneintegration,archetypes,dexterity]',
           'plone.namedfile [blobs]',
           'plone.app.referenceablebehavior',
-          # -*- Extra requirements: -*-
+          'collective.geo.bundle',
+          'collective.geo.behaviour',
       ],
       entry_points="""
       # -*- Entry points: -*-
