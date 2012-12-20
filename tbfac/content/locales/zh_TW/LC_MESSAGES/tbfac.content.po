@@ -1,10 +1,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tbfac.content\n"
-"POT-Creation-Date: 2012-12-17 13:45+0000\n"
-"PO-Revision-Date: 2012-12-17 21:50+0800\n"
+"POT-Creation-Date: 2012-12-20 05:34+0000\n"
+"PO-Revision-Date: 2012-12-20 13:38+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -28,7 +28,7 @@ msgstr "活動地址"
 msgid "Bio"
 msgstr "經歷"
 
-#: ./info.py:85
+#: ./info.py:93
 #: ./info_templates/view.pt:56
 msgid "Body"
 msgstr "內文"
@@ -38,12 +38,12 @@ msgstr "內文"
 msgid "Category"
 msgstr "活動類別"
 
-#: ./info.py:106
+#: ./info.py:114
 #: ./info_templates/view.pt:76
 msgid "Contact Name"
 msgstr "活動聯絡人"
 
-#: ./info.py:101
+#: ./info.py:109
 #: ./info_templates/view.pt:71
 msgid "Contact Phone"
 msgstr "活動聯絡電話"
@@ -74,17 +74,17 @@ msgstr "戲劇"
 msgid "End Date"
 msgstr "結束展演日期"
 
-#: ./info.py:111
+#: ./info.py:119
 #: ./info_templates/view.pt:81
 msgid "Event URL"
 msgstr "活動網址"
 
-#: ./info.py:90
+#: ./info.py:98
 #: ./info_templates/view.pt:60
 msgid "Fee Details"
 msgstr "費用說明"
 
-#: ./info.py:91
+#: ./info.py:99
 msgid "Fee Details Description"
 msgstr "例：500元。2012/11/15前早鳥優惠：400元；持台新信用卡刷卡享有85折優惠。"
 
@@ -92,7 +92,11 @@ msgstr "例：500元。2012/11/15前早鳥優惠：400元；持台新信用卡�
 msgid "Info"
 msgstr "活動訊息"
 
-#: ./info.py:116
+#: ./vocabularies.py:17
+msgid "Kaohsiung City"
+msgstr "高雄市"
+
+#: ./info.py:124
 #: ./venue.py:44
 msgid "Lead Image"
 msgstr "標題圖片"
@@ -104,6 +108,10 @@ msgstr "音樂"
 #: ./nominator.py:39
 msgid "Name"
 msgstr "姓名"
+
+#: ./vocabularies.py:14
+msgid "New Taipei City"
+msgstr "新北市"
 
 #: ./profiles/default/types/tbfac.Nominator.xml
 msgid "Nominator"
@@ -121,6 +129,10 @@ msgstr "主辦人/單位"
 #: ./nominator.py:59
 msgid "Photo"
 msgstr "照片"
+
+#: ./info.py:72
+msgid "Region"
+msgstr "所屬地區"
 
 #: ./profiles/default/types/tbfac.Review.xml
 msgid "Review"
@@ -155,7 +167,19 @@ msgstr "短評表單"
 msgid "TBFAC Venue Type"
 msgstr "活動地點表單"
 
-#: ./info.py:96
+#: ./vocabularies.py:15
+msgid "Taichung City"
+msgstr "臺中市"
+
+#: ./vocabularies.py:16
+msgid "Tainan City"
+msgstr "臺南市"
+
+#: ./vocabularies.py:13
+msgid "Taipei City"
+msgstr "臺北市"
+
+#: ./info.py:104
 #: ./info_templates/view.pt:65
 msgid "Ticket URL"
 msgstr "售票網址"
@@ -164,7 +188,7 @@ msgstr "售票網址"
 msgid "Upload Photo"
 msgstr "上傳照片"
 
-#: ./info.py:72
+#: ./info.py:80
 #: ./info_templates/view.pt:47
 #: ./profiles/default/types/tbfac.Venue.xml
 msgid "Venue"
@@ -177,10 +201,6 @@ msgstr "屆別"
 #: ./browser/templates/recommendations.pt:14
 msgid "recommend"
 msgstr "推薦"
-
-#: ./browser/templates/recommendations.pt:7
-msgid "recommended"
-msgstr "已被推薦"
 
 #: ./browser/templates/recommendations.pt:14
 msgid "unrecommend"

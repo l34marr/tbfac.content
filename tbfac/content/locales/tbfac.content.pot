@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-12-17 13:45+0000\n"
+"POT-Creation-Date: 2012-12-20 05:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,7 +31,7 @@ msgstr ""
 msgid "Bio"
 msgstr ""
 
-#: ./info.py:85
+#: ./info.py:93
 #: ./info_templates/view.pt:56
 msgid "Body"
 msgstr ""
@@ -41,12 +41,12 @@ msgstr ""
 msgid "Category"
 msgstr ""
 
-#: ./info.py:106
+#: ./info.py:114
 #: ./info_templates/view.pt:76
 msgid "Contact Name"
 msgstr ""
 
-#: ./info.py:101
+#: ./info.py:109
 #: ./info_templates/view.pt:71
 msgid "Contact Phone"
 msgstr ""
@@ -77,17 +77,17 @@ msgstr ""
 msgid "End Date"
 msgstr ""
 
-#: ./info.py:111
+#: ./info.py:119
 #: ./info_templates/view.pt:81
 msgid "Event URL"
 msgstr ""
 
-#: ./info.py:90
+#: ./info.py:98
 #: ./info_templates/view.pt:60
 msgid "Fee Details"
 msgstr ""
 
-#: ./info.py:91
+#: ./info.py:99
 msgid "Fee Details Description"
 msgstr ""
 
@@ -95,7 +95,11 @@ msgstr ""
 msgid "Info"
 msgstr ""
 
-#: ./info.py:116
+#: ./vocabularies.py:17
+msgid "Kaohsiung City"
+msgstr ""
+
+#: ./info.py:124
 #: ./venue.py:44
 msgid "Lead Image"
 msgstr ""
@@ -106,6 +110,10 @@ msgstr ""
 
 #: ./nominator.py:39
 msgid "Name"
+msgstr ""
+
+#: ./vocabularies.py:14
+msgid "New Taipei City"
 msgstr ""
 
 #: ./profiles/default/types/tbfac.Nominator.xml
@@ -123,6 +131,10 @@ msgstr ""
 
 #: ./nominator.py:59
 msgid "Photo"
+msgstr ""
+
+#: ./info.py:72
+msgid "Region"
 msgstr ""
 
 #: ./profiles/default/types/tbfac.Review.xml
@@ -158,7 +170,19 @@ msgstr ""
 msgid "TBFAC Venue Type"
 msgstr ""
 
-#: ./info.py:96
+#: ./vocabularies.py:15
+msgid "Taichung City"
+msgstr ""
+
+#: ./vocabularies.py:16
+msgid "Tainan City"
+msgstr ""
+
+#: ./vocabularies.py:13
+msgid "Taipei City"
+msgstr ""
+
+#: ./info.py:104
 #: ./info_templates/view.pt:65
 msgid "Ticket URL"
 msgstr ""
@@ -167,7 +191,7 @@ msgstr ""
 msgid "Upload Photo"
 msgstr ""
 
-#: ./info.py:72
+#: ./info.py:80
 #: ./info_templates/view.pt:47
 #: ./profiles/default/types/tbfac.Venue.xml
 msgid "Venue"
@@ -179,10 +203,6 @@ msgstr ""
 
 #: ./browser/templates/recommendations.pt:14
 msgid "recommend"
-msgstr ""
-
-#: ./browser/templates/recommendations.pt:7
-msgid "recommended"
 msgstr ""
 
 #: ./browser/templates/recommendations.pt:14

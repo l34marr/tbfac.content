@@ -68,6 +68,14 @@ class IInfo(form.Schema, IImageScaleTraversable):
         required=False,
     )
 
+    region = schema.List(
+        title=_(u"Region"),
+        value_type=schema.Choice(
+            vocabulary='regions',
+            required=False,
+        ),
+    )
+
     venue = RelationList(
         title=_(u'Venue'),
         value_type=RelationChoice(
