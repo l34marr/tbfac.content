@@ -1,0 +1,12 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:five="http://namespaces.zope.org/five"
+  xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+  i18n_domain="tbfac.content">
+
+  <utility
+    component=".vocabularies.regionsFactory"
+    name="regions"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+</configure>
