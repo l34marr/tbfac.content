@@ -1,37 +1,7 @@
-<configure
-    xmlns="http://namespaces.zope.org/zope"
-    xmlns:five="http://namespaces.zope.org/five"
-    xmlns:i18n="http://namespaces.zope.org/i18n"
-    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
-    xmlns:grok="http://namespaces.zope.org/grok"
-    xmlns:plone="http://namespaces.plone.org/plone"
-    i18n_domain="tbfac.content">
+<configure xmlns="http://namespaces.zope.org/zope">
 
-  <!-- Include configuration for dependencies listed in setup.py -->
-  <includeDependencies package="." />
-
-  <!-- Include files -->
-  <include file="permissions.zcml" />
-  <include file="implements.zcml" />
-  <include file="vocabularies.zcml" />
-  <include package=".behaviors" />
-  <include package=".browser" />
-
-  <!-- Grok the package to initialise schema interfaces and content classes -->
-  <grok:grok package="." />
-  
-  <i18n:registerTranslations directory="locales" />
-
-  <!-- Register an extension profile to make the product installable
-       in Plone -->
-  <genericsetup:registerProfile
-      name="default"
-      title="TBFAC Content Types"
-      directory="profiles/default"
-      description="Extension profile for TBFAC Content Types"
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      />
-
-  <!-- -*- extra stuff goes here -*- -->
+<include package="z3c.jbot" file="meta.zcml" />
+  <browser:templateOverrides
+     directory="templates" />
 
 </configure>
