@@ -27,7 +27,7 @@ setup(name='tbfac.content',
       install_requires=[
           'setuptools',
           'plone.app.dexterity',
-          'z3.jbot',
+          'z3c.jbot',
           # 'plone.app.event [ploneintegration,archetypes,dexterity]',
           'plone.namedfile [blobs]',
           'plone.app.referenceablebehavior',
