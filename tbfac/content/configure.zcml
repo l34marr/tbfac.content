@@ -1,7 +1,0 @@
-<configure xmlns="http://namespaces.zope.org/zope">
-
-<include package="z3c.jbot" file="meta.zcml" />
-  <browser:templateOverrides
-     directory="templates" />
-
-</configure>
