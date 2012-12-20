@@ -132,7 +132,7 @@ msgstr "照片"
 
 #: ./info.py:72
 msgid "Region"
-msgstr "所屬地區"
+msgstr "所屬縣市"
 
 #: ./profiles/default/types/tbfac.Review.xml
 msgid "Review"

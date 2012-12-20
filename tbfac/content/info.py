@@ -165,6 +165,13 @@ def endIndexer(obj):
     return DateTime(obj.endDate.isoformat())
 grok.global_adapter(endIndexer, name="end")
 
+@indexer(IInfo)
+def regionIndexer(obj):
+    if obj.region is None:
+        return None
+    return obj.region
+grok.global_adapter(regionIndexer, name="region")
+
 
 class View(grok.View):
     grok.context(IInfo)
