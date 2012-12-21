@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-12-20 05:34+0000\n"
+"POT-Creation-Date: 2012-12-21 02:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,33 +21,37 @@ msgstr ""
 msgid "Activity"
 msgstr ""
 
-#: ./info_templates/view.pt:51
+#: ./info_templates/view.pt:53
 #: ./venue.py:39
 msgid "Address"
 msgstr ""
 
-#: ./nominator.py:53
-#: ./nominator_templates/view.pt:21
+#: ./committee.py:53
+#: ./committee_templates/view.pt:21
 msgid "Bio"
 msgstr ""
 
 #: ./info.py:93
-#: ./info_templates/view.pt:56
+#: ./info_templates/view.pt:58
 msgid "Body"
 msgstr ""
 
 #: ./info.py:50
-#: ./info_templates/view.pt:23
+#: ./info_templates/view.pt:25
 msgid "Category"
 msgstr ""
 
+#: ./profiles/default/types/tbfac.Committee.xml
+msgid "Committee"
+msgstr ""
+
 #: ./info.py:114
-#: ./info_templates/view.pt:76
+#: ./info_templates/view.pt:78
 msgid "Contact Name"
 msgstr ""
 
 #: ./info.py:109
-#: ./info_templates/view.pt:71
+#: ./info_templates/view.pt:73
 msgid "Contact Phone"
 msgstr ""
 
@@ -56,7 +60,7 @@ msgid "Dancing"
 msgstr ""
 
 #: ./info.py:66
-#: ./info_templates/view.pt:41
+#: ./info_templates/view.pt:43
 msgid "Date Details"
 msgstr ""
 
@@ -64,7 +68,7 @@ msgstr ""
 msgid "Date Details Description"
 msgstr ""
 
-#: ./nominator.py:47
+#: ./committee.py:47
 msgid "Description"
 msgstr ""
 
@@ -73,17 +77,17 @@ msgid "Drama"
 msgstr ""
 
 #: ./info.py:62
-#: ./info_templates/view.pt:35
+#: ./info_templates/view.pt:37
 msgid "End Date"
 msgstr ""
 
 #: ./info.py:119
-#: ./info_templates/view.pt:81
+#: ./info_templates/view.pt:83
 msgid "Event URL"
 msgstr ""
 
 #: ./info.py:98
-#: ./info_templates/view.pt:60
+#: ./info_templates/view.pt:62
 msgid "Fee Details"
 msgstr ""
 
@@ -108,7 +112,7 @@ msgstr ""
 msgid "Music"
 msgstr ""
 
-#: ./nominator.py:39
+#: ./committee.py:39
 msgid "Name"
 msgstr ""
 
@@ -116,20 +120,16 @@ msgstr ""
 msgid "New Taipei City"
 msgstr ""
 
-#: ./profiles/default/types/tbfac.Nominator.xml
-msgid "Nominator"
-msgstr ""
-
 #: ./info.py:52
 msgid "Opera"
 msgstr ""
 
 #: ./info.py:45
-#: ./info_templates/view.pt:18
+#: ./info_templates/view.pt:19
 msgid "Organizer"
 msgstr ""
 
-#: ./nominator.py:59
+#: ./committee.py:59
 msgid "Photo"
 msgstr ""
 
@@ -146,7 +146,7 @@ msgid "Show"
 msgstr ""
 
 #: ./info.py:58
-#: ./info_templates/view.pt:31
+#: ./info_templates/view.pt:33
 msgid "Start Date"
 msgstr ""
 
@@ -154,12 +154,12 @@ msgstr ""
 msgid "TBFAC Activity Type"
 msgstr ""
 
-#: ./profiles/default/types/tbfac.Info.xml
-msgid "TBFAC Info Type"
+#: ./profiles/default/types/tbfac.Committee.xml
+msgid "TBFAC Committee Type"
 msgstr ""
 
-#: ./profiles/default/types/tbfac.Nominator.xml
-msgid "TBFAC Nominator Type"
+#: ./profiles/default/types/tbfac.Info.xml
+msgid "TBFAC Info Type"
 msgstr ""
 
 #: ./profiles/default/types/tbfac.Review.xml
@@ -183,21 +183,21 @@ msgid "Taipei City"
 msgstr ""
 
 #: ./info.py:104
-#: ./info_templates/view.pt:65
+#: ./info_templates/view.pt:67
 msgid "Ticket URL"
 msgstr ""
 
-#: ./nominator.py:60
+#: ./committee.py:60
 msgid "Upload Photo"
 msgstr ""
 
 #: ./info.py:80
-#: ./info_templates/view.pt:47
+#: ./info_templates/view.pt:49
 #: ./profiles/default/types/tbfac.Venue.xml
 msgid "Venue"
 msgstr ""
 
-#: ./nominator.py:43
+#: ./committee.py:43
 msgid "Year"
 msgstr ""
 
