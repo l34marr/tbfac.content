@@ -21,8 +21,8 @@
         />
 
     <permission
-        id="tbfac.AddNominator"
-        title="TBFAC: Add Nominator"
+        id="tbfac.AddCommittee"
+        title="TBFAC: Add Committee"
         />
 
     <permission
