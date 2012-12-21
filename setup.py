@@ -27,11 +27,15 @@ setup(name='tbfac.content',
       install_requires=[
           'setuptools',
           'plone.app.dexterity',
+          'z3c.jbot',
           # 'plone.app.event [ploneintegration,archetypes,dexterity]',
           'plone.namedfile [blobs]',
           'plone.app.referenceablebehavior',
           'collective.geo.bundle',
           'collective.geo.behaviour',
+          'simplejson',
+          'collective.geo.mapwidget',
+          'geopy',
       ],
       entry_points="""
       # -*- Entry points: -*-
