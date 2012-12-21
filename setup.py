@@ -33,6 +33,9 @@ setup(name='tbfac.content',
           'plone.app.referenceablebehavior',
           'collective.geo.bundle',
           'collective.geo.behaviour',
+          'simplejson',
+          'collective.geo.mapwidget',
+          'geopy',
       ],
       entry_points="""
       # -*- Entry points: -*-

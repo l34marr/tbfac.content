@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tbfac.content\n"
-"POT-Creation-Date: 2012-12-20 05:34+0000\n"
+"POT-Creation-Date: 2012-12-21 02:35+0000\n"
 "PO-Revision-Date: 2012-12-20 13:38+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
@@ -18,33 +18,37 @@ msgstr ""
 msgid "Activity"
 msgstr "展演"
 
-#: ./info_templates/view.pt:51
+#: ./info_templates/view.pt:53
 #: ./venue.py:39
 msgid "Address"
 msgstr "活動地址"
 
-#: ./nominator.py:53
-#: ./nominator_templates/view.pt:21
+#: ./committee.py:53
+#: ./committee_templates/view.pt:21
 msgid "Bio"
 msgstr "經歷"
 
 #: ./info.py:93
-#: ./info_templates/view.pt:56
+#: ./info_templates/view.pt:58
 msgid "Body"
 msgstr "內文"
 
 #: ./info.py:50
-#: ./info_templates/view.pt:23
+#: ./info_templates/view.pt:25
 msgid "Category"
 msgstr "活動類別"
 
+#: ./profiles/default/types/tbfac.Committee.xml
+msgid "Committee"
+msgstr "委員"
+
 #: ./info.py:114
-#: ./info_templates/view.pt:76
+#: ./info_templates/view.pt:78
 msgid "Contact Name"
 msgstr "活動聯絡人"
 
 #: ./info.py:109
-#: ./info_templates/view.pt:71
+#: ./info_templates/view.pt:73
 msgid "Contact Phone"
 msgstr "活動聯絡電話"
 
@@ -53,7 +57,7 @@ msgid "Dancing"
 msgstr "舞蹈"
 
 #: ./info.py:66
-#: ./info_templates/view.pt:41
+#: ./info_templates/view.pt:43
 msgid "Date Details"
 msgstr "詳細時間說明"
 
@@ -61,7 +65,7 @@ msgstr "詳細時間說明"
 msgid "Date Details Description"
 msgstr "例：5/15 (五) ～ 5/16 (六)，19:30；5/16 (六) ～ 5/17 (日)，14:30。"
 
-#: ./nominator.py:47
+#: ./committee.py:47
 msgid "Description"
 msgstr "簡介"
 
@@ -70,17 +74,17 @@ msgid "Drama"
 msgstr "戲劇"
 
 #: ./info.py:62
-#: ./info_templates/view.pt:35
+#: ./info_templates/view.pt:37
 msgid "End Date"
 msgstr "結束展演日期"
 
 #: ./info.py:119
-#: ./info_templates/view.pt:81
+#: ./info_templates/view.pt:83
 msgid "Event URL"
 msgstr "活動網址"
 
 #: ./info.py:98
-#: ./info_templates/view.pt:60
+#: ./info_templates/view.pt:62
 msgid "Fee Details"
 msgstr "費用說明"
 
@@ -105,7 +109,7 @@ msgstr "標題圖片"
 msgid "Music"
 msgstr "音樂"
 
-#: ./nominator.py:39
+#: ./committee.py:39
 msgid "Name"
 msgstr "姓名"
 
@@ -113,20 +117,16 @@ msgstr "姓名"
 msgid "New Taipei City"
 msgstr "新北市"
 
-#: ./profiles/default/types/tbfac.Nominator.xml
-msgid "Nominator"
-msgstr "提名人"
-
 #: ./info.py:52
 msgid "Opera"
 msgstr "戲曲"
 
 #: ./info.py:45
-#: ./info_templates/view.pt:18
+#: ./info_templates/view.pt:19
 msgid "Organizer"
 msgstr "主辦人/單位"
 
-#: ./nominator.py:59
+#: ./committee.py:59
 msgid "Photo"
 msgstr "照片"
 
@@ -143,7 +143,7 @@ msgid "Show"
 msgstr "展覽"
 
 #: ./info.py:58
-#: ./info_templates/view.pt:31
+#: ./info_templates/view.pt:33
 msgid "Start Date"
 msgstr "首次展演日期"
 
@@ -151,13 +151,13 @@ msgstr "首次展演日期"
 msgid "TBFAC Activity Type"
 msgstr "展演資訊表單"
 
+#: ./profiles/default/types/tbfac.Committee.xml
+msgid "TBFAC Committee Type"
+msgstr "委員表單"
+
 #: ./profiles/default/types/tbfac.Info.xml
 msgid "TBFAC Info Type"
 msgstr "活動訊息表單"
-
-#: ./profiles/default/types/tbfac.Nominator.xml
-msgid "TBFAC Nominator Type"
-msgstr "提名人表單"
 
 #: ./profiles/default/types/tbfac.Review.xml
 msgid "TBFAC Review Type"
@@ -180,21 +180,21 @@ msgid "Taipei City"
 msgstr "臺北市"
 
 #: ./info.py:104
-#: ./info_templates/view.pt:65
+#: ./info_templates/view.pt:67
 msgid "Ticket URL"
 msgstr "售票網址"
 
-#: ./nominator.py:60
+#: ./committee.py:60
 msgid "Upload Photo"
 msgstr "上傳照片"
 
 #: ./info.py:80
-#: ./info_templates/view.pt:47
+#: ./info_templates/view.pt:49
 #: ./profiles/default/types/tbfac.Venue.xml
 msgid "Venue"
 msgstr "活動地點"
 
-#: ./nominator.py:43
+#: ./committee.py:43
 msgid "Year"
 msgstr "屆別"
 

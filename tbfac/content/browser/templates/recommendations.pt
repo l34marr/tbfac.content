@@ -1,10 +1,10 @@
 <div class="newsImageContainer"
       i18n:domain="tbfac.content">
 
-  <span class="isRecommended"
-        title="Recommendations: %d"
-        tal:attributes="title python:attrs['title'] % view.recommendations"
-        tal:condition="python:view.recommended and not view.advisor">[<tal:i18n i18n:translate="">recommended</tal:i18n>]</span>
+  <img src="#"
+   tal:attributes="src string:++resource++tbfac.content/recommend.png;
+                   alt string:recommended"
+   tal:condition="python:view.recommended and not view.advisor" />
 
   <a class="recommendAction"
      href="toggle-recommendation"

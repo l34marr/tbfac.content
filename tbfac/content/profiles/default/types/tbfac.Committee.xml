@@ -1,22 +1,22 @@
 <?xml version="1.0"?>
-<object name="tbfac.Nominator"
+<object name="tbfac.Committee"
    meta_type="Dexterity FTI"
    i18n:domain="tbfac.content" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
 
   <!-- Basic metadata -->
-  <property name="title" i18n:translate="">Nominator</property>
+  <property name="title" i18n:translate="">Committee</property>
   <property name="description"
-    i18n:translate="">TBFAC Nominator Type</property>
+    i18n:translate="">TBFAC Committee Type</property>
   <property name="content_icon">++resource++tbfac.content/figure.gif</property>
-  <property name="factory">tbfac.content.nominator</property>
+  <property name="factory">tbfac.content.committee</property>
   <property name="global_allow">True</property>
   <property name="filter_content_types">False</property>  
   <property name="allowed_content_types" />
   <property name="allow_discussion">False</property>
 
   <!-- schema and class used for content items -->
-  <property name="schema">tbfac.content.nominator.INominator</property> 
-  <property name="klass">tbfac.content.nominator.Nominator</property>
+  <property name="schema">tbfac.content.committee.ICommittee</property> 
+  <property name="klass">tbfac.content.committee.Committee</property>
 
   <property name="behaviors">
      <element value="plone.app.content.interfaces.INameFromTitle" />
