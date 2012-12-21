@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml
+  xmlns="http://www.opengis.net/kml/2.2"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:tal="http://xml.zope.org/namespaces/tal">
+<Document>
+  <name tal:content="view/title">infovenuesmap</name>
+  <description tal:content="view/description">description</description>
+  <Style id="venueicon">
+    <IconStyle>
+      <Icon>
+        <href tal:content="string:${context/absolute_url}/++resource++tbfac.content/venue.png">
+          imgurl</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Placemark tal:repeat="placemark view/get_venues">
+    <name tal:content="placemark/title">Venue Title</name>
+    <description
+        tal:content="structure placemark/description">Venue Desc</description>
+    <styleUrl>#venueicon</styleUrl>
+    <Point>
+      <coordinates
+          tal:content="placemark/location">11.550751,44.850513,0.000000</coordinates>
+    </Point>
+  </Placemark>
+</Document>
+</kml>

@@ -33,4 +33,28 @@
         name="tbfac.content_main.js"
         />
 
+    <!-- GEO Map related registrations -->
+    <browser:page
+        for="..info.IInfo"
+        name="infovenuesmap.kml"
+        class=".infovenuesmap_view.InfoVenuesMapKMLView"
+        template="templates/infovenuesmap_kml.pt"
+        permission="zope2.View"
+        />
+
+    <browser:page
+        name="infovenuesmap-layer"
+        for="..info.IInfo"
+        template="templates/infovenuesmap_layer.pt"
+        permission="zope.Public"
+        />
+
+    <adapter
+        for=".interfaces.IInfoVenuesMapView
+             zope.interface.Interface
+             ..info.IInfo
+             zope.interface.Interface"
+        factory=".maplayer.KMLMapLayers"
+        />
+
 </configure>
