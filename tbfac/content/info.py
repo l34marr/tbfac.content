@@ -81,9 +81,9 @@ class IInfo(form.Schema, IImageScaleTraversable):
         value_type=RelationChoice(
             source=ObjPathSourceBinder(
                 object_provides=IVenue.__identifier__,
-                navigation_tree_query={
-                    'path': {'query': '/taishin/venues'}
-                },
+                #navigation_tree_query={
+                #    'path': {'query': '/taishin/venues'}
+                #},
             ),
         ),
         required=False,

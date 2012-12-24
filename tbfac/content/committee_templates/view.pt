@@ -8,9 +8,12 @@
 <body>
 
 <metal:header fill-slot="header">
-<div class="newsImageContainer">
-  <img tal:define="scale context/@@images"
-       tal:replace="structure python: scale.scale('photo', width=350, height=350).tag()" />
+<div class="newsImageContainer"
+ tal:define="photo nocall:context/photo"
+ tal:condition="nocall:photo">
+  <img tal:attributes="src string:${context/absolute_url}/@@download/photo/${photo/filename};
+                       height photo/_height | nothing;
+                       width photo/_width | nothing;" />
 </div>
 </metal:header>
 

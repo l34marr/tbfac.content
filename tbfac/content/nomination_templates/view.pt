@@ -1,0 +1,32 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="tbfac.content">
+<body>
+
+<metal:main fill-slot="content-core">
+  <metal:content-core define-macro="content-core">
+
+<p>
+  <span tal:define="items context/category|nothing"
+        tal:condition="items">
+  <tal:field i18n:translate="">Category</tal:field>:
+  <tal:items repeat="obj items">
+    <span tal:replace="obj">Value</span>
+    <span class="separator" tal:condition="not: repeat/obj/end">,</span>
+  </tal:items>
+  </span>
+</p>
+<tal:text condition="context/text">
+  <tal:field i18n:translate="">Body</tal:field>:
+  <span tal:replace="structure context/text/output">Text</span>
+</tal:text>
+
+  </metal:content-core>
+</metal:main>
+
+</body>
+</html>
