@@ -15,6 +15,12 @@
                        height photo/_height | nothing;
                        width photo/_width | nothing;" />
 </div>
+<div class="newsImageContainer">
+第 <tal:year replace="python: int(context.year) - 2001">N</tal:year> 屆
+<tal:group condition="context/group">
+  <span tal:replace="context/group">Group Member</span>
+</tal:group>
+</div>
 </metal:header>
 
 <metal:main fill-slot="content-core">
@@ -25,6 +31,19 @@
   <span tal:replace="structure context/bio/output">Text</span>
 </tal:bio>
 
+<tal:list define="obj_url context/@@plone_context_state/object_url;
+                  author python:obj_url.split('/')[-1];
+                  contents python:context.portal_catalog.searchResults(dict(Creator=author, sort_on='created', sort_order='reverse'))[:10];"
+       condition="contents">
+<tal:field i18n:translate="">Content List</tal:field>:
+<ul>
+  <tal:block repeat="item contents">
+    <li><a href="" tal:attributes="href item/getURL"
+                   tal:content="item/pretty_title_or_id">title</a></li>
+  </tal:block>
+<ul>
+</tal:list>
+                         
   </metal:content-core>
 </metal:main>
 

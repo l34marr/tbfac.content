@@ -9,7 +9,7 @@
   <Style id="venueicon">
     <IconStyle>
       <Icon>
-        <href tal:content="string:${context/absolute_url}/++resource++tbfac.content/venue.png">
+        <href tal:content="string:${context/absolute_url}/++resource++tbfac.content/marker.png">
           imgurl</href>
       </Icon>
     </IconStyle>

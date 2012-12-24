@@ -43,6 +43,11 @@ class ICommittee(form.Schema, IImageScaleTraversable):
         title=_(u"Year"),
     )
 
+    group = schema.Choice(
+        title=_(u"Group"),
+        values=[_(u"Nominator"), _(u"Committee"), _(u"FinalReviewer")]
+    )
+
     description = schema.Text(
         title=_(u"Description"),
         required=False,
