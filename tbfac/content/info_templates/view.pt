@@ -44,16 +44,15 @@
   <span tal:replace="context/dateDetails">Text</span>
   </span>
 </p>
-<p tal:condition="context/venue">
+<ol tal:condition="context/venue">
   <tal:venues repeat="venue view/venueInfo">
-  <tal:field i18n:translate="">Venue</tal:field>:
+  <li><tal:field i18n:translate="">Venue</tal:field>:
     <a tal:attributes="href venue/url"
-       tal:content="venue/title">String</a>
-  <br />
+       tal:content="venue/title">String</a></li>
   <tal:field i18n:translate="">Address</tal:field>:
     <span tal:replace="venue/address">String</span>
   </tal:venues>
-</p>
+</ol>
 <tal:text condition="context/text">
   <tal:field i18n:translate="">Body</tal:field>:
   <span tal:replace="structure context/text/output">Text</span>
