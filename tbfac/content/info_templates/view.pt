@@ -44,7 +44,16 @@
   <span tal:replace="context/dateDetails">Text</span>
   </span>
 </p>
-<ol tal:condition="context/venue">
+<tal:block condition="context/venue">
+<p tal:condition="python: len(view.venueInfo()) == 1"
+   tal:define="venue python:view.venueInfo()[0]">
+  <tal:field i18n:translate="">Venue</tal:field>:
+    <a tal:attributes="href venue/url"
+       tal:content="venue/title">String</a><br />
+  <tal:field i18n:translate="">Address</tal:field>:
+    <span tal:replace="venue/address">String</span>
+</p>
+<ol tal:condition="python: len(view.venueInfo()) > 1">
   <tal:venues repeat="venue view/venueInfo">
   <li><tal:field i18n:translate="">Venue</tal:field>:
     <a tal:attributes="href venue/url"
@@ -53,6 +62,7 @@
     <span tal:replace="venue/address">String</span>
   </tal:venues>
 </ol>
+</tal:block>
 <tal:text condition="context/text">
   <tal:field i18n:translate="">Body</tal:field>:
   <span tal:replace="structure context/text/output">Text</span>
