@@ -8,6 +8,21 @@
     <browser:templateOverrides
       directory="templates" />
 
+    <include package="collective.geo.kml" />
+    <adapter
+        factory=".kmldocument.Info"
+        for="..info.IInfo
+             zope.publisher.interfaces.browser.IBrowserRequest"
+        provides="collective.geo.kml.interfaces.IFeature"
+        />
+    <browser:page
+        for="plone.app.folder.folder.IATUnifiedFolder"
+        name="kml-document"
+        class=".kmldocument.KMLFolderDocument"
+        layer="collective.geo.kml.interfaces.IGeoKmlLayer"
+        permission="zope2.View"
+        />
+
     <browser:viewlet
         for="..behaviors.recommendations.IRecommendable"
         name="tbfac.recommendations"

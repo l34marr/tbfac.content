@@ -1,11 +1,6 @@
-from time import time
-
 from zope.interface import implements
-from zope.component import getUtility
-from Products.Five import BrowserView
 
-from plone.memoize import ram
-from plone.registry.interfaces import IRegistry
+from Products.Five import BrowserView
 
 from collective.geo.contentlocations.interfaces import IGeoManager
 
@@ -34,10 +29,6 @@ class InfoVenuesMapKMLView(BrowserView):
     def description(self):
         return "<![CDATA[%s]]>" % self.context.Description()
 
-    @property
-    def user_coords_tool(self):
-        return getUtility(IUsersCoordinates)
-
     def get_venues(self):
         """This function retrieves all related Venue objects for given Info
         and for each Venue gets the coordinates.
@@ -48,11 +39,19 @@ class InfoVenuesMapKMLView(BrowserView):
         location, title, description
         """
         venues = []
-        for ref in self.context.venue:
+        refs = self.context.venue
+        if not refs:
+            return venues
+
+        for ref in refs:
             ob = ref.to_object
             geo = IGeoManager(ob, None)
             if geo and geo.isGeoreferenceable():
-                geometry, (longitude, latitude) = geo.getCoordinates()
+                geometry, coordinates = geo.getCoordinates()
+                if not coordinates or len(coordinates) != 2:
+                    continue
+                else:
+                    longitude, latitude = coordinates
                 if geometry == 'Point' and longitude and latitude:
                     venue = {
                         'title': ob.Title(),
