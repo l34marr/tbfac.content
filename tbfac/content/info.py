@@ -166,6 +166,13 @@ def endIndexer(obj):
 grok.global_adapter(endIndexer, name="end")
 
 @indexer(IInfo)
+def categoryIndexer(obj):
+    if obj.category is None:
+        return None
+    return obj.category
+grok.global_adapter(categoryIndexer, name="category")
+
+@indexer(IInfo)
 def regionIndexer(obj):
     if obj.region is None:
         return None
