@@ -188,12 +188,12 @@ class View(grok.View):
     def update(self):
         """Prepare information for the template
         """
-        pass
-        self.startDateFormatted = self.context.startDate.strftime("%d %b %Y")
-        
+        if self.context.startDate is not None:
+            self.startDateFormatted = self.context.startDate.strftime(
+                "%d %b %Y")
+
         if self.context.endDate is not None:
             self.endDateFormatted = self.context.endDate.strftime("%d %b %Y")
-            
 
     @memoize
     def venueInfo(self):
