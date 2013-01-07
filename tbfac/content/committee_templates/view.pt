@@ -8,6 +8,14 @@
 <body>
 
 <metal:header fill-slot="header">
+
+<div class="nomi-year-info">
+第 <tal:year replace="python: int(context.year) - 2001">N</tal:year> 屆
+<tal:group condition="context/group">
+  <span tal:replace="context/group">Group Member</span>
+</tal:group>
+</div>
+
 <div class="leadImageContainer"
  tal:define="photo nocall:context/photo"
  tal:condition="nocall:photo">
@@ -15,12 +23,7 @@
                        height photo/_height | nothing;
                        width photo/_width | nothing;" />
 </div>
-<div class="newsImageContainer">
-第 <tal:year replace="python: int(context.year) - 2001">N</tal:year> 屆
-<tal:group condition="context/group">
-  <span tal:replace="context/group">Group Member</span>
-</tal:group>
-</div>
+
 </metal:header>
 
 <metal:main fill-slot="content-core">
