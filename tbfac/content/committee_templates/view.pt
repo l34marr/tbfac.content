@@ -8,7 +8,7 @@
 <body>
 
 <metal:header fill-slot="header">
-<div class="newsImageContainer"
+<div class="leadImageContainer"
  tal:define="photo nocall:context/photo"
  tal:condition="nocall:photo">
   <img tal:attributes="src string:${context/absolute_url}/@@download/photo/${photo/filename};
