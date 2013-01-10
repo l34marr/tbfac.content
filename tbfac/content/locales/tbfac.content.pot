@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-01-07 09:26+0000\n"
+"POT-Creation-Date: 2013-01-10 04:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgstr ""
 msgid "Add Info Venues Map portlet"
 msgstr ""
 
-#: ./info_templates/view.pt:56
+#: ./info_templates/view.pt:57
 #: ./venue.py:39
 msgid "Address"
 msgstr ""
@@ -44,13 +44,13 @@ msgid "Bio"
 msgstr ""
 
 #: ./info.py:93
-#: ./info_templates/view.pt:70
+#: ./info_templates/view.pt:71
 #: ./nomination.py:60
 msgid "Body"
 msgstr ""
 
 #: ./info.py:50
-#: ./info_templates/view.pt:28
+#: ./info_templates/view.pt:29
 #: ./nomination_templates/view.pt:16
 msgid "Category"
 msgstr ""
@@ -61,12 +61,12 @@ msgid "Committee"
 msgstr ""
 
 #: ./info.py:114
-#: ./info_templates/view.pt:90
+#: ./info_templates/view.pt:91
 msgid "Contact Name"
 msgstr ""
 
 #: ./info.py:109
-#: ./info_templates/view.pt:85
+#: ./info_templates/view.pt:86
 msgid "Contact Phone"
 msgstr ""
 
@@ -79,7 +79,7 @@ msgid "Dancing"
 msgstr ""
 
 #: ./info.py:66
-#: ./info_templates/view.pt:46
+#: ./info_templates/view.pt:47
 msgid "Date Details"
 msgstr ""
 
@@ -100,17 +100,17 @@ msgid "Edit Info Venues Map portlet"
 msgstr ""
 
 #: ./info.py:62
-#: ./info_templates/view.pt:40
+#: ./info_templates/view.pt:41
 msgid "End Date"
 msgstr ""
 
 #: ./info.py:119
-#: ./info_templates/view.pt:95
+#: ./info_templates/view.pt:96
 msgid "Event URL"
 msgstr ""
 
 #: ./info.py:98
-#: ./info_templates/view.pt:74
+#: ./info_templates/view.pt:75
 msgid "Fee Details"
 msgstr ""
 
@@ -136,6 +136,10 @@ msgstr ""
 
 #: ./profiles/default/types/tbfac.Info.xml
 msgid "Info"
+msgstr ""
+
+#: ./committee.py:48
+msgid "Jury"
 msgstr ""
 
 #: ./vocabularies.py:17
@@ -168,7 +172,11 @@ msgid "Nomination"
 msgstr ""
 
 #: ./committee.py:48
-msgid "Nominator"
+msgid "NominatorGroup"
+msgstr ""
+
+#: ./committee.py:48
+msgid "ObserverGroup"
 msgstr ""
 
 #: ./info.py:52
@@ -176,7 +184,7 @@ msgid "Opera"
 msgstr ""
 
 #: ./info.py:45
-#: ./info_templates/view.pt:22
+#: ./info_templates/view.pt:23
 msgid "Organizer"
 msgstr ""
 
@@ -186,6 +194,10 @@ msgstr ""
 
 #: ./committee.py:64
 msgid "Photo"
+msgstr ""
+
+#: ./committee.py:48
+msgid "RecommendGroup"
 msgstr ""
 
 #: ./info.py:72
@@ -201,7 +213,7 @@ msgid "Show"
 msgstr ""
 
 #: ./info.py:58
-#: ./info_templates/view.pt:36
+#: ./info_templates/view.pt:37
 msgid "Start Date"
 msgstr ""
 
@@ -246,7 +258,7 @@ msgid "This portlet displays a map of Info Venues locations."
 msgstr ""
 
 #: ./info.py:104
-#: ./info_templates/view.pt:79
+#: ./info_templates/view.pt:80
 msgid "Ticket URL"
 msgstr ""
 
@@ -271,7 +283,7 @@ msgid "Upload a Image of Size 710x300."
 msgstr ""
 
 #: ./info.py:80
-#: ./info_templates/view.pt:53
+#: ./info_templates/view.pt:54
 #: ./profiles/default/types/tbfac.Venue.xml
 msgid "Venue"
 msgstr ""
