@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-12-21 02:35+0000\n"
+"POT-Creation-Date: 2013-01-07 09:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,38 +21,57 @@ msgstr ""
 msgid "Activity"
 msgstr ""
 
-#: ./info_templates/view.pt:53
+#: ./portlets/infovenuesmap.py:153
+msgid "Add Info Venues Map portlet"
+msgstr ""
+
+#: ./info_templates/view.pt:56
 #: ./venue.py:39
 msgid "Address"
 msgstr ""
 
-#: ./committee.py:53
-#: ./committee_templates/view.pt:21
+#: ./nomination.py:40
+msgid "Award Category"
+msgstr ""
+
+#: ./info.py:130
+msgid "Banner Image"
+msgstr ""
+
+#: ./committee.py:58
+#: ./committee_templates/view.pt:33
 msgid "Bio"
 msgstr ""
 
 #: ./info.py:93
-#: ./info_templates/view.pt:58
+#: ./info_templates/view.pt:70
+#: ./nomination.py:60
 msgid "Body"
 msgstr ""
 
 #: ./info.py:50
-#: ./info_templates/view.pt:25
+#: ./info_templates/view.pt:28
+#: ./nomination_templates/view.pt:16
 msgid "Category"
 msgstr ""
 
+#: ./committee.py:48
 #: ./profiles/default/types/tbfac.Committee.xml
 msgid "Committee"
 msgstr ""
 
 #: ./info.py:114
-#: ./info_templates/view.pt:78
+#: ./info_templates/view.pt:90
 msgid "Contact Name"
 msgstr ""
 
 #: ./info.py:109
-#: ./info_templates/view.pt:73
+#: ./info_templates/view.pt:85
 msgid "Contact Phone"
+msgstr ""
+
+#: ./committee_templates/view.pt:41
+msgid "Content List"
 msgstr ""
 
 #: ./info.py:52
@@ -60,7 +79,7 @@ msgid "Dancing"
 msgstr ""
 
 #: ./info.py:66
-#: ./info_templates/view.pt:43
+#: ./info_templates/view.pt:46
 msgid "Date Details"
 msgstr ""
 
@@ -68,7 +87,7 @@ msgstr ""
 msgid "Date Details Description"
 msgstr ""
 
-#: ./committee.py:47
+#: ./committee.py:52
 msgid "Description"
 msgstr ""
 
@@ -76,23 +95,43 @@ msgstr ""
 msgid "Drama"
 msgstr ""
 
+#: ./portlets/infovenuesmap.py:166
+msgid "Edit Info Venues Map portlet"
+msgstr ""
+
 #: ./info.py:62
-#: ./info_templates/view.pt:37
+#: ./info_templates/view.pt:40
 msgid "End Date"
 msgstr ""
 
 #: ./info.py:119
-#: ./info_templates/view.pt:83
+#: ./info_templates/view.pt:95
 msgid "Event URL"
 msgstr ""
 
 #: ./info.py:98
-#: ./info_templates/view.pt:62
+#: ./info_templates/view.pt:74
 msgid "Fee Details"
 msgstr ""
 
 #: ./info.py:99
 msgid "Fee Details Description"
+msgstr ""
+
+#: ./committee.py:48
+msgid "FinalReviewer"
+msgstr ""
+
+#: ./committee.py:47
+msgid "Group"
+msgstr ""
+
+#: ./portlets/infovenuesmap.py:44
+msgid "Height"
+msgstr ""
+
+#: ./portlets/infovenuesmap.py:45
+msgid "Height for maps, specified as an absolute (like '450px' or '15em'), or relative (like '100%') size."
 msgstr ""
 
 #: ./profiles/default/types/tbfac.Info.xml
@@ -120,16 +159,32 @@ msgstr ""
 msgid "New Taipei City"
 msgstr ""
 
+#: ./nomination.py:48
+msgid "Nominated Info"
+msgstr ""
+
+#: ./profiles/default/types/tbfac.Nomination.xml
+msgid "Nomination"
+msgstr ""
+
+#: ./committee.py:48
+msgid "Nominator"
+msgstr ""
+
 #: ./info.py:52
 msgid "Opera"
 msgstr ""
 
 #: ./info.py:45
-#: ./info_templates/view.pt:19
+#: ./info_templates/view.pt:22
 msgid "Organizer"
 msgstr ""
 
-#: ./committee.py:59
+#: ./nomination.py:42
+msgid "Performing Arts"
+msgstr ""
+
+#: ./committee.py:64
 msgid "Photo"
 msgstr ""
 
@@ -146,7 +201,7 @@ msgid "Show"
 msgstr ""
 
 #: ./info.py:58
-#: ./info_templates/view.pt:33
+#: ./info_templates/view.pt:36
 msgid "Start Date"
 msgstr ""
 
@@ -160,6 +215,10 @@ msgstr ""
 
 #: ./profiles/default/types/tbfac.Info.xml
 msgid "TBFAC Info Type"
+msgstr ""
+
+#: ./profiles/default/types/tbfac.Nomination.xml
+msgid "TBFAC Nomination Type"
 msgstr ""
 
 #: ./profiles/default/types/tbfac.Review.xml
@@ -182,23 +241,56 @@ msgstr ""
 msgid "Taipei City"
 msgstr ""
 
+#: ./portlets/infovenuesmap.py:23
+msgid "This portlet displays a map of Info Venues locations."
+msgstr ""
+
 #: ./info.py:104
-#: ./info_templates/view.pt:67
+#: ./info_templates/view.pt:79
 msgid "Ticket URL"
 msgstr ""
 
-#: ./committee.py:60
+#: ./nomination.py:35
+msgid "Title"
+msgstr ""
+
+#: ./nomination.py:42
+msgid "Uncatrgorized"
+msgstr ""
+
+#: ./committee.py:65
 msgid "Upload Photo"
 msgstr ""
 
+#: ./info.py:125
+msgid "Upload a Image of Size 230x230."
+msgstr ""
+
+#: ./info.py:131
+msgid "Upload a Image of Size 710x300."
+msgstr ""
+
 #: ./info.py:80
-#: ./info_templates/view.pt:49
+#: ./info_templates/view.pt:53
 #: ./profiles/default/types/tbfac.Venue.xml
 msgid "Venue"
 msgstr ""
 
+#: ./portlets/infovenuesmap.py:34
+msgid "Venues"
+msgstr ""
+
+#: ./nomination.py:42
+msgid "Visual Arts"
+msgstr ""
+
 #: ./committee.py:43
 msgid "Year"
+msgstr ""
+
+#. Default: "Info Venues Map Portlet"
+#: ./profiles/default/portlets.xml
+msgid "description"
 msgstr ""
 
 #: ./browser/templates/recommendations.pt:14

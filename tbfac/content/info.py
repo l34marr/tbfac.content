@@ -122,6 +122,13 @@ class IInfo(form.Schema, IImageScaleTraversable):
 
     image = NamedBlobImage(
         title=_(u'Lead Image'),
+        description=_(u"Upload a Image of Size 230x230."),
+        required=True,
+    )
+
+    banner = NamedBlobImage(
+        title=_(u'Banner Image'),
+        description=_(u"Upload a Image of Size 710x300."),
         required=False,
     )
 
