@@ -4,8 +4,13 @@
     <role name="Advisor"/>
   </roles>
   <permissions>
-    <permission name="TBFAC: Add Recommendation"
-                acquire="True">
+    <permission name="TBFAC: Add Info" acquire="False">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Owner" />
+      <role name="Contributor" />
+    </permission>
+    <permission name="TBFAC: Add Recommendation" acquire="True">
       <role name="Advisor"/>
       <role name="Manager"/>
     </permission>
