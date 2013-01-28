@@ -39,13 +39,21 @@ class ICommittee(form.Schema, IImageScaleTraversable):
         title=_(u"Name"),
     )
 
-    year = schema.TextLine(
-        title=_(u"Year"),
+    category = schema.Choice(
+        title=_(u'Award Category'),
+        values=[_(u'Visual Arts'), _(u'Performing Arts'), _(u'Uncatrgorized')],
+        required=True,
     )
 
-    group = schema.Choice(
+    group = schema.List(
         title=_(u"Group"),
-        values=[_(u"NominatorGroup"), _(u"ObserverGroup"), _(u"Jury"), _(u"Committee"), _(u"FinalReviewer"), _(u"RecommendGroup")]
+        value_type=schema.Choice(
+            values=[_(u"NominatorGroup"), _(u"ObserverGroup"), _(u"Jury"), _(u"Committee"), _(u"FinalReviewer"), _(u"RecommendGroup")]
+        )
+    )
+
+    year = schema.TextLine(
+        title=_(u"Year"),
     )
 
     description = schema.Text(
@@ -91,3 +99,4 @@ class View(grok.View):
     grok.context(ICommittee)
     grok.require('zope2.View')
     grok.name('view')
+

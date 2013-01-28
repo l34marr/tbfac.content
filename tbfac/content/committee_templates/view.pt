@@ -11,9 +11,12 @@
 
 <div class="nomi-year-info">
 第 <tal:year replace="python: int(context.year) - 2001">N</tal:year> 屆
-<tal:group condition="context/group">
-  <span tal:replace="context/group">Group Member</span>
+<tal:group repeat="grp context/group">
+  <span tal:replace="grp">Group Member</span>
+  <span class="separator" tal:condition="not: repeat/grp/end">,</span>
 </tal:group>
+<tal:field i18n:translate="">Award Category</tal:field>:
+<span tal:content="context/category">Text</span>
 </div>
 
 <div class="leadImageContainer"
@@ -30,7 +33,6 @@
   <metal:content-core define-macro="content-core">
 
 <tal:bio condition="context/bio">
-  <tal:field i18n:translate="">Bio</tal:field>:
   <span tal:replace="structure context/bio/output">Text</span>
 </tal:bio>
 

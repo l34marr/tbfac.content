@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tbfac.content\n"
-"POT-Creation-Date: 2013-01-10 04:11+0000\n"
-"PO-Revision-Date: 2013-01-10 12:12+0800\n"
+"POT-Creation-Date: 2013-01-10 05:46+0000\n"
+"PO-Revision-Date: 2013-01-10 13:48+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -27,15 +27,16 @@ msgstr "新增地圖方框"
 msgid "Address"
 msgstr "活動地址"
 
+#: ./committee.py:43
 #: ./nomination.py:40
 msgid "Award Category"
-msgstr "獎項"
+msgstr "獎項分類"
 
 #: ./info.py:130
 msgid "Banner Image"
 msgstr "內頁圖片"
 
-#: ./committee.py:58
+#: ./committee.py:66
 #: ./committee_templates/view.pt:33
 msgid "Bio"
 msgstr "經歷"
@@ -52,7 +53,7 @@ msgstr "內文"
 msgid "Category"
 msgstr "活動類別"
 
-#: ./committee.py:48
+#: ./committee.py:51
 #: ./profiles/default/types/tbfac.Committee.xml
 msgid "Committee"
 msgstr "委員會委員"
@@ -84,7 +85,7 @@ msgstr "詳細時間說明"
 msgid "Date Details Description"
 msgstr "例：5/15 (五) ～ 5/16 (六)，19:30；5/16 (六) ～ 5/17 (日)，14:30。"
 
-#: ./committee.py:52
+#: ./committee.py:60
 msgid "Description"
 msgstr "簡介"
 
@@ -115,11 +116,11 @@ msgstr "費用說明"
 msgid "Fee Details Description"
 msgstr "例：500元。2012/11/15前早鳥優惠：400元；持台新信用卡刷卡享有85折優惠。"
 
-#: ./committee.py:48
+#: ./committee.py:51
 msgid "FinalReviewer"
 msgstr "決審委員"
 
-#: ./committee.py:47
+#: ./committee.py:49
 msgid "Group"
 msgstr "分類"
 
@@ -135,7 +136,7 @@ msgstr "以 450px 或 100% 方式指定地圖高度"
 msgid "Info"
 msgstr "活動訊息"
 
-#: ./committee.py:48
+#: ./committee.py:51
 msgid "Jury"
 msgstr "提名觀察人"
 
@@ -168,11 +169,11 @@ msgstr "入圍理由"
 msgid "Nomination"
 msgstr "提名"
 
-#: ./committee.py:48
+#: ./committee.py:51
 msgid "NominatorGroup"
 msgstr "提名團"
 
-#: ./committee.py:48
+#: ./committee.py:51
 msgid "ObserverGroup"
 msgstr "觀察團"
 
@@ -185,15 +186,16 @@ msgstr "戲曲"
 msgid "Organizer"
 msgstr "主辦人/單位"
 
+#: ./committee.py:44
 #: ./nomination.py:42
 msgid "Performing Arts"
 msgstr "表演藝術"
 
-#: ./committee.py:64
+#: ./committee.py:72
 msgid "Photo"
 msgstr "照片"
 
-#: ./committee.py:48
+#: ./committee.py:51
 msgid "RecommendGroup"
 msgstr "推薦團"
 
@@ -263,11 +265,12 @@ msgstr "售票網址"
 msgid "Title"
 msgstr "標題"
 
+#: ./committee.py:44
 #: ./nomination.py:42
 msgid "Uncatrgorized"
 msgstr "不分類"
 
-#: ./committee.py:65
+#: ./committee.py:73
 msgid "Upload Photo"
 msgstr "上傳照片"
 
@@ -289,11 +292,12 @@ msgstr "活動地點"
 msgid "Venues"
 msgstr "活動地點"
 
+#: ./committee.py:44
 #: ./nomination.py:42
 msgid "Visual Arts"
 msgstr "視覺藝術"
 
-#: ./committee.py:43
+#: ./committee.py:56
 msgid "Year"
 msgstr "屆別"
 

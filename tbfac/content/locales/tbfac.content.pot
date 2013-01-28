@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-01-10 04:11+0000\n"
+"POT-Creation-Date: 2013-01-10 05:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,6 +30,7 @@ msgstr ""
 msgid "Address"
 msgstr ""
 
+#: ./committee.py:43
 #: ./nomination.py:40
 msgid "Award Category"
 msgstr ""
@@ -38,7 +39,7 @@ msgstr ""
 msgid "Banner Image"
 msgstr ""
 
-#: ./committee.py:58
+#: ./committee.py:66
 #: ./committee_templates/view.pt:33
 msgid "Bio"
 msgstr ""
@@ -55,7 +56,7 @@ msgstr ""
 msgid "Category"
 msgstr ""
 
-#: ./committee.py:48
+#: ./committee.py:51
 #: ./profiles/default/types/tbfac.Committee.xml
 msgid "Committee"
 msgstr ""
@@ -87,7 +88,7 @@ msgstr ""
 msgid "Date Details Description"
 msgstr ""
 
-#: ./committee.py:52
+#: ./committee.py:60
 msgid "Description"
 msgstr ""
 
@@ -118,11 +119,11 @@ msgstr ""
 msgid "Fee Details Description"
 msgstr ""
 
-#: ./committee.py:48
+#: ./committee.py:51
 msgid "FinalReviewer"
 msgstr ""
 
-#: ./committee.py:47
+#: ./committee.py:49
 msgid "Group"
 msgstr ""
 
@@ -138,7 +139,7 @@ msgstr ""
 msgid "Info"
 msgstr ""
 
-#: ./committee.py:48
+#: ./committee.py:51
 msgid "Jury"
 msgstr ""
 
@@ -171,11 +172,11 @@ msgstr ""
 msgid "Nomination"
 msgstr ""
 
-#: ./committee.py:48
+#: ./committee.py:51
 msgid "NominatorGroup"
 msgstr ""
 
-#: ./committee.py:48
+#: ./committee.py:51
 msgid "ObserverGroup"
 msgstr ""
 
@@ -188,15 +189,16 @@ msgstr ""
 msgid "Organizer"
 msgstr ""
 
+#: ./committee.py:44
 #: ./nomination.py:42
 msgid "Performing Arts"
 msgstr ""
 
-#: ./committee.py:64
+#: ./committee.py:72
 msgid "Photo"
 msgstr ""
 
-#: ./committee.py:48
+#: ./committee.py:51
 msgid "RecommendGroup"
 msgstr ""
 
@@ -266,11 +268,12 @@ msgstr ""
 msgid "Title"
 msgstr ""
 
+#: ./committee.py:44
 #: ./nomination.py:42
 msgid "Uncatrgorized"
 msgstr ""
 
-#: ./committee.py:65
+#: ./committee.py:73
 msgid "Upload Photo"
 msgstr ""
 
@@ -292,11 +295,12 @@ msgstr ""
 msgid "Venues"
 msgstr ""
 
+#: ./committee.py:44
 #: ./nomination.py:42
 msgid "Visual Arts"
 msgstr ""
 
-#: ./committee.py:43
+#: ./committee.py:56
 msgid "Year"
 msgstr ""
 
