@@ -16,7 +16,7 @@
 
   <!-- schema and class used for content items -->
   <property name="schema">tbfac.content.review.IReview</property> 
-  <property name="klass">plone.dexterity.content.Item</property>
+  <property name="klass">tbfac.content.review.Review</property>
   <property name="add_permission">tbfac.AddReview</property>
 
   <property name="behaviors">

@@ -8,11 +8,23 @@
         <implements interface="zope.annotation.interfaces.IAttributeAnnotatable" />
     </class>
 
+    <class class=".info.Info">
+        <implements interface="collective.geo.geographer.interfaces.IGeoreferenceable" />
+    </class>
+
     <class class=".venue.Venue">
         <implements interface="collective.geo.geographer.interfaces.IGeoreferenceable" />
     </class>
 
     <class class=".activity.Activity">
+        <implements interface="collective.geo.geographer.interfaces.IGeoreferenceable" />
+    </class>
+
+    <class class=".committee.Committee">
+        <implements interface="collective.geo.geographer.interfaces.IGeoreferenceable" />
+    </class>
+
+    <class class=".review.Review">
         <implements interface="collective.geo.geographer.interfaces.IGeoreferenceable" />
     </class>
 
