@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tbfac.content\n"
-"POT-Creation-Date: 2013-01-10 05:46+0000\n"
-"PO-Revision-Date: 2013-01-10 13:48+0800\n"
+"POT-Creation-Date: 2013-01-30 07:32+0000\n"
+"PO-Revision-Date: 2013-01-30 15:32+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -14,10 +14,6 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: tbfac.content\n"
 
-#: ./profiles/default/types/tbfac.Activity.xml
-msgid "Activity"
-msgstr "展演"
-
 #: ./portlets/infovenuesmap.py:153
 msgid "Add Info Venues Map portlet"
 msgstr "新增地圖方框"
@@ -27,7 +23,12 @@ msgstr "新增地圖方框"
 msgid "Address"
 msgstr "活動地址"
 
+#: ./profiles/default/types/tbfac.Article.xml
+msgid "Article"
+msgstr "文章"
+
 #: ./committee.py:43
+#: ./committee_templates/view.pt:18
 #: ./nomination.py:40
 msgid "Award Category"
 msgstr "獎項分類"
@@ -37,7 +38,6 @@ msgid "Banner Image"
 msgstr "內頁圖片"
 
 #: ./committee.py:66
-#: ./committee_templates/view.pt:33
 msgid "Bio"
 msgstr "經歷"
 
@@ -67,10 +67,6 @@ msgstr "活動聯絡人"
 #: ./info_templates/view.pt:86
 msgid "Contact Phone"
 msgstr "活動聯絡電話"
-
-#: ./committee_templates/view.pt:41
-msgid "Content List"
-msgstr "文章列表"
 
 #: ./info.py:52
 msgid "Dancing"
@@ -119,6 +115,10 @@ msgstr "例：500元。2012/11/15前早鳥優惠：400元；持台新信用卡�
 #: ./committee.py:51
 msgid "FinalReviewer"
 msgstr "決審委員"
+
+#: ./profiles/default/types/tbfac.Folder.xml
+msgid "Folder"
+msgstr "藝論"
 
 #: ./committee.py:49
 msgid "Group"
@@ -216,13 +216,17 @@ msgstr "展覽"
 msgid "Start Date"
 msgstr "首次展演日期"
 
-#: ./profiles/default/types/tbfac.Activity.xml
-msgid "TBFAC Activity Type"
-msgstr "展演資訊表單"
+#: ./profiles/default/types/tbfac.Article.xml
+msgid "TBFAC Article Type"
+msgstr "文章表單"
 
 #: ./profiles/default/types/tbfac.Committee.xml
 msgid "TBFAC Committee Type"
 msgstr "委員表單"
+
+#: ./profiles/default/types/tbfac.Folder.xml
+msgid "TBFAC Folder Type"
+msgstr "藝論表單"
 
 #: ./profiles/default/types/tbfac.Info.xml
 msgid "TBFAC Info Type"
@@ -305,12 +309,4 @@ msgstr "屆別"
 #: ./profiles/default/portlets.xml
 msgid "description"
 msgstr "描述"
-
-#: ./browser/templates/recommendations.pt:14
-msgid "recommend"
-msgstr "推薦"
-
-#: ./browser/templates/recommendations.pt:14
-msgid "unrecommend"
-msgstr "取消推薦"
 

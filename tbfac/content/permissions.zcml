@@ -6,8 +6,8 @@
     <!-- Define new permissions -->
     
     <permission
-        id="tbfac.AddActivity"
-        title="TBFAC: Add Activity"
+        id="tbfac.AddFolder"
+        title="TBFAC: Add Folder"
         />
 
     <permission

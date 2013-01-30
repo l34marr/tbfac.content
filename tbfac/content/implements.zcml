@@ -16,10 +16,6 @@
         <implements interface="collective.geo.geographer.interfaces.IGeoreferenceable" />
     </class>
 
-    <class class=".activity.Activity">
-        <implements interface="collective.geo.geographer.interfaces.IGeoreferenceable" />
-    </class>
-
     <class class=".committee.Committee">
         <implements interface="collective.geo.geographer.interfaces.IGeoreferenceable" />
     </class>

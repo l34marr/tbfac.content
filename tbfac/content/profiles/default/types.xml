@@ -8,7 +8,7 @@
   -->
 <object name="portal_types" meta_type="Plone Types Tool">
   <!-- -*- extra stuff goes here -*- -->
-  <object name="tbfac.Activity" meta_type="Dexterity FTI" />
+  <object name="tbfac.Folder" meta_type="Dexterity FTI" />
   <object name="tbfac.Info" meta_type="Dexterity FTI" />
   <object name="tbfac.Venue" meta_type="Dexterity FTI" />
   <object name="tbfac.Review" meta_type="Dexterity FTI" />

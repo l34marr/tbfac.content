@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-01-10 05:46+0000\n"
+"POT-Creation-Date: 2013-01-30 07:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,10 +17,6 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: tbfac.content\n"
 
-#: ./profiles/default/types/tbfac.Activity.xml
-msgid "Activity"
-msgstr ""
-
 #: ./portlets/infovenuesmap.py:153
 msgid "Add Info Venues Map portlet"
 msgstr ""
@@ -30,7 +26,12 @@ msgstr ""
 msgid "Address"
 msgstr ""
 
+#: ./profiles/default/types/tbfac.Article.xml
+msgid "Article"
+msgstr ""
+
 #: ./committee.py:43
+#: ./committee_templates/view.pt:18
 #: ./nomination.py:40
 msgid "Award Category"
 msgstr ""
@@ -40,7 +41,6 @@ msgid "Banner Image"
 msgstr ""
 
 #: ./committee.py:66
-#: ./committee_templates/view.pt:33
 msgid "Bio"
 msgstr ""
 
@@ -69,10 +69,6 @@ msgstr ""
 #: ./info.py:109
 #: ./info_templates/view.pt:86
 msgid "Contact Phone"
-msgstr ""
-
-#: ./committee_templates/view.pt:41
-msgid "Content List"
 msgstr ""
 
 #: ./info.py:52
@@ -121,6 +117,10 @@ msgstr ""
 
 #: ./committee.py:51
 msgid "FinalReviewer"
+msgstr ""
+
+#: ./profiles/default/types/tbfac.Folder.xml
+msgid "Folder"
 msgstr ""
 
 #: ./committee.py:49
@@ -219,12 +219,16 @@ msgstr ""
 msgid "Start Date"
 msgstr ""
 
-#: ./profiles/default/types/tbfac.Activity.xml
-msgid "TBFAC Activity Type"
+#: ./profiles/default/types/tbfac.Article.xml
+msgid "TBFAC Article Type"
 msgstr ""
 
 #: ./profiles/default/types/tbfac.Committee.xml
 msgid "TBFAC Committee Type"
+msgstr ""
+
+#: ./profiles/default/types/tbfac.Folder.xml
+msgid "TBFAC Folder Type"
 msgstr ""
 
 #: ./profiles/default/types/tbfac.Info.xml
@@ -307,13 +311,5 @@ msgstr ""
 #. Default: "Info Venues Map Portlet"
 #: ./profiles/default/portlets.xml
 msgid "description"
-msgstr ""
-
-#: ./browser/templates/recommendations.pt:14
-msgid "recommend"
-msgstr ""
-
-#: ./browser/templates/recommendations.pt:14
-msgid "unrecommend"
 msgstr ""
 
