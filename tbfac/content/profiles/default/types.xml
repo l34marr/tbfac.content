@@ -12,6 +12,7 @@
   <object name="tbfac.Info" meta_type="Dexterity FTI" />
   <object name="tbfac.Venue" meta_type="Dexterity FTI" />
   <object name="tbfac.Review" meta_type="Dexterity FTI" />
+  <object name="tbfac.Article" meta_type="Dexterity FTI" />
   <object name="tbfac.Nomination" meta_type="Dexterity FTI" />
   <object name="tbfac.Committee" meta_type="Dexterity FTI" />
 </object>

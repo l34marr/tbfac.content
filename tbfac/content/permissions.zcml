@@ -21,6 +21,11 @@
         />
 
     <permission
+        id="tbfac.AddArticle"
+        title="TBFAC: Add Article"
+        />
+
+    <permission
         id="tbfac.AddCommittee"
         title="TBFAC: Add Committee"
         />
