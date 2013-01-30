@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-01-30 07:32+0000\n"
+"POT-Creation-Date: 2013-01-30 10:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,6 +54,18 @@ msgstr ""
 #: ./info_templates/view.pt:29
 #: ./nomination_templates/view.pt:16
 msgid "Category"
+msgstr ""
+
+#: ./vocabularies.py:22
+msgid "Changhua County"
+msgstr ""
+
+#: ./vocabularies.py:24
+msgid "Chiayi City"
+msgstr ""
+
+#: ./vocabularies.py:25
+msgid "Chiayi County"
 msgstr ""
 
 #: ./committee.py:51
@@ -135,6 +147,18 @@ msgstr ""
 msgid "Height for maps, specified as an absolute (like '450px' or '15em'), or relative (like '100%') size."
 msgstr ""
 
+#: ./vocabularies.py:18
+msgid "Hsinchu City"
+msgstr ""
+
+#: ./vocabularies.py:17
+msgid "Hsinchu County"
+msgstr ""
+
+#: ./vocabularies.py:30
+msgid "Hualien County"
+msgstr ""
+
 #: ./profiles/default/types/tbfac.Info.xml
 msgid "Info"
 msgstr ""
@@ -143,13 +167,37 @@ msgstr ""
 msgid "Jury"
 msgstr ""
 
-#: ./vocabularies.py:17
+#: ./vocabularies.py:27
 msgid "Kaohsiung City"
+msgstr ""
+
+#: ./vocabularies.py:13
+msgid "Keelung City"
+msgstr ""
+
+#: ./vocabularies.py:34
+msgid "Kinmen County"
 msgstr ""
 
 #: ./info.py:124
 #: ./venue.py:44
 msgid "Lead Image"
+msgstr ""
+
+#: ./vocabularies.py:33
+msgid "Lienchiang County"
+msgstr ""
+
+#: ./folder.py:13
+msgid "Link Image"
+msgstr ""
+
+#: ./folder.py:18
+msgid "Link URL"
+msgstr ""
+
+#: ./vocabularies.py:19
+msgid "Miaoli County"
 msgstr ""
 
 #: ./info.py:52
@@ -160,7 +208,11 @@ msgstr ""
 msgid "Name"
 msgstr ""
 
-#: ./vocabularies.py:14
+#: ./vocabularies.py:21
+msgid "Nantou County"
+msgstr ""
+
+#: ./vocabularies.py:15
 msgid "New Taipei City"
 msgstr ""
 
@@ -189,6 +241,10 @@ msgstr ""
 msgid "Organizer"
 msgstr ""
 
+#: ./vocabularies.py:32
+msgid "Penghu County"
+msgstr ""
+
 #: ./committee.py:44
 #: ./nomination.py:42
 msgid "Performing Arts"
@@ -196,6 +252,10 @@ msgstr ""
 
 #: ./committee.py:72
 msgid "Photo"
+msgstr ""
+
+#: ./vocabularies.py:28
+msgid "Pingtung County"
 msgstr ""
 
 #: ./committee.py:51
@@ -247,16 +307,24 @@ msgstr ""
 msgid "TBFAC Venue Type"
 msgstr ""
 
-#: ./vocabularies.py:15
+#: ./vocabularies.py:20
 msgid "Taichung City"
 msgstr ""
 
-#: ./vocabularies.py:16
+#: ./vocabularies.py:26
 msgid "Tainan City"
 msgstr ""
 
-#: ./vocabularies.py:13
+#: ./vocabularies.py:14
 msgid "Taipei City"
+msgstr ""
+
+#: ./vocabularies.py:31
+msgid "Taitung County"
+msgstr ""
+
+#: ./vocabularies.py:16
+msgid "Taoyuan County"
 msgstr ""
 
 #: ./portlets/infovenuesmap.py:23
@@ -306,6 +374,14 @@ msgstr ""
 
 #: ./committee.py:56
 msgid "Year"
+msgstr ""
+
+#: ./vocabularies.py:29
+msgid "Yilan County"
+msgstr ""
+
+#: ./vocabularies.py:23
+msgid "Yunlin County"
 msgstr ""
 
 #. Default: "Info Venues Map Portlet"

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tbfac.content\n"
-"POT-Creation-Date: 2013-01-30 07:32+0000\n"
-"PO-Revision-Date: 2013-01-30 15:32+0800\n"
+"POT-Creation-Date: 2013-01-30 10:15+0000\n"
+"PO-Revision-Date: 2013-01-30 18:18+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -52,6 +52,18 @@ msgstr "內文"
 #: ./nomination_templates/view.pt:16
 msgid "Category"
 msgstr "活動類別"
+
+#: ./vocabularies.py:22
+msgid "Changhua County"
+msgstr "彰化縣"
+
+#: ./vocabularies.py:24
+msgid "Chiayi City"
+msgstr "嘉義市"
+
+#: ./vocabularies.py:25
+msgid "Chiayi County"
+msgstr "嘉義縣"
 
 #: ./committee.py:51
 #: ./profiles/default/types/tbfac.Committee.xml
@@ -132,6 +144,18 @@ msgstr "高度"
 msgid "Height for maps, specified as an absolute (like '450px' or '15em'), or relative (like '100%') size."
 msgstr "以 450px 或 100% 方式指定地圖高度"
 
+#: ./vocabularies.py:18
+msgid "Hsinchu City"
+msgstr "新竹市"
+
+#: ./vocabularies.py:17
+msgid "Hsinchu County"
+msgstr "新竹縣"
+
+#: ./vocabularies.py:30
+msgid "Hualien County"
+msgstr "花蓮縣"
+
 #: ./profiles/default/types/tbfac.Info.xml
 msgid "Info"
 msgstr "活動訊息"
@@ -140,14 +164,38 @@ msgstr "活動訊息"
 msgid "Jury"
 msgstr "提名觀察人"
 
-#: ./vocabularies.py:17
+#: ./vocabularies.py:27
 msgid "Kaohsiung City"
 msgstr "高雄市"
+
+#: ./vocabularies.py:13
+msgid "Keelung City"
+msgstr "基隆市"
+
+#: ./vocabularies.py:34
+msgid "Kinmen County"
+msgstr "金門縣"
 
 #: ./info.py:124
 #: ./venue.py:44
 msgid "Lead Image"
 msgstr "標題圖片"
+
+#: ./vocabularies.py:33
+msgid "Lienchiang County"
+msgstr "連江縣"
+
+#: ./folder.py:13
+msgid "Link Image"
+msgstr "連結圖檔"
+
+#: ./folder.py:18
+msgid "Link URL"
+msgstr "連結網址"
+
+#: ./vocabularies.py:19
+msgid "Miaoli County"
+msgstr "苗栗縣"
 
 #: ./info.py:52
 msgid "Music"
@@ -157,7 +205,11 @@ msgstr "音樂"
 msgid "Name"
 msgstr "姓名"
 
-#: ./vocabularies.py:14
+#: ./vocabularies.py:21
+msgid "Nantou County"
+msgstr "南投縣"
+
+#: ./vocabularies.py:15
 msgid "New Taipei City"
 msgstr "新北市"
 
@@ -186,6 +238,10 @@ msgstr "戲曲"
 msgid "Organizer"
 msgstr "主辦人/單位"
 
+#: ./vocabularies.py:32
+msgid "Penghu County"
+msgstr "澎湖縣"
+
 #: ./committee.py:44
 #: ./nomination.py:42
 msgid "Performing Arts"
@@ -194,6 +250,10 @@ msgstr "表演藝術"
 #: ./committee.py:72
 msgid "Photo"
 msgstr "照片"
+
+#: ./vocabularies.py:28
+msgid "Pingtung County"
+msgstr "屏東縣"
 
 #: ./committee.py:51
 msgid "RecommendGroup"
@@ -244,17 +304,25 @@ msgstr "短評表單"
 msgid "TBFAC Venue Type"
 msgstr "活動地點表單"
 
-#: ./vocabularies.py:15
+#: ./vocabularies.py:20
 msgid "Taichung City"
 msgstr "臺中市"
 
-#: ./vocabularies.py:16
+#: ./vocabularies.py:26
 msgid "Tainan City"
 msgstr "臺南市"
 
-#: ./vocabularies.py:13
+#: ./vocabularies.py:14
 msgid "Taipei City"
 msgstr "臺北市"
+
+#: ./vocabularies.py:31
+msgid "Taitung County"
+msgstr "臺東縣"
+
+#: ./vocabularies.py:16
+msgid "Taoyuan County"
+msgstr "桃園縣"
 
 #: ./portlets/infovenuesmap.py:23
 msgid "This portlet displays a map of Info Venues locations."
@@ -304,6 +372,14 @@ msgstr "視覺藝術"
 #: ./committee.py:56
 msgid "Year"
 msgstr "屆別"
+
+#: ./vocabularies.py:29
+msgid "Yilan County"
+msgstr "宜蘭縣"
+
+#: ./vocabularies.py:23
+msgid "Yunlin County"
+msgstr "雲林縣"
 
 #. Default: "Info Venues Map Portlet"
 #: ./profiles/default/portlets.xml
