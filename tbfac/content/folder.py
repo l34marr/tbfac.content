@@ -26,3 +26,9 @@ class Folder(dexterity.Container):
 
 # Note that we use the standard folder_listing view for this type, so there
 # is no specific view here
+
+class View(grok.View):
+    grok.context(IFolder)
+    grok.require('zope2.View')
+    grok.name('view')
+
