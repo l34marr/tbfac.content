@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-01-30 10:15+0000\n"
+"POT-Creation-Date: 2013-01-31 06:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -384,8 +384,23 @@ msgstr ""
 msgid "Yunlin County"
 msgstr ""
 
+#. Default: "created"
+#: ./folder_templates/view.pt:68
+msgid "box_created"
+msgstr ""
+
 #. Default: "Info Venues Map Portlet"
 #: ./profiles/default/portlets.xml
 msgid "description"
+msgstr ""
+
+#. Default: "by ${author}"
+#: ./folder_templates/view.pt:57
+msgid "label_by_author"
+msgstr ""
+
+#. Default: "Read More…"
+#: ./folder_templates/view.pt:88
+msgid "read_more"
 msgstr ""
 

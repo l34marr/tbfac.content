@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tbfac.content\n"
-"POT-Creation-Date: 2013-01-30 10:15+0000\n"
+"POT-Creation-Date: 2013-01-31 06:16+0000\n"
 "PO-Revision-Date: 2013-01-30 18:18+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
@@ -381,8 +381,23 @@ msgstr "宜蘭縣"
 msgid "Yunlin County"
 msgstr "雲林縣"
 
+#. Default: "created"
+#: ./folder_templates/view.pt:68
+msgid "box_created"
+msgstr "發表時間"
+
 #. Default: "Info Venues Map Portlet"
 #: ./profiles/default/portlets.xml
 msgid "description"
 msgstr "描述"
+
+#. Default: "by ${author}"
+#: ./folder_templates/view.pt:57
+msgid "label_by_author"
+msgstr "張貼者 ${author}"
+
+#. Default: "Read More…"
+#: ./folder_templates/view.pt:88
+msgid "read_more"
+msgstr "更多討論"
 

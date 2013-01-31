@@ -17,6 +17,7 @@
      <element value="tbfac.Info" />
      <element value="tbfac.Venue" />
      <element value="Image" />
+     <element value="Document" />
   </property>
   <property name="allow_discussion">False</property>
 

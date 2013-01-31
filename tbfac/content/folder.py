@@ -32,3 +32,6 @@ class View(grok.View):
     grok.require('zope2.View')
     grok.name('view')
 
+    def update(self):
+        self.request.set('disable_border', True)
+
