@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tbfac.content\n"
-"POT-Creation-Date: 2013-01-31 06:16+0000\n"
-"PO-Revision-Date: 2013-01-30 18:18+0800\n"
+"POT-Creation-Date: 2013-01-31 07:11+0000\n"
+"PO-Revision-Date: 2013-01-31 16:12+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -27,6 +27,10 @@ msgstr "活動地址"
 msgid "Article"
 msgstr "文章"
 
+#: ./article.py:41
+msgid "Author"
+msgstr "發表人"
+
 #: ./committee.py:43
 #: ./committee_templates/view.pt:18
 #: ./nomination.py:40
@@ -41,9 +45,9 @@ msgstr "內頁圖片"
 msgid "Bio"
 msgstr "經歷"
 
+#: ./article.py:63
 #: ./info.py:93
 #: ./info_templates/view.pt:71
-#: ./nomination.py:60
 msgid "Body"
 msgstr "內文"
 
@@ -156,6 +160,10 @@ msgstr "新竹縣"
 msgid "Hualien County"
 msgstr "花蓮縣"
 
+#: ./article.py:47
+msgid "If no referenced Info items to select, please manually fill them in the next field."
+msgstr "若選單無該評論展演，則在下列「自行填寫評論展演」文字欄位中新增。"
+
 #: ./profiles/default/types/tbfac.Info.xml
 msgid "Info"
 msgstr "活動訊息"
@@ -259,6 +267,10 @@ msgstr "屏東縣"
 msgid "RecommendGroup"
 msgstr "推薦團"
 
+#: ./article.py:46
+msgid "Referenced Info"
+msgstr "由選單尋找符合該文章之展演資訊項目"
+
 #: ./info.py:72
 msgid "Region"
 msgstr "所屬縣市"
@@ -266,6 +278,10 @@ msgstr "所屬縣市"
 #: ./profiles/default/types/tbfac.Review.xml
 msgid "Review"
 msgstr "短評"
+
+#: ./article.py:57
+msgid "Reviewed Info"
+msgstr "自行填寫評論展演"
 
 #: ./info.py:52
 msgid "Show"
@@ -353,6 +369,10 @@ msgstr "上傳 230x230 尺寸的圖檔。"
 #: ./info.py:131
 msgid "Upload a Image of Size 710x300."
 msgstr "上傳 710x300 尺寸的圖檔。"
+
+#: ./article.py:58
+msgid "Use comma to separate multiple Info data."
+msgstr "如為兩節目以上展演項目，請用「、」分隔。例：《羅密歐與茱麗葉》、《馬克白》"
 
 #: ./info.py:80
 #: ./info_templates/view.pt:54

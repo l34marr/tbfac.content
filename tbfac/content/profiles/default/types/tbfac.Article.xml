@@ -9,7 +9,7 @@
     i18n:translate="">TBFAC Article Type</property>
   <property name="icon_expr">string:${portal_url}/document_icon.png</property>
   <property name="factory">tbfac.content.article</property>
-  <property name="global_allow">True</property>
+  <property name="global_allow">False</property>
   <property name="filter_content_types">False</property>  
   <property name="allowed_content_types" />
   <property name="allow_discussion">True</property>
@@ -21,7 +21,7 @@
 
   <property name="behaviors">
      <element value="plone.app.content.interfaces.INameFromTitle" />
-     <element value="plone.app.dexterity.behaviors.metadata.IBasic" />
+     <element value="plone.app.referenceablebehavior.referenceable.IReferenceable" />
    </property>
 
   <!-- View information -->

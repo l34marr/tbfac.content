@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-01-31 06:16+0000\n"
+"POT-Creation-Date: 2013-01-31 07:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,6 +30,10 @@ msgstr ""
 msgid "Article"
 msgstr ""
 
+#: ./article.py:41
+msgid "Author"
+msgstr ""
+
 #: ./committee.py:43
 #: ./committee_templates/view.pt:18
 #: ./nomination.py:40
@@ -44,9 +48,9 @@ msgstr ""
 msgid "Bio"
 msgstr ""
 
+#: ./article.py:63
 #: ./info.py:93
 #: ./info_templates/view.pt:71
-#: ./nomination.py:60
 msgid "Body"
 msgstr ""
 
@@ -159,6 +163,10 @@ msgstr ""
 msgid "Hualien County"
 msgstr ""
 
+#: ./article.py:47
+msgid "If no referenced Info items to select, please manually fill them in the next field."
+msgstr ""
+
 #: ./profiles/default/types/tbfac.Info.xml
 msgid "Info"
 msgstr ""
@@ -262,12 +270,20 @@ msgstr ""
 msgid "RecommendGroup"
 msgstr ""
 
+#: ./article.py:46
+msgid "Referenced Info"
+msgstr ""
+
 #: ./info.py:72
 msgid "Region"
 msgstr ""
 
 #: ./profiles/default/types/tbfac.Review.xml
 msgid "Review"
+msgstr ""
+
+#: ./article.py:57
+msgid "Reviewed Info"
 msgstr ""
 
 #: ./info.py:52
@@ -355,6 +371,10 @@ msgstr ""
 
 #: ./info.py:131
 msgid "Upload a Image of Size 710x300."
+msgstr ""
+
+#: ./article.py:58
+msgid "Use comma to separate multiple Info data."
 msgstr ""
 
 #: ./info.py:80

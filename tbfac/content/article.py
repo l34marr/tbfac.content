@@ -19,6 +19,7 @@ from z3c.relationfield.schema import RelationList, RelationChoice
 from plone.formwidget.contenttree import ObjPathSourceBinder
 
 from tbfac.content import MessageFactory as _
+from tbfac.content.info import IInfo
 
 
 # Interface class; used to define content-type schema.
@@ -36,6 +37,36 @@ class IArticle(form.Schema, IImageScaleTraversable):
     
     #form.model("models/article.xml")
 
+    title = schema.TextLine(
+        title=_(u"Title"),
+    )
+
+    author = schema.TextLine(
+        title=_(u"Author"),
+        required=True,
+    )
+
+    info_ref = RelationList(
+        title=_(u"Referenced Info"),
+        description=_(u"If no referenced Info items to select, please manually fill them in the next field."),
+        value_type=RelationChoice(
+            source=ObjPathSourceBinder(
+                object_provides=IInfo.__identifier__,
+            ),
+        ),
+        required=False,
+    )
+
+    info_rvw = schema.TextLine(
+        title=_(u"Reviewed Info"),
+        description=_(u"Use comma to separate multiple Info data."),
+        required=False,
+    )
+
+    text = RichText(
+        title=_(u"Body"),
+        required=False,
+    )
 
 # Custom content-type class; objects created for this content type will
 # be instances of this class. Use this class to add content-type specific
@@ -61,5 +92,5 @@ class Article(dexterity.Item):
 class View(grok.View):
     grok.context(IArticle)
     grok.require('zope2.View')
-    
     grok.name('view')
+
