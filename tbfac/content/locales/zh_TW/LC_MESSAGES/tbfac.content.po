@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tbfac.content\n"
-"POT-Creation-Date: 2013-01-31 07:11+0000\n"
-"PO-Revision-Date: 2013-01-31 16:12+0800\n"
+"POT-Creation-Date: 2013-02-01 02:55+0000\n"
+"PO-Revision-Date: 2013-02-01 10:56+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -14,11 +14,15 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: tbfac.content\n"
 
+#: ./info_templates/view.pt:78
+msgid "About the Event"
+msgstr "關於展演"
+
 #: ./portlets/infovenuesmap.py:153
 msgid "Add Info Venues Map portlet"
 msgstr "新增地圖方框"
 
-#: ./info_templates/view.pt:57
+#: ./info_templates/view.pt:64
 #: ./venue.py:39
 msgid "Address"
 msgstr "活動地址"
@@ -27,7 +31,7 @@ msgstr "活動地址"
 msgid "Article"
 msgstr "文章"
 
-#: ./article.py:41
+#: ./article.py:45
 msgid "Author"
 msgstr "發表人"
 
@@ -45,14 +49,14 @@ msgstr "內頁圖片"
 msgid "Bio"
 msgstr "經歷"
 
-#: ./article.py:63
+#: ./article.py:67
 #: ./info.py:93
-#: ./info_templates/view.pt:71
+#: ./nomination.py:60
 msgid "Body"
 msgstr "內文"
 
 #: ./info.py:50
-#: ./info_templates/view.pt:29
+#: ./info_templates/view.pt:36
 #: ./nomination_templates/view.pt:16
 msgid "Category"
 msgstr "活動類別"
@@ -75,12 +79,12 @@ msgid "Committee"
 msgstr "委員會委員"
 
 #: ./info.py:114
-#: ./info_templates/view.pt:91
+#: ./info_templates/view.pt:98
 msgid "Contact Name"
 msgstr "活動聯絡人"
 
 #: ./info.py:109
-#: ./info_templates/view.pt:86
+#: ./info_templates/view.pt:93
 msgid "Contact Phone"
 msgstr "活動聯絡電話"
 
@@ -89,7 +93,7 @@ msgid "Dancing"
 msgstr "舞蹈"
 
 #: ./info.py:66
-#: ./info_templates/view.pt:47
+#: ./info_templates/view.pt:54
 msgid "Date Details"
 msgstr "詳細時間說明"
 
@@ -110,17 +114,16 @@ msgid "Edit Info Venues Map portlet"
 msgstr "編輯地圖方框"
 
 #: ./info.py:62
-#: ./info_templates/view.pt:41
+#: ./info_templates/view.pt:48
 msgid "End Date"
 msgstr "結束展演日期"
 
 #: ./info.py:119
-#: ./info_templates/view.pt:96
 msgid "Event URL"
 msgstr "活動網址"
 
 #: ./info.py:98
-#: ./info_templates/view.pt:75
+#: ./info_templates/view.pt:82
 msgid "Fee Details"
 msgstr "費用說明"
 
@@ -160,7 +163,7 @@ msgstr "新竹縣"
 msgid "Hualien County"
 msgstr "花蓮縣"
 
-#: ./article.py:47
+#: ./article.py:51
 msgid "If no referenced Info items to select, please manually fill them in the next field."
 msgstr "若選單無該評論展演，則在下列「自行填寫評論展演」文字欄位中新增。"
 
@@ -242,7 +245,7 @@ msgid "Opera"
 msgstr "戲曲"
 
 #: ./info.py:45
-#: ./info_templates/view.pt:23
+#: ./info_templates/view.pt:30
 msgid "Organizer"
 msgstr "主辦人/單位"
 
@@ -267,7 +270,7 @@ msgstr "屏東縣"
 msgid "RecommendGroup"
 msgstr "推薦團"
 
-#: ./article.py:46
+#: ./article.py:50
 msgid "Referenced Info"
 msgstr "由選單尋找符合該文章之展演資訊項目"
 
@@ -279,7 +282,7 @@ msgstr "所屬縣市"
 msgid "Review"
 msgstr "短評"
 
-#: ./article.py:57
+#: ./article.py:61
 msgid "Reviewed Info"
 msgstr "自行填寫評論展演"
 
@@ -288,7 +291,7 @@ msgid "Show"
 msgstr "展覽"
 
 #: ./info.py:58
-#: ./info_templates/view.pt:37
+#: ./info_templates/view.pt:44
 msgid "Start Date"
 msgstr "首次展演日期"
 
@@ -345,10 +348,11 @@ msgid "This portlet displays a map of Info Venues locations."
 msgstr "顯示展演訊息的地點資訊"
 
 #: ./info.py:104
-#: ./info_templates/view.pt:80
+#: ./info_templates/view.pt:87
 msgid "Ticket URL"
 msgstr "售票網址"
 
+#: ./article.py:41
 #: ./nomination.py:35
 msgid "Title"
 msgstr "標題"
@@ -370,12 +374,12 @@ msgstr "上傳 230x230 尺寸的圖檔。"
 msgid "Upload a Image of Size 710x300."
 msgstr "上傳 710x300 尺寸的圖檔。"
 
-#: ./article.py:58
+#: ./article.py:62
 msgid "Use comma to separate multiple Info data."
 msgstr "如為兩節目以上展演項目，請用「、」分隔。例：《羅密歐與茱麗葉》、《馬克白》"
 
 #: ./info.py:80
-#: ./info_templates/view.pt:54
+#: ./info_templates/view.pt:61
 #: ./profiles/default/types/tbfac.Venue.xml
 msgid "Venue"
 msgstr "活動地點"

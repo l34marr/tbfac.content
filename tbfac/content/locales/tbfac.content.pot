@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-01-31 07:11+0000\n"
+"POT-Creation-Date: 2013-02-01 02:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,15 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: tbfac.content\n"
 
+#: ./info_templates/view.pt:78
+msgid "About the Event"
+msgstr ""
+
 #: ./portlets/infovenuesmap.py:153
 msgid "Add Info Venues Map portlet"
 msgstr ""
 
-#: ./info_templates/view.pt:57
+#: ./info_templates/view.pt:64
 #: ./venue.py:39
 msgid "Address"
 msgstr ""
@@ -30,7 +34,7 @@ msgstr ""
 msgid "Article"
 msgstr ""
 
-#: ./article.py:41
+#: ./article.py:45
 msgid "Author"
 msgstr ""
 
@@ -48,14 +52,14 @@ msgstr ""
 msgid "Bio"
 msgstr ""
 
-#: ./article.py:63
+#: ./article.py:67
 #: ./info.py:93
-#: ./info_templates/view.pt:71
+#: ./nomination.py:60
 msgid "Body"
 msgstr ""
 
 #: ./info.py:50
-#: ./info_templates/view.pt:29
+#: ./info_templates/view.pt:36
 #: ./nomination_templates/view.pt:16
 msgid "Category"
 msgstr ""
@@ -78,12 +82,12 @@ msgid "Committee"
 msgstr ""
 
 #: ./info.py:114
-#: ./info_templates/view.pt:91
+#: ./info_templates/view.pt:98
 msgid "Contact Name"
 msgstr ""
 
 #: ./info.py:109
-#: ./info_templates/view.pt:86
+#: ./info_templates/view.pt:93
 msgid "Contact Phone"
 msgstr ""
 
@@ -92,7 +96,7 @@ msgid "Dancing"
 msgstr ""
 
 #: ./info.py:66
-#: ./info_templates/view.pt:47
+#: ./info_templates/view.pt:54
 msgid "Date Details"
 msgstr ""
 
@@ -113,17 +117,16 @@ msgid "Edit Info Venues Map portlet"
 msgstr ""
 
 #: ./info.py:62
-#: ./info_templates/view.pt:41
+#: ./info_templates/view.pt:48
 msgid "End Date"
 msgstr ""
 
 #: ./info.py:119
-#: ./info_templates/view.pt:96
 msgid "Event URL"
 msgstr ""
 
 #: ./info.py:98
-#: ./info_templates/view.pt:75
+#: ./info_templates/view.pt:82
 msgid "Fee Details"
 msgstr ""
 
@@ -163,7 +166,7 @@ msgstr ""
 msgid "Hualien County"
 msgstr ""
 
-#: ./article.py:47
+#: ./article.py:51
 msgid "If no referenced Info items to select, please manually fill them in the next field."
 msgstr ""
 
@@ -245,7 +248,7 @@ msgid "Opera"
 msgstr ""
 
 #: ./info.py:45
-#: ./info_templates/view.pt:23
+#: ./info_templates/view.pt:30
 msgid "Organizer"
 msgstr ""
 
@@ -270,7 +273,7 @@ msgstr ""
 msgid "RecommendGroup"
 msgstr ""
 
-#: ./article.py:46
+#: ./article.py:50
 msgid "Referenced Info"
 msgstr ""
 
@@ -282,7 +285,7 @@ msgstr ""
 msgid "Review"
 msgstr ""
 
-#: ./article.py:57
+#: ./article.py:61
 msgid "Reviewed Info"
 msgstr ""
 
@@ -291,7 +294,7 @@ msgid "Show"
 msgstr ""
 
 #: ./info.py:58
-#: ./info_templates/view.pt:37
+#: ./info_templates/view.pt:44
 msgid "Start Date"
 msgstr ""
 
@@ -348,10 +351,11 @@ msgid "This portlet displays a map of Info Venues locations."
 msgstr ""
 
 #: ./info.py:104
-#: ./info_templates/view.pt:80
+#: ./info_templates/view.pt:87
 msgid "Ticket URL"
 msgstr ""
 
+#: ./article.py:41
 #: ./nomination.py:35
 msgid "Title"
 msgstr ""
@@ -373,12 +377,12 @@ msgstr ""
 msgid "Upload a Image of Size 710x300."
 msgstr ""
 
-#: ./article.py:58
+#: ./article.py:62
 msgid "Use comma to separate multiple Info data."
 msgstr ""
 
 #: ./info.py:80
-#: ./info_templates/view.pt:54
+#: ./info_templates/view.pt:61
 #: ./profiles/default/types/tbfac.Venue.xml
 msgid "Venue"
 msgstr ""

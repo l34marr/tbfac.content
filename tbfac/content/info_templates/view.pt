@@ -18,6 +18,13 @@
                    width string:710;
                    height string:300;" />
 </div>
+<span class="weblink"
+ tal:condition="context/eventURL">
+  <a tal:attributes="href context/eventURL;
+                     target string:_blank">
+    <img tal:attributes="src string:$portal_url/pic/weblink_normal.png" />
+  </a>
+</span>
 <p>
   <span tal:condition="context/organizer">
   <tal:field i18n:translate="">Organizer</tal:field>:
@@ -68,20 +75,22 @@
 </ol>
 </tal:block>
 <tal:text condition="context/text">
-  <tal:field i18n:translate="">Body</tal:field>:
+  <tal:field i18n:translate="">About the Event</tal:field>:
   <span tal:replace="structure context/text/output">Text</span>
 </tal:text>
-<tal:feeDetails condition="context/feeDetails">
-  <tal:field i18n:translate="">Fee Details</tal:field>:
-  <span tal:replace="context/feeDetails">Text</span>
-</tal:feeDetails>
+<p>
+  <tal:feeDetails condition="context/feeDetails">
+    <tal:field i18n:translate="">Fee Details</tal:field>:
+    <span tal:replace="context/feeDetails">Text</span>
+  </tal:feeDetails>
+</p>
 <p>
   <tal:ticketURL condition="context/ticketURL">
   <tal:field i18n:translate="">Ticket URL</tal:field>:
   <a tal:attributes="href context/ticketURL"
      tal:content="context/ticketURL">Text</a>
   </tal:ticketURL>
-  <br />
+  <br tal:condition="python: (context.ticketURL and context.contactPhone)" />
   <tal:contactPhone condition="context/contactPhone">
   <tal:field i18n:translate="">Contact Phone</tal:field>:
   <span tal:replace="context/contactPhone">Text</span>
@@ -91,12 +100,6 @@
   <tal:field i18n:translate="">Contact Name</tal:field>:
   <span tal:replace="context/contactName">Name</span>
   </tal:contactName>
-  <br />
-  <tal:eventURL condition="context/eventURL">
-  <tal:field i18n:translate="">Event URL</tal:field>:
-  <a tal:attributes="href context/eventURL"
-     tal:content="context/eventURL">Text</a>
-  </tal:eventURL>
 </p>
 
   </metal:content-core>
