@@ -75,7 +75,7 @@
 </ol>
 </tal:block>
 <tal:text condition="context/text">
-  <tal:field i18n:translate="">Body</tal:field>:
+  <tal:field i18n:translate="">About the Event</tal:field>:
   <span tal:replace="structure context/text/output">Text</span>
 </tal:text>
 <tal:feeDetails condition="context/feeDetails">
