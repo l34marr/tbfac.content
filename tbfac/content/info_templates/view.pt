@@ -18,6 +18,13 @@
                    width string:710;
                    height string:300;" />
 </div>
+<span class="weblink"
+ tal:condition="context/eventURL">
+  <a tal:attributes="href context/eventURL;
+                     target string:_blank">
+    <img tal:attributes="src string:$portal_url/pic/weblink_normal.png" />
+  </a>
+</span>
 <p>
   <span tal:condition="context/organizer">
   <tal:field i18n:translate="">Organizer</tal:field>:
@@ -91,12 +98,6 @@
   <tal:field i18n:translate="">Contact Name</tal:field>:
   <span tal:replace="context/contactName">Name</span>
   </tal:contactName>
-  <br />
-  <tal:eventURL condition="context/eventURL">
-  <tal:field i18n:translate="">Event URL</tal:field>:
-  <a tal:attributes="href context/eventURL"
-     tal:content="context/eventURL">Text</a>
-  </tal:eventURL>
 </p>
 
   </metal:content-core>
