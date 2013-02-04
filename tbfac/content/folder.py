@@ -4,6 +4,7 @@ from plone.directives import form, dexterity
 from plone.namedfile.field import NamedBlobImage
 
 from tbfac.content import MessageFactory as _
+from Products.CMFCore.utils import getToolByName
 
 class IFolder(form.Schema):
     """TBFAC Folder Type
@@ -33,5 +34,7 @@ class View(grok.View):
     grok.name('view')
 
     def update(self):
-        self.request.set('disable_border', True)
+        membership = getToolByName(self.context, 'portal_membership')
+        if membership.isAnonymousUser():
+            self.request.set('disable_border', True)
 

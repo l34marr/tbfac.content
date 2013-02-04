@@ -20,6 +20,7 @@ from plone.formwidget.contenttree import ObjPathSourceBinder
 
 from tbfac.content import MessageFactory as _
 from tbfac.content.info import IInfo
+from Products.CMFCore.utils import getToolByName
 
 
 # Interface class; used to define content-type schema.
@@ -93,4 +94,9 @@ class View(grok.View):
     grok.context(IArticle)
     grok.require('zope2.View')
     grok.name('view')
+
+    def update(self):
+        membership = getToolByName(self.context, 'portal_membership')
+        if membership.isAnonymousUser():
+            self.request.set('disable_border', True)
 
