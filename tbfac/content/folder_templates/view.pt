@@ -48,8 +48,8 @@
 
                     </h2>
 
-                    <div class="documentByLine" tal:condition="python: site_properties.allowAnonymousViewAbout or not isAnon">
-                    <tal:newsitem condition="python: item_type == 'News Item'">
+                    <div class="documentByLine">
+                    <tal:document condition="python: item_type == 'Document'">
                         <tal:name tal:condition="item_creator"
                             tal:define="author python:pas_member.info(item_creator)">
                           <span class="documentAuthor" i18n:translate="label_by_author">
@@ -72,7 +72,26 @@
                                       August 16, 2001 at 23:35:59
                               </span>
                         </span>
-                    </tal:newsitem>
+                    </tal:document>
+                    <tal:article condition="python: item_type == 'tbfac.Article'">
+                        <tal:name tal:define="item_author item_object/author"
+                                  tal:condition="item_author">
+                          <span class="documentAuthor">
+                          <tal:field i18n:translate="">Author</tal:field>
+                          <span tal:replace="item_author">
+                            Bob Dobalina</span>
+                          </span>
+                        </tal:name>
+                        &mdash;
+                        <span class="documentModified">
+                              <tal:mod i18n:translate="box_created">
+                              created
+                              </tal:mod>
+                              <span tal:replace="python:toLocalizedTime(item_modified,long_format=1)">
+                                      August 16, 2001 at 23:35:59
+                              </span>
+                        </span>
+                    </tal:article>
                     </div>
 
                     <p class="tileBody" tal:condition="item_description">

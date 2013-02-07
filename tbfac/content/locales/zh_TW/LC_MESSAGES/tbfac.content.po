@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tbfac.content\n"
-"POT-Creation-Date: 2013-02-07 07:19+0000\n"
+"POT-Creation-Date: 2013-02-07 09:10+0000\n"
 "PO-Revision-Date: 2013-02-01 10:56+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
@@ -33,8 +33,9 @@ msgstr "文章"
 
 #: ./article.py:46
 #: ./article_templates/view.pt:15
+#: ./folder_templates/view.pt:80
 msgid "Author"
-msgstr "發表人"
+msgstr "張貼者"
 
 #: ./committee.py:43
 #: ./committee_templates/view.pt:18
@@ -51,8 +52,8 @@ msgid "Bio"
 msgstr "經歷"
 
 #: ./article.py:68
-#: ./article_templates/view.pt:36
 #: ./info.py:93
+#: ./nomination.py:60
 msgid "Body"
 msgstr "內文"
 
@@ -426,7 +427,7 @@ msgid "label_by_author"
 msgstr "張貼者 ${author}"
 
 #. Default: "Read More…"
-#: ./folder_templates/view.pt:88
+#: ./folder_templates/view.pt:107
 msgid "read_more"
 msgstr "更多討論"
 

@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-02-07 07:19+0000\n"
+"POT-Creation-Date: 2013-02-07 09:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,6 +36,7 @@ msgstr ""
 
 #: ./article.py:46
 #: ./article_templates/view.pt:15
+#: ./folder_templates/view.pt:80
 msgid "Author"
 msgstr ""
 
@@ -54,8 +55,8 @@ msgid "Bio"
 msgstr ""
 
 #: ./article.py:68
-#: ./article_templates/view.pt:36
 #: ./info.py:93
+#: ./nomination.py:60
 msgid "Body"
 msgstr ""
 
@@ -429,7 +430,7 @@ msgid "label_by_author"
 msgstr ""
 
 #. Default: "Read More…"
-#: ./folder_templates/view.pt:88
+#: ./folder_templates/view.pt:107
 msgid "read_more"
 msgstr ""
 

@@ -33,7 +33,6 @@
   </span>
 </p>
 <span tal:condition="context/text">
- <tal:field i18n:translate="">Body</tal:field>:
  <span tal:replace="structure context/text/output">Text</span>
 </span>
 
