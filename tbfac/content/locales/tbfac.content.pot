@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-02-07 06:36+0000\n"
+"POT-Creation-Date: 2013-02-07 07:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -287,8 +287,11 @@ msgid "Review"
 msgstr ""
 
 #: ./article.py:62
-#: ./article_templates/view.pt:24
 msgid "Reviewed Info"
+msgstr ""
+
+#: ./article_templates/view.pt:24
+msgid "Reviewed Infos"
 msgstr ""
 
 #: ./info.py:52

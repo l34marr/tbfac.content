@@ -21,7 +21,7 @@
 </p>
 <p>
   <span tal:condition="python:context.info_ref or context.info_rvw">
-  <tal:field i18n:translate="">Reviewed Info</tal:field>:
+  <tal:field i18n:translate="">Reviewed Infos</tal:field>:
   </span>
   <span tal:condition="context/info_ref">
    <tal:infos repeat="info view/relatedInfos">

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tbfac.content\n"
-"POT-Creation-Date: 2013-02-07 06:36+0000\n"
+"POT-Creation-Date: 2013-02-07 07:19+0000\n"
 "PO-Revision-Date: 2013-02-01 10:56+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
@@ -284,9 +284,12 @@ msgid "Review"
 msgstr "短評"
 
 #: ./article.py:62
-#: ./article_templates/view.pt:24
 msgid "Reviewed Info"
 msgstr "自行填寫評論展演"
+
+#: ./article_templates/view.pt:24
+msgid "Reviewed Infos"
+msgstr "評論的展演"
 
 #: ./info.py:52
 msgid "Show"
