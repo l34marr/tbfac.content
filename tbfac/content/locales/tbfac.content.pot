@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-02-01 02:55+0000\n"
+"POT-Creation-Date: 2013-02-07 06:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,8 @@ msgstr ""
 msgid "Article"
 msgstr ""
 
-#: ./article.py:45
+#: ./article.py:46
+#: ./article_templates/view.pt:15
 msgid "Author"
 msgstr ""
 
@@ -52,9 +53,9 @@ msgstr ""
 msgid "Bio"
 msgstr ""
 
-#: ./article.py:67
+#: ./article.py:68
+#: ./article_templates/view.pt:36
 #: ./info.py:93
-#: ./nomination.py:60
 msgid "Body"
 msgstr ""
 
@@ -82,12 +83,12 @@ msgid "Committee"
 msgstr ""
 
 #: ./info.py:114
-#: ./info_templates/view.pt:98
+#: ./info_templates/view.pt:100
 msgid "Contact Name"
 msgstr ""
 
 #: ./info.py:109
-#: ./info_templates/view.pt:93
+#: ./info_templates/view.pt:95
 msgid "Contact Phone"
 msgstr ""
 
@@ -126,7 +127,7 @@ msgid "Event URL"
 msgstr ""
 
 #: ./info.py:98
-#: ./info_templates/view.pt:82
+#: ./info_templates/view.pt:83
 msgid "Fee Details"
 msgstr ""
 
@@ -166,7 +167,7 @@ msgstr ""
 msgid "Hualien County"
 msgstr ""
 
-#: ./article.py:51
+#: ./article.py:52
 msgid "If no referenced Info items to select, please manually fill them in the next field."
 msgstr ""
 
@@ -199,11 +200,11 @@ msgstr ""
 msgid "Lienchiang County"
 msgstr ""
 
-#: ./folder.py:13
+#: ./folder.py:14
 msgid "Link Image"
 msgstr ""
 
-#: ./folder.py:18
+#: ./folder.py:19
 msgid "Link URL"
 msgstr ""
 
@@ -273,7 +274,7 @@ msgstr ""
 msgid "RecommendGroup"
 msgstr ""
 
-#: ./article.py:50
+#: ./article.py:51
 msgid "Referenced Info"
 msgstr ""
 
@@ -285,7 +286,8 @@ msgstr ""
 msgid "Review"
 msgstr ""
 
-#: ./article.py:61
+#: ./article.py:62
+#: ./article_templates/view.pt:24
 msgid "Reviewed Info"
 msgstr ""
 
@@ -351,11 +353,11 @@ msgid "This portlet displays a map of Info Venues locations."
 msgstr ""
 
 #: ./info.py:104
-#: ./info_templates/view.pt:87
+#: ./info_templates/view.pt:89
 msgid "Ticket URL"
 msgstr ""
 
-#: ./article.py:41
+#: ./article.py:42
 #: ./nomination.py:35
 msgid "Title"
 msgstr ""
@@ -377,7 +379,7 @@ msgstr ""
 msgid "Upload a Image of Size 710x300."
 msgstr ""
 
-#: ./article.py:62
+#: ./article.py:63
 msgid "Use comma to separate multiple Info data."
 msgstr ""
 

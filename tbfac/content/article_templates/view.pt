@@ -7,28 +7,38 @@
       i18n:domain="tbfac.content">
 <body>
 
-<tal:comment tal:condition="nothing">
-    This is a sample view template. It will not be used for rendering the
-    content unless activated by creation of a view class with a matching name.
-    
-    Note that we're using Plone 4 macros. Replace them with Plone 3 macros
-    if needed.
-</tal:comment>
-
 <metal:main fill-slot="content-core">
   <metal:content-core define-macro="content-core">
 
-    <h2>
-        Rendered from 
-        activityreview_templates/<span tal:replace="template/id" />
-    </h2>
+<p>
+  <span tal:condition="context/author">
+  <tal:field i18n:translate="">Author</tal:field>:
+  <span tal:replace="context/author">Name</span>,
+  </span>
+  <span class="dcoumentModified">
+  <span tal:replace="python:view.toLocalizedTime(context.ModificationDate(),long_format=1)">August 16, 2001 at 23:35:59</span>
+  </span>
+</p>
+<p>
+  <span tal:condition="python:context.info_ref or context.info_rvw">
+  <tal:field i18n:translate="">Reviewed Info</tal:field>:
+  </span>
+  <span tal:condition="context/info_ref">
+   <tal:infos repeat="info view/relatedInfos">
+    <span tal:content="info/title" />
+   </tal:infos>
+  </span>
+  <span tal:condition="context/info_rvw">
+  <span tal:replace="context/info_rvw">Name</span>
+  </span>
+</p>
+<span tal:condition="context/text">
+ <tal:field i18n:translate="">Body</tal:field>:
+ <span tal:replace="structure context/text/output">Text</span>
+</span>
 
-
-    <div tal:content="context/Title">Title inserted here</div>
-    
   </metal:content-core>
 </metal:main>
 
 </body>
 </html>
-
