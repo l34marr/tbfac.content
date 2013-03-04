@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tbfac.content\n"
 "POT-Creation-Date: 2013-02-07 09:10+0000\n"
-"PO-Revision-Date: 2013-02-01 10:56+0800\n"
+"PO-Revision-Date: 2013-03-04 14:56+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -282,7 +282,7 @@ msgstr "所屬縣市"
 
 #: ./profiles/default/types/tbfac.Review.xml
 msgid "Review"
-msgstr "短評"
+msgstr "評論"
 
 #: ./article.py:62
 msgid "Reviewed Info"
@@ -323,7 +323,7 @@ msgstr "提名表單"
 
 #: ./profiles/default/types/tbfac.Review.xml
 msgid "TBFAC Review Type"
-msgstr "短評表單"
+msgstr "評論表單"
 
 #: ./profiles/default/types/tbfac.Venue.xml
 msgid "TBFAC Venue Type"
