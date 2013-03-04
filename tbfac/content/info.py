@@ -89,6 +89,7 @@ class IInfo(form.Schema, IImageScaleTraversable):
         required=False,
     )
 
+    form.primary('text')
     text = RichText(
         title=_(u'Body'),
         required=False,
