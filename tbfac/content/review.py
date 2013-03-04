@@ -19,6 +19,8 @@ from z3c.relationfield.schema import RelationList, RelationChoice
 from plone.formwidget.contenttree import ObjPathSourceBinder
 
 from tbfac.content import MessageFactory as _
+from tbfac.content.info import IInfo
+from Products.CMFCore.utils import getToolByName
 
 
 # Interface class; used to define content-type schema.
@@ -36,6 +38,27 @@ class IReview(form.Schema, IImageScaleTraversable):
     
     #form.model("models/activityreview.xml")
 
+    info_ref = RelationList(
+        title=_(u"Referenced Info"),
+        description=_(u"If no referenced Info items to select, please manually fill them in the next field."),
+        value_type=RelationChoice(
+            source=ObjPathSourceBinder(
+                object_provides=IInfo.__identifier__,
+            ),
+        ),
+        required=False,
+    )
+
+    info_rvw = schema.TextLine(
+        title=_(u"Reviewed Info"),
+        description=_(u"Use comma to separate multiple Info data."),
+        required=False,
+    )
+
+    text = RichText(
+        title=_(u"Body"),
+        required=False,
+    )
 
 # Custom content-type class; objects created for this content type will
 # be instances of this class. Use this class to add content-type specific
@@ -50,7 +73,7 @@ class Review(dexterity.Item):
 
 # View class
 # The view will automatically use a similarly named template in
-# activityreview_templates.
+# review_templates.
 # Template filenames should be all lower case.
 # The view will render when you request a content object with this
 # interface with "/@@sampleview" appended.
@@ -58,8 +81,24 @@ class Review(dexterity.Item):
 # of this type by uncommenting the grok.name line below or by
 # changing the view class name and template filename to View / view.pt.
 
-class SampleView(grok.View):
+class View(grok.View):
     grok.context(IReview)
     grok.require('zope2.View')
-    
-    # grok.name('view')
+    grok.name('view')
+
+    def toLocalizedTime(self, time, long_format=None, time_only=None):
+        """Convert time to localized time
+        """
+        util = getToolByName(self.context, 'translation_service')
+        return util.ulocalized_time(time, long_format, time_only, self.context, domain='plonelocales')
+
+    def relatedInfos(self):
+        infos = []
+        if self.context.info_ref is not None:
+            for ref in self.context.info_ref:
+                obj = ref.to_object
+                infos.append({
+                    'title': obj.title,
+                })
+        return infos
+
