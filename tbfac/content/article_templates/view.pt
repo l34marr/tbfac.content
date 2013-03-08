@@ -16,7 +16,7 @@
   <span tal:replace="context/author">Name</span>,
   </span>
   <span class="dcoumentModified">
-  <span tal:replace="python:view.toLocalizedTime(context.ModificationDate(),long_format=1)">August 16, 2001 at 23:35:59</span>
+  <span tal:replace="python:view.toLocalizedTime(context.CreationDate(),long_format=1)">August 16, 2001 at 23:35:59</span>
   </span>
 </p>
 <p>
