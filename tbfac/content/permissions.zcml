@@ -26,6 +26,11 @@
         />
 
     <permission
+        id="tbfac.AddAdvert"
+        title="TBFAC: Add Advert"
+        />
+
+    <permission
         id="tbfac.AddCommittee"
         title="TBFAC: Add Committee"
         />

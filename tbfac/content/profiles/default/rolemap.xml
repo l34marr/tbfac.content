@@ -23,6 +23,11 @@
       <role name="Contributor" />
       <role name="Anonymous" />
     </permission>
+    <permission name="TBFAC: Add Advert" acquire="False">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Owner" />
+    </permission>
     <permission name="TBFAC: Add Recommendation" acquire="True">
       <role name="Advisor"/>
       <role name="Manager"/>
