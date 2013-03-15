@@ -102,3 +102,14 @@ class View(grok.View):
                 })
         return infos
 
+    def creator(self):
+        return self.context.Creator()
+
+    def author(self):
+        membership = getToolByName(self.context, 'portal_membership')
+        return membership.getMemberInfo(self.creator())
+
+    def authorname(self):
+        author = self.author()
+        return author and author['fullname'] or self.creator()
+

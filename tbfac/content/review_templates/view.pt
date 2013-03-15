@@ -17,6 +17,7 @@
 
 <p aligh="right">
   <span class="dcoumentModified">
+  <span tal:replace="view/authorname">Author</span>
   <span tal:replace="python:view.toLocalizedTime(context.CreationDate(),long_format=1)">August 16, 2001 at 23:35:59</span>
   </span>
 </p>
@@ -36,8 +37,6 @@
 <span tal:condition="context/text">
  <span tal:replace="structure context/text/output">Text</span>
 </span>
-
-  <span tal:replace="context/Creator">Name</span>
 
   </metal:content-core>
 </metal:main>
