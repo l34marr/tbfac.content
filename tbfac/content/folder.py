@@ -4,7 +4,11 @@ from plone.directives import form, dexterity
 from plone.namedfile.field import NamedBlobImage
 
 from tbfac.content import MessageFactory as _
+from zope.component import getMultiAdapter
+from Acquisition import aq_inner
 from Products.CMFCore.utils import getToolByName
+from tbfac.content.info import IInfo
+from tbfac.content.article import IArticle
 
 class IFolder(form.Schema):
     """TBFAC Folder Type
@@ -37,4 +41,20 @@ class View(grok.View):
         membership = getToolByName(self.context, 'portal_membership')
         if membership.isAnonymousUser():
             self.request.set('disable_border', True)
+
+    def getItems(self):
+        """ Get Items to Display
+        """
+        context = aq_inner(self.context)
+        catalog = getToolByName(context, 'portal_catalog')
+        portal_state = getMultiAdapter((context, self.request),
+            name=u'plone_portal_state')
+        if context.absolute_url().endswith('/event/info'): end = '/event/info'
+        if context.absolute_url().endswith('/event/talks'): end = '/event/talks'
+        path = portal_state.navigation_root_path() + end
+        return catalog(object_provides=(IArticle.__identifier__, IInfo.__identifier__),
+                       review_state='published',
+                       path=path,
+                       sort_on='created',
+                       sort_order='descending')
 

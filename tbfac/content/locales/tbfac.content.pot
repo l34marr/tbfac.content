@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-02-07 09:10+0000\n"
+"POT-Creation-Date: 2013-03-18 10:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,13 +30,16 @@ msgstr ""
 msgid "Address"
 msgstr ""
 
+#: ./profiles/default/types/tbfac.Advert.xml
+msgid "Advert"
+msgstr ""
+
 #: ./profiles/default/types/tbfac.Article.xml
 msgid "Article"
 msgstr ""
 
 #: ./article.py:46
 #: ./article_templates/view.pt:15
-#: ./folder_templates/view.pt:80
 msgid "Author"
 msgstr ""
 
@@ -46,7 +49,7 @@ msgstr ""
 msgid "Award Category"
 msgstr ""
 
-#: ./info.py:130
+#: ./info.py:131
 msgid "Banner Image"
 msgstr ""
 
@@ -55,7 +58,7 @@ msgid "Bio"
 msgstr ""
 
 #: ./article.py:68
-#: ./info.py:93
+#: ./info.py:94
 #: ./nomination.py:60
 msgid "Body"
 msgstr ""
@@ -83,12 +86,12 @@ msgstr ""
 msgid "Committee"
 msgstr ""
 
-#: ./info.py:114
+#: ./info.py:115
 #: ./info_templates/view.pt:100
 msgid "Contact Name"
 msgstr ""
 
-#: ./info.py:109
+#: ./info.py:110
 #: ./info_templates/view.pt:95
 msgid "Contact Phone"
 msgstr ""
@@ -123,16 +126,16 @@ msgstr ""
 msgid "End Date"
 msgstr ""
 
-#: ./info.py:119
+#: ./info.py:120
 msgid "Event URL"
 msgstr ""
 
-#: ./info.py:98
+#: ./info.py:99
 #: ./info_templates/view.pt:83
 msgid "Fee Details"
 msgstr ""
 
-#: ./info.py:99
+#: ./info.py:100
 msgid "Fee Details Description"
 msgstr ""
 
@@ -169,6 +172,7 @@ msgid "Hualien County"
 msgstr ""
 
 #: ./article.py:52
+#: ./review.py:43
 msgid "If no referenced Info items to select, please manually fill them in the next field."
 msgstr ""
 
@@ -192,7 +196,8 @@ msgstr ""
 msgid "Kinmen County"
 msgstr ""
 
-#: ./info.py:124
+#: ./advert.py:28
+#: ./info.py:125
 #: ./venue.py:44
 msgid "Lead Image"
 msgstr ""
@@ -201,11 +206,11 @@ msgstr ""
 msgid "Lienchiang County"
 msgstr ""
 
-#: ./folder.py:14
+#: ./folder.py:18
 msgid "Link Image"
 msgstr ""
 
-#: ./folder.py:19
+#: ./folder.py:23
 msgid "Link URL"
 msgstr ""
 
@@ -276,6 +281,7 @@ msgid "RecommendGroup"
 msgstr ""
 
 #: ./article.py:51
+#: ./review.py:42
 msgid "Referenced Info"
 msgstr ""
 
@@ -288,10 +294,12 @@ msgid "Review"
 msgstr ""
 
 #: ./article.py:62
+#: ./review.py:53
 msgid "Reviewed Info"
 msgstr ""
 
 #: ./article_templates/view.pt:24
+#: ./review_templates/view.pt:26
 msgid "Reviewed Infos"
 msgstr ""
 
@@ -302,6 +310,10 @@ msgstr ""
 #: ./info.py:58
 #: ./info_templates/view.pt:44
 msgid "Start Date"
+msgstr ""
+
+#: ./profiles/default/types/tbfac.Advert.xml
+msgid "TBFAC Advert Type"
 msgstr ""
 
 #: ./profiles/default/types/tbfac.Article.xml
@@ -352,11 +364,19 @@ msgstr ""
 msgid "Taoyuan County"
 msgstr ""
 
+#: ./advert.py:39
+msgid "Text Above"
+msgstr ""
+
+#: ./advert.py:40
+msgid "Text Above the Title."
+msgstr ""
+
 #: ./portlets/infovenuesmap.py:23
 msgid "This portlet displays a map of Info Venues locations."
 msgstr ""
 
-#: ./info.py:104
+#: ./info.py:105
 #: ./info_templates/view.pt:89
 msgid "Ticket URL"
 msgstr ""
@@ -364,6 +384,10 @@ msgstr ""
 #: ./article.py:42
 #: ./nomination.py:35
 msgid "Title"
+msgstr ""
+
+#: ./advert.py:34
+msgid "URL"
 msgstr ""
 
 #: ./committee.py:44
@@ -375,15 +399,17 @@ msgstr ""
 msgid "Upload Photo"
 msgstr ""
 
-#: ./info.py:125
+#: ./advert.py:29
+#: ./info.py:126
 msgid "Upload a Image of Size 230x230."
 msgstr ""
 
-#: ./info.py:131
+#: ./info.py:132
 msgid "Upload a Image of Size 710x300."
 msgstr ""
 
 #: ./article.py:63
+#: ./review.py:54
 msgid "Use comma to separate multiple Info data."
 msgstr ""
 
@@ -414,23 +440,18 @@ msgstr ""
 msgid "Yunlin County"
 msgstr ""
 
-#. Default: "created"
-#: ./folder_templates/view.pt:68
-msgid "box_created"
-msgstr ""
-
 #. Default: "Info Venues Map Portlet"
 #: ./profiles/default/portlets.xml
 msgid "description"
 msgstr ""
 
-#. Default: "by ${author}"
-#: ./folder_templates/view.pt:57
-msgid "label_by_author"
+#. Default: "Read More…"
+#: ./folder_templates/view.pt:74
+msgid "read_more_info"
 msgstr ""
 
 #. Default: "Read More…"
-#: ./folder_templates/view.pt:107
-msgid "read_more"
+#: ./folder_templates/view.pt:76
+msgid "read_more_talk"
 msgstr ""
 

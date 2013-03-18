@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tbfac.content\n"
-"POT-Creation-Date: 2013-02-07 09:10+0000\n"
-"PO-Revision-Date: 2013-03-04 14:56+0800\n"
+"POT-Creation-Date: 2013-03-18 10:41+0000\n"
+"PO-Revision-Date: 2013-03-18 20:46+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -27,13 +27,16 @@ msgstr "新增地圖方框"
 msgid "Address"
 msgstr "活動地址"
 
+#: ./profiles/default/types/tbfac.Advert.xml
+msgid "Advert"
+msgstr "首頁磚"
+
 #: ./profiles/default/types/tbfac.Article.xml
 msgid "Article"
 msgstr "文章"
 
 #: ./article.py:46
 #: ./article_templates/view.pt:15
-#: ./folder_templates/view.pt:80
 msgid "Author"
 msgstr "張貼者"
 
@@ -43,7 +46,7 @@ msgstr "張貼者"
 msgid "Award Category"
 msgstr "獎項分類"
 
-#: ./info.py:130
+#: ./info.py:131
 msgid "Banner Image"
 msgstr "內頁圖片"
 
@@ -52,7 +55,7 @@ msgid "Bio"
 msgstr "經歷"
 
 #: ./article.py:68
-#: ./info.py:93
+#: ./info.py:94
 #: ./nomination.py:60
 msgid "Body"
 msgstr "內文"
@@ -80,12 +83,12 @@ msgstr "嘉義縣"
 msgid "Committee"
 msgstr "委員會委員"
 
-#: ./info.py:114
+#: ./info.py:115
 #: ./info_templates/view.pt:100
 msgid "Contact Name"
 msgstr "活動聯絡人"
 
-#: ./info.py:109
+#: ./info.py:110
 #: ./info_templates/view.pt:95
 msgid "Contact Phone"
 msgstr "活動聯絡電話"
@@ -120,16 +123,16 @@ msgstr "編輯地圖方框"
 msgid "End Date"
 msgstr "結束展演日期"
 
-#: ./info.py:119
+#: ./info.py:120
 msgid "Event URL"
 msgstr "活動網址"
 
-#: ./info.py:98
+#: ./info.py:99
 #: ./info_templates/view.pt:83
 msgid "Fee Details"
 msgstr "費用說明"
 
-#: ./info.py:99
+#: ./info.py:100
 msgid "Fee Details Description"
 msgstr "例：500元。2012/11/15前早鳥優惠：400元；持台新信用卡刷卡享有85折優惠。"
 
@@ -166,6 +169,7 @@ msgid "Hualien County"
 msgstr "花蓮縣"
 
 #: ./article.py:52
+#: ./review.py:43
 msgid "If no referenced Info items to select, please manually fill them in the next field."
 msgstr "若選單無該評論展演，則在下列「自行填寫評論展演」文字欄位中新增。"
 
@@ -189,7 +193,8 @@ msgstr "基隆市"
 msgid "Kinmen County"
 msgstr "金門縣"
 
-#: ./info.py:124
+#: ./advert.py:28
+#: ./info.py:125
 #: ./venue.py:44
 msgid "Lead Image"
 msgstr "標題圖片"
@@ -198,11 +203,11 @@ msgstr "標題圖片"
 msgid "Lienchiang County"
 msgstr "連江縣"
 
-#: ./folder.py:14
+#: ./folder.py:18
 msgid "Link Image"
 msgstr "連結圖檔"
 
-#: ./folder.py:19
+#: ./folder.py:23
 msgid "Link URL"
 msgstr "連結網址"
 
@@ -273,6 +278,7 @@ msgid "RecommendGroup"
 msgstr "推薦團"
 
 #: ./article.py:51
+#: ./review.py:42
 msgid "Referenced Info"
 msgstr "由選單尋找符合該文章之展演資訊項目"
 
@@ -285,10 +291,12 @@ msgid "Review"
 msgstr "評論"
 
 #: ./article.py:62
+#: ./review.py:53
 msgid "Reviewed Info"
 msgstr "自行填寫評論展演"
 
 #: ./article_templates/view.pt:24
+#: ./review_templates/view.pt:26
 msgid "Reviewed Infos"
 msgstr "評論的展演"
 
@@ -300,6 +308,10 @@ msgstr "展覽"
 #: ./info_templates/view.pt:44
 msgid "Start Date"
 msgstr "首次展演日期"
+
+#: ./profiles/default/types/tbfac.Advert.xml
+msgid "TBFAC Advert Type"
+msgstr "首頁磚表單"
 
 #: ./profiles/default/types/tbfac.Article.xml
 msgid "TBFAC Article Type"
@@ -349,11 +361,19 @@ msgstr "臺東縣"
 msgid "Taoyuan County"
 msgstr "桃園縣"
 
+#: ./advert.py:39
+msgid "Text Above"
+msgstr "上方文字"
+
+#: ./advert.py:40
+msgid "Text Above the Title."
+msgstr "標題上方的文字。"
+
 #: ./portlets/infovenuesmap.py:23
 msgid "This portlet displays a map of Info Venues locations."
 msgstr "顯示展演訊息的地點資訊"
 
-#: ./info.py:104
+#: ./info.py:105
 #: ./info_templates/view.pt:89
 msgid "Ticket URL"
 msgstr "售票網址"
@@ -362,6 +382,10 @@ msgstr "售票網址"
 #: ./nomination.py:35
 msgid "Title"
 msgstr "標題"
+
+#: ./advert.py:34
+msgid "URL"
+msgstr "連結網址"
 
 #: ./committee.py:44
 #: ./nomination.py:42
@@ -372,15 +396,17 @@ msgstr "不分類"
 msgid "Upload Photo"
 msgstr "上傳照片"
 
-#: ./info.py:125
+#: ./advert.py:29
+#: ./info.py:126
 msgid "Upload a Image of Size 230x230."
 msgstr "上傳 230x230 尺寸的圖檔。"
 
-#: ./info.py:131
+#: ./info.py:132
 msgid "Upload a Image of Size 710x300."
 msgstr "上傳 710x300 尺寸的圖檔。"
 
 #: ./article.py:63
+#: ./review.py:54
 msgid "Use comma to separate multiple Info data."
 msgstr "如為兩節目以上展演項目，請用「、」分隔。例：《羅密歐與茱麗葉》、《馬克白》"
 
@@ -411,23 +437,18 @@ msgstr "宜蘭縣"
 msgid "Yunlin County"
 msgstr "雲林縣"
 
-#. Default: "created"
-#: ./folder_templates/view.pt:68
-msgid "box_created"
-msgstr "發表時間"
-
 #. Default: "Info Venues Map Portlet"
 #: ./profiles/default/portlets.xml
 msgid "description"
 msgstr "描述"
 
-#. Default: "by ${author}"
-#: ./folder_templates/view.pt:57
-msgid "label_by_author"
-msgstr "張貼者 ${author}"
+#. Default: "Read More…"
+#: ./folder_templates/view.pt:74
+msgid "read_more_info"
+msgstr "閱讀全文…"
 
 #. Default: "Read More…"
-#: ./folder_templates/view.pt:107
-msgid "read_more"
-msgstr "更多討論"
+#: ./folder_templates/view.pt:76
+msgid "read_more_talk"
+msgstr "更多討論…"
 
