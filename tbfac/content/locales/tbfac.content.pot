@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-03-18 10:41+0000\n"
+"POT-Creation-Date: 2013-03-19 03:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,8 +39,12 @@ msgid "Article"
 msgstr ""
 
 #: ./article.py:46
-#: ./article_templates/view.pt:15
 msgid "Author"
+msgstr ""
+
+#: ./article_templates/view.pt:15
+#: ./folder_templates/view.pt:67
+msgid "Author:"
 msgstr ""
 
 #: ./committee.py:43
@@ -440,18 +444,22 @@ msgstr ""
 msgid "Yunlin County"
 msgstr ""
 
+#: ./folder_templates/view.pt:72
+msgid "at"
+msgstr ""
+
 #. Default: "Info Venues Map Portlet"
 #: ./profiles/default/portlets.xml
 msgid "description"
 msgstr ""
 
 #. Default: "Read More…"
-#: ./folder_templates/view.pt:74
+#: ./folder_templates/view.pt:86
 msgid "read_more_info"
 msgstr ""
 
 #. Default: "Read More…"
-#: ./folder_templates/view.pt:76
+#: ./folder_templates/view.pt:88
 msgid "read_more_talk"
 msgstr ""
 

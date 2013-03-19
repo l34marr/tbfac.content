@@ -62,6 +62,18 @@
       </span>
     </div>
 
+    <tal:article condition="python:obj.portal_type=='tbfac.Article'">
+      <span class="documentAuthor">
+      <tal:field i18n:translate="">Author:</tal:field>
+      <span tal:replace="obj/author">Name</span>
+      </span>
+      &mdash;
+      <span class="documentModified">
+      <tal:date i18n:translate="">at</tal:date>
+      <span tal:replace="python:view.toLocalizedTime(obj.CreationDate(),long_format=1)">Auguest 16, 2001 at 23:35:59</span>
+      </span>
+    </tal:article>
+
     <p class="tileBody"
      tal:condition="obj/Description">
       <span class="description" tal:content="obj/Description" />
@@ -69,7 +81,7 @@
 
     <p class="tileFooter">
       <a href=""
-       tal:attributes="href python:">
+       tal:attributes="href obj/absolute_url">
         <span class="hiddenStructure"><span tal:replace="obj/pretty_title_or_id" /> - </span>
         <span i18n:translate="read_more_info"
          tal:condition="python:obj.portal_type=='tbfac.Info'">Read More&hellip;</span>
@@ -87,6 +99,8 @@
 <div metal:use-macro="context/batch_macros/macros/navigation" />
 
 </tal:entries>
+
+<div tal:replace="structure context/@@addthis_dependencies" />
 
 </metal:text>
 

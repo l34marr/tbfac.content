@@ -12,7 +12,7 @@
 
 <p>
   <span tal:condition="context/author">
-  <tal:field i18n:translate="">Author</tal:field>:
+  <tal:field i18n:translate="">Author:</tal:field>
   <span tal:replace="context/author">Name</span>,
   </span>
   <span class="dcoumentModified">

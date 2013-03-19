@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tbfac.content\n"
-"POT-Creation-Date: 2013-03-18 10:41+0000\n"
-"PO-Revision-Date: 2013-03-18 20:46+0800\n"
+"POT-Creation-Date: 2013-03-19 03:28+0000\n"
+"PO-Revision-Date: 2013-03-19 11:29+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -36,9 +36,13 @@ msgid "Article"
 msgstr "文章"
 
 #: ./article.py:46
-#: ./article_templates/view.pt:15
 msgid "Author"
 msgstr "張貼者"
+
+#: ./article_templates/view.pt:15
+#: ./folder_templates/view.pt:67
+msgid "Author:"
+msgstr "張貼者："
 
 #: ./committee.py:43
 #: ./committee_templates/view.pt:18
@@ -437,18 +441,22 @@ msgstr "宜蘭縣"
 msgid "Yunlin County"
 msgstr "雲林縣"
 
+#: ./folder_templates/view.pt:72
+msgid "at"
+msgstr " "
+
 #. Default: "Info Venues Map Portlet"
 #: ./profiles/default/portlets.xml
 msgid "description"
 msgstr "描述"
 
 #. Default: "Read More…"
-#: ./folder_templates/view.pt:74
+#: ./folder_templates/view.pt:86
 msgid "read_more_info"
 msgstr "閱讀全文…"
 
 #. Default: "Read More…"
-#: ./folder_templates/view.pt:76
+#: ./folder_templates/view.pt:88
 msgid "read_more_talk"
 msgstr "更多討論…"
 
