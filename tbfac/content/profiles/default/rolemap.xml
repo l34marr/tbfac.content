@@ -28,6 +28,11 @@
       <role name="Site Administrator" />
       <role name="Owner" />
     </permission>
+    <permission name="TBFAC: Add Jury" acquire="False">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Owner" />
+    </permission>
     <permission name="TBFAC: Add Recommendation" acquire="True">
       <role name="Advisor"/>
       <role name="Manager"/>

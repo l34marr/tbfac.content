@@ -31,6 +31,11 @@
         />
 
     <permission
+        id="tbfac.AddJury"
+        title="TBFAC: Add Jury"
+        />
+
+    <permission
         id="tbfac.AddCommittee"
         title="TBFAC: Add Committee"
         />
