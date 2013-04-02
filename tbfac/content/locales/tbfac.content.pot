@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-03-19 03:28+0000\n"
+"POT-Creation-Date: 2013-04-02 05:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,12 +44,13 @@ msgstr ""
 
 #: ./article_templates/view.pt:15
 #: ./folder_templates/view.pt:67
+#: ./quarterly_templates/view.pt:15
 msgid "Author:"
 msgstr ""
 
 #: ./committee.py:43
 #: ./committee_templates/view.pt:18
-#: ./nomination.py:40
+#: ./jury.py:48
 msgid "Award Category"
 msgstr ""
 
@@ -58,6 +59,7 @@ msgid "Banner Image"
 msgstr ""
 
 #: ./committee.py:66
+#: ./jury.py:55
 msgid "Bio"
 msgstr ""
 
@@ -114,6 +116,7 @@ msgid "Date Details Description"
 msgstr ""
 
 #: ./committee.py:60
+#: ./jury.py:43
 msgid "Description"
 msgstr ""
 
@@ -176,7 +179,7 @@ msgid "Hualien County"
 msgstr ""
 
 #: ./article.py:52
-#: ./review.py:43
+#: ./review.py:52
 msgid "If no referenced Info items to select, please manually fill them in the next field."
 msgstr ""
 
@@ -185,6 +188,7 @@ msgid "Info"
 msgstr ""
 
 #: ./committee.py:51
+#: ./profiles/default/types/tbfac.Jury.xml
 msgid "Jury"
 msgstr ""
 
@@ -227,6 +231,7 @@ msgid "Music"
 msgstr ""
 
 #: ./committee.py:39
+#: ./jury.py:39
 msgid "Name"
 msgstr ""
 
@@ -268,11 +273,13 @@ msgid "Penghu County"
 msgstr ""
 
 #: ./committee.py:44
+#: ./jury.py:49
 #: ./nomination.py:42
 msgid "Performing Arts"
 msgstr ""
 
 #: ./committee.py:72
+#: ./jury.py:61
 msgid "Photo"
 msgstr ""
 
@@ -280,12 +287,16 @@ msgstr ""
 msgid "Pingtung County"
 msgstr ""
 
+#: ./profiles/default/types/tbfac.Quarterly.xml
+msgid "Quarterly"
+msgstr ""
+
 #: ./committee.py:51
 msgid "RecommendGroup"
 msgstr ""
 
 #: ./article.py:51
-#: ./review.py:42
+#: ./review.py:51
 msgid "Referenced Info"
 msgstr ""
 
@@ -298,7 +309,7 @@ msgid "Review"
 msgstr ""
 
 #: ./article.py:62
-#: ./review.py:53
+#: ./review.py:62
 msgid "Reviewed Info"
 msgstr ""
 
@@ -336,8 +347,16 @@ msgstr ""
 msgid "TBFAC Info Type"
 msgstr ""
 
+#: ./profiles/default/types/tbfac.Jury.xml
+msgid "TBFAC Jury Type"
+msgstr ""
+
 #: ./profiles/default/types/tbfac.Nomination.xml
 msgid "TBFAC Nomination Type"
+msgstr ""
+
+#: ./profiles/default/types/tbfac.Quarterly.xml
+msgid "TBFAC Quarterly Type"
 msgstr ""
 
 #: ./profiles/default/types/tbfac.Review.xml
@@ -387,6 +406,7 @@ msgstr ""
 
 #: ./article.py:42
 #: ./nomination.py:35
+#: ./quarterly.py:42
 msgid "Title"
 msgstr ""
 
@@ -395,11 +415,13 @@ msgid "URL"
 msgstr ""
 
 #: ./committee.py:44
+#: ./jury.py:49
 #: ./nomination.py:42
 msgid "Uncatrgorized"
 msgstr ""
 
 #: ./committee.py:73
+#: ./jury.py:62
 msgid "Upload Photo"
 msgstr ""
 
@@ -413,7 +435,7 @@ msgid "Upload a Image of Size 710x300."
 msgstr ""
 
 #: ./article.py:63
-#: ./review.py:54
+#: ./review.py:63
 msgid "Use comma to separate multiple Info data."
 msgstr ""
 
@@ -428,6 +450,7 @@ msgid "Venues"
 msgstr ""
 
 #: ./committee.py:44
+#: ./jury.py:49
 #: ./nomination.py:42
 msgid "Visual Arts"
 msgstr ""
