@@ -4,20 +4,20 @@
    i18n:domain="tbfac.content" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
 
   <!-- Basic metadata -->
-  <property name="title" i18n:translate="">Review</property>
+  <property name="title" i18n:translate="">Quarterly</property>
   <property name="description"
-    i18n:translate="">TBFAC Review Type</property>
+    i18n:translate="">TBFAC Quarterly Type</property>
   <property name="icon_expr">string:${portal_url}/document_icon.png</property>
-  <property name="factory">tbfac.content.review</property>
+  <property name="factory">tbfac.content.quarterly</property>
   <property name="global_allow">True</property>
   <property name="filter_content_types">False</property>  
   <property name="allowed_content_types" />
   <property name="allow_discussion">False</property>
 
   <!-- schema and class used for content items -->
-  <property name="schema">tbfac.content.review.IReview</property> 
-  <property name="klass">tbfac.content.review.Review</property>
-  <property name="add_permission">tbfac.AddReview</property>
+  <property name="schema">tbfac.content.quarterly.IQuarterly</property> 
+  <property name="klass">tbfac.content.quarterly.Quarterly</property>
+  <property name="add_permission">tbfac.AddQuarterly</property>
 
   <property name="behaviors">
      <element value="plone.app.content.interfaces.INameFromTitle" />

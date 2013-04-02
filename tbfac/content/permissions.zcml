@@ -21,6 +21,11 @@
         />
 
     <permission
+        id="tbfac.AddQuarterly"
+        title="TBFAC: Add Quarterly"
+        />
+
+    <permission
         id="tbfac.AddArticle"
         title="TBFAC: Add Article"
         />

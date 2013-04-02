@@ -25,18 +25,18 @@ from Products.CMFCore.utils import getToolByName
 
 # Interface class; used to define content-type schema.
 
-class IReview(form.Schema, IImageScaleTraversable):
+class IQuarterly(form.Schema, IImageScaleTraversable):
     """
-    TBFAC Review Type
+    TBFAC Quarterly Type
     """
     
     # If you want a schema-defined interface, delete the form.model
     # line below and delete the matching file in the models sub-directory.
     # If you want a model-based interface, edit
-    # models/review.xml to define the content type
+    # models/quarterly.xml to define the content type
     # and add directives here as necessary.
     
-    #form.model("models/review.xml")
+    #form.model("models/quarterly.xml")
 
     title = schema.TextLine(
         title=_(u"Title"),
@@ -47,30 +47,13 @@ class IReview(form.Schema, IImageScaleTraversable):
         required=False,
     )
 
-    info_ref = RelationList(
-        title=_(u"Referenced Info"),
-        description=_(u"If no referenced Info items to select, please manually fill them in the next field."),
-        value_type=RelationChoice(
-            source=ObjPathSourceBinder(
-                object_provides=IInfo.__identifier__,
-            ),
-        ),
-        required=False,
-    )
-
-    info_rvw = schema.TextLine(
-        title=_(u"Reviewed Info"),
-        description=_(u"Use comma to separate multiple Info data."),
-        required=False,
-    )
-
 # Custom content-type class; objects created for this content type will
 # be instances of this class. Use this class to add content-type specific
 # methods and properties. Put methods that are mainly useful for rendering
 # in separate view classes.
 
-class Review(dexterity.Item):
-    grok.implements(IReview)
+class Quarterly(dexterity.Item):
+    grok.implements(IQuarterly)
     
     # Add your class methods and properties here
 
@@ -86,7 +69,7 @@ class Review(dexterity.Item):
 # changing the view class name and template filename to View / view.pt.
 
 class View(grok.View):
-    grok.context(IReview)
+    grok.context(IQuarterly)
     grok.require('zope2.View')
     grok.name('view')
 
@@ -95,16 +78,6 @@ class View(grok.View):
         """
         util = getToolByName(self.context, 'translation_service')
         return util.ulocalized_time(time, long_format, time_only, self.context, domain='plonelocales')
-
-    def relatedInfos(self):
-        infos = []
-        if self.context.info_ref is not None:
-            for ref in self.context.info_ref:
-                obj = ref.to_object
-                infos.append({
-                    'title': obj.title,
-                })
-        return infos
 
     def creator(self):
         return self.context.Creator()
