@@ -303,7 +303,7 @@ msgstr "所屬縣市"
 
 #: ./profiles/default/types/tbfac.Review.xml
 msgid "Review"
-msgstr "評論"
+msgstr "展演觀察評論"
 
 #: ./article.py:62
 #: ./review.py:62
@@ -358,7 +358,7 @@ msgstr "季提名報告表單"
 
 #: ./profiles/default/types/tbfac.Review.xml
 msgid "TBFAC Review Type"
-msgstr "評論表單"
+msgstr "展演觀察評論表單"
 
 #: ./profiles/default/types/tbfac.Venue.xml
 msgid "TBFAC Venue Type"
