@@ -21,7 +21,6 @@
         provides=".createdid.INameFromCreated"
         for="plone.dexterity.interfaces.IDexterityContent"
     />
-    <!-- info: "plone.dexterity.interfaces.IDexterityContent" => replace with custom dexterity type -->
     <adapter
         for="plone.dexterity.interfaces.IDexterityContent"
         factory=".createdid.NameFromCreated"
