@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<layers>
+ <layer name="tbfac.content"
+   interface="tbfac.content.interfaces.IPackageLayer" />
+</layers>

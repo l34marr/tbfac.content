@@ -8,6 +8,50 @@
     <browser:templateOverrides
       directory="templates" />
 
+
+  <configure package="collective.geo.ushahidi.browser">
+  <browser:page
+      for="*"
+      name="ushahidi-map-view"
+      class="tbfac.content.browser.ushahidi_map_view.UshahidiMapView"
+      template="templates/map_view.pt"
+      permission="zope.Public"
+      layer="tbfac.content.interfaces.IPackageLayer"
+      />
+  <browser:page
+      for="*"
+      name="ushahidi-json-cluster"
+      class="tbfac.content.browser.ushahidi_map_view.UshahidiMapView"
+      attribute="getJSONCluster"
+      permission="zope.Public"
+      layer="tbfac.content.interfaces.IPackageLayer"
+      />
+  <browser:page
+      for="*"
+      name="ushahidi-json"
+      class="tbfac.content.browser.ushahidi_map_view.UshahidiMapView"
+      attribute="getJSON"
+      permission="zope.Public"
+      layer="tbfac.content.interfaces.IPackageLayer"
+      />
+  <browser:page
+      for="*"
+      name="ushahidi-json-layer"
+      class="tbfac.content.browser.ushahidi_map_view.UshahidiMapView"
+      attribute="getJSONLayer"
+      permission="zope.Public"
+      layer="tbfac.content.interfaces.IPackageLayer"
+      />
+  <browser:page
+      for="*"
+      name="ushahidi-timeline"
+      class="tbfac.content.browser.ushahidi_map_view.UshahidiMapView"
+      attribute="getTimeline"
+      permission="zope.Public"
+      layer="tbfac.content.interfaces.IPackageLayer"
+      />
+  </configure>
+
     <include package="collective.geo.kml" />
     <adapter
         factory=".kmldocument.Info"
