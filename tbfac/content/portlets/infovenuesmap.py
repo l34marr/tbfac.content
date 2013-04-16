@@ -15,6 +15,7 @@ from plone.app.form.widgets.wysiwygwidget import WYSIWYGWidget
 
 from plone.i18n.normalizer.interfaces import IIDNormalizer
 
+from ..browser.infovenuesmap_view import InfoVenuesMapKMLView
 from ..browser.interfaces import IInfoVenuesMapView
 from .. import MessageFactory as _
 
@@ -101,6 +102,16 @@ class Renderer(base.Renderer):
     implements(IInfoVenuesMapView)
 
     render = ViewPageTemplateFile('infovenuesmap.pt')
+
+    @property
+    def available(self):
+        """Check if we got any venues to show on a map"""
+        view = InfoVenuesMapKMLView(self.context, self.request)
+        try:
+            venues = view.get_venues()
+        except Exception:
+            venues = []
+        return len(venues) > 0
 
     def css_class(self):
         header = self.data.header
