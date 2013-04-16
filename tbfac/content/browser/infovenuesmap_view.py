@@ -58,7 +58,6 @@ class InfoVenuesMapKMLView(BrowserView):
                         'description': DESC_TEMPLATE % ob.Description(),
                         'location': "%r,%r,0.000000" % (longitude, latitude),
                     }
-
-            venues.append(venue)
+                    venues.append(venue)
 
         return venues
