@@ -53,11 +53,10 @@ class InfoVenuesMapKMLView(BrowserView):
                 else:
                     longitude, latitude = coordinates
                 if geometry == 'Point' and longitude and latitude:
-                    venue = {
+                    venues.append({
                         'title': ob.Title(),
                         'description': DESC_TEMPLATE % ob.Description(),
                         'location': "%r,%r,0.000000" % (longitude, latitude),
-                    }
-                    venues.append(venue)
+                    })
 
         return venues
