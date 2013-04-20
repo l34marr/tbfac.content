@@ -151,6 +151,7 @@ class UshahidiMapView(base.UshahidiMapView):
     def getJSONCluster(self):
         context = aq_inner(self.context)
         catalog = getToolByName(context, 'portal_catalog')
+        purl = getToolByName(context, 'portal_url')()
 
         # prepare catalog query
         query = Eq('path', '/'.join(context.getPhysicalPath())) & \
@@ -232,12 +233,13 @@ class UshahidiMapView(base.UshahidiMapView):
             if start:
                 start = calendar.timegm(DT2dt(start).timetuple())
 
+            uids = '&'.join(['UID=%s' % m['uid'] for m in cluster])
             features.append({
                 'type': 'Feature',
                 'properties': {
                     'id': marker['uid'],
-                    'name': marker['title'],
-                    'link': marker['url'],
+                    'name': '%d Items' % len(cluster),
+                    'link': '%s/@@search?%s' % (purl, uids),
                     'category': marker['tags'],
                     'color': color,
                     'icon': '',
