@@ -13,4 +13,15 @@
         edit_permission="zope2.View"
         />
 
+    <plone:portlet
+        name="tbfac.content.MostLikedPortlet"
+        interface=".mostliked.IMostLikedPortlet"
+        assignment=".mostliked.Assignment"
+        renderer=".mostliked.Renderer"
+        addview=".mostliked.AddForm"
+        editview=".mostliked.EditForm"
+        view_permission="zope2.View"
+        edit_permission="zope2.View"
+        />
+
 </configure>

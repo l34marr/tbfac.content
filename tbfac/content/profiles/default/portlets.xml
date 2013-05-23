@@ -10,4 +10,11 @@
     description="Display a map of Info Venues locations"
    />
 
+  <portlet
+    i18n:attributes="title description"
+    addview="tbfac.content.MostLikedPortlet"
+    title="Most Liked Portlet"
+    description="Display list of Most Liked Pages on the site"
+   />
+
 </portlets>
