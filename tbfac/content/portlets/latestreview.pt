@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      tal:omit-tag="">
+<dl class="portlet portletLatestReview"
+    i18n:domain="tbfac.content">
+
+    <dt class="portletHeader"
+        tal:condition="view/data/header">
+        <span class="portletTopLeft"></span>
+        <span tal:content="view/data/header">Latest Review</span>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <tal:latest  tal:define="plone_view context/@@plone;
+                             getIcon nocall:plone_view/getIcon;"
+                    tal:repeat="obj view/latest_review">
+    <dd tal:define="oddrow repeat/obj/odd;
+                    item_icon python:getIcon(obj);"
+         tal:attributes="class python:oddrow and 'portletItem even' or 'portletItem odd'">
+
+      <a href=""
+         class="tile"
+         tal:attributes="href obj/getURL;
+                         title obj/Description">
+        <img tal:replace="structure item_icon/html_tag" />
+        <span tal:replace="obj/pretty_title_or_id">Review Title</span>
+      </a>
+      <span class="portletItemDetails">
+        <a href="#" class="portletItemAuthor"
+           tal:attributes="href author/url"
+           tal:define="author python:view.getAuthorInfo(obj.Creator)"
+           tal:condition="author"
+           tal:content="author/name">Author Full Name</a>
+        <span class="portletItemDate"
+              tal:content="python:view.toLocalizedTime(obj.Date)">May 5</span>
+    </dd>
+    </tal:latest>
+
+</dl>
+</html>

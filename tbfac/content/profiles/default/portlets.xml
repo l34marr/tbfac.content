@@ -17,4 +17,11 @@
     description="Display list of Most Liked Pages on the site"
    />
 
+  <portlet
+    i18n:attributes="title description"
+    addview="tbfac.content.LatestReviewPortlet"
+    title="Latest Review Portlet"
+    description="Display list of latest Other Juries Reviews"
+   />
+
 </portlets>

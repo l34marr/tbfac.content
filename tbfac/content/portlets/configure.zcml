@@ -24,4 +24,15 @@
         edit_permission="zope2.View"
         />
 
+    <plone:portlet
+        name="tbfac.content.LatestReviewPortlet"
+        interface=".latestreview.ILatestReviewPortlet"
+        assignment=".latestreview.Assignment"
+        renderer=".latestreview.Renderer"
+        addview=".latestreview.AddForm"
+        editview=".latestreview.EditForm"
+        view_permission="zope2.View"
+        edit_permission="zope2.View"
+        />
+
 </configure>
