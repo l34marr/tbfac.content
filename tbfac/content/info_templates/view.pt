@@ -50,9 +50,10 @@
   </tal:end>
   
   <br />
-  <span tal:condition="context/dateDetails">
-  <tal:field i18n:translate="">Date Details</tal:field>:
-  <span tal:replace="context/dateDetails">Text</span>
+  <span tal:condition="context/dateDetails"
+   tal:define="pps modules/Products.PythonScripts.standard">
+  <tal:field i18n:translate="">Date Details</tal:field>:<br />
+  <span tal:replace="structure python:pps.newline_to_br(pps.html_quote(context.dateDetails))">Text</span>
   </span>
 </p>
 <tal:block condition="context/venue">
@@ -79,9 +80,10 @@
   <span tal:replace="structure context/text/output">Text</span>
 </tal:text>
 <p>
-  <tal:feeDetails condition="context/feeDetails">
-    <tal:field i18n:translate="">Fee Details</tal:field>:
-    <span tal:replace="context/feeDetails">Text</span>
+  <tal:feeDetails condition="context/feeDetails"
+   tal:define="pps modules/Products.PythonScripts.standard">
+    <tal:field i18n:translate="">Fee Details</tal:field>:<br />
+    <span tal:replace="structure python:pps.newline_to_br(pps.html_quote(context.feeDetails))">Text</span>
   </tal:feeDetails>
 </p>
 <p>
