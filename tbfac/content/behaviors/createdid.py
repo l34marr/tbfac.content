@@ -6,6 +6,7 @@ from plone.app.content.interfaces import INameFromTitle
 from Products.CMFCore.interfaces import ISiteRoot
 from zope.annotation.interfaces import IAnnotations
 
+ANNOTATION_DATE_ID = 'tbfac.content.behavior.dateid'
 ANNOTATION_NEXT_ID = 'tbfac.content.behavior.nextid'
 
 class INameFromCreated(Interface):
@@ -19,10 +20,25 @@ class NameFromCreated(object):
         instance = super(NameFromCreated, cls).__new__(cls)
         site = getUtility(ISiteRoot)
         storage = IAnnotations(site, {})
-        next = storage.get(ANNOTATION_NEXT_ID , 1)
-        storage[ANNOTATION_NEXT_ID] = next + 1
         cdate = context.creation_date
-        instance.title = '%d%s%s%s' % (cdate.year() , cdate.mm() , cdate.dd() , str(next).zfill(2))
+        current_date = "%d%s%s" % (cdate.year() , cdate.mm() , cdate.dd())
+
+        if not storage.has_key(ANNOTATION_DATE_ID):
+            storage[ANNOTATION_DATE_ID] = current_date
+            dateid = current_date
+        else:
+            dateid = storage.get(ANNOTATION_DATE_ID)
+
+        if dateid != current_date:
+            dateid = current_date
+            storage[ANNOTATION_DATE_ID] = current_date
+            nextid = 1
+        else:
+            nextid = storage.get(ANNOTATION_NEXT_ID , 1)
+
+        storage[ANNOTATION_NEXT_ID] = nextid + 1
+
+        instance.title = '%s%s' % (dateid , str(nextid).zfill(2))
         return instance
 
     def __init__(self, context):
