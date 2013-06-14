@@ -70,44 +70,34 @@ class Renderer(base.Renderer):
             name='plone_context_state')
         url_tool = getToolByName(context, 'portal_url')
         purl, ppath = url_tool(), url_tool.getPortalPath()
-        limit = self.data.count or 5
-        counter = 0
         folder = cstate.folder()
         paths = []
         if IPloneSiteRoot.providedBy(folder): # site root
             for info in data:
-                if counter >= limit:
-                    break
-
                 path = self._getPath(info['url'], purl, ppath)
                 if path and path not in paths:
-                    counter += 1
-                    paths.append(path)
+                    paths.append((path, info['shares']))
         else: # nested folder
             url = folder.absolute_url()
 
-            # debug code for localhost
+            # # debug code for localhost
             # url = folder.absolute_url().replace(purl,
             #     'http://talks.taishinart.org.tw')
 
             for info in data:
-                if counter >= limit:
-                    break
-
-                # skipt anything that's not within current folder
+                # skip anything that's not within current folder
                 if not info['url'].startswith(url):
                     continue
 
                 path = self._getPath(info['url'], purl, ppath)
                 if path and path not in paths:
-                    counter += 1
-                    paths.append(path)
+                    paths.append((path, info['shares']))
 
         if not paths:
             return []
 
         catalog = getToolByName(context, 'portal_catalog')
-        brains = catalog(path={'query': paths, 'depth': 0})
+        brains = catalog(path={'query': [p[0] for p in paths], 'depth': 0})
         if len(brains) == 0:
             return []
 
@@ -116,16 +106,31 @@ class Renderer(base.Renderer):
             brains_dict[b.getPath()] = b
 
         result = []
-        for p in paths:
+        limit = self.data.count or 5
+        counter = 0
+        for p, shares in paths:
+            if counter >= limit:
+                break
+
             if not brains_dict.has_key(p):
                 continue
-            result.append(brains_dict[p])
+
+            b = brains_dict[p]
+            result.append({
+              'brain': b,
+              'url': b.getURL(),
+              'desc': b.Description,
+              'title': b.pretty_title_or_id,
+              'date': b.start or b.Date,
+              'shares': shares,
+            })
+            counter += 1
 
         return result
 
     def _getPath(self, url, portal_url, portal_path):
         """Convert addthis.com url to plone path"""
-        # debug code for localhost
+        # # debug code for localhost
         # portal_url = u'http://talks.taishinart.org.tw'
         # portal_path = u'/www'
 

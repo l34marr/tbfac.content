@@ -17,8 +17,8 @@ def _addThisShared():
     """Returns top shared urls from addthis.com"""
     # TODO: handle pagination
     url = 'https://api.addthis.com/analytics/1.0/pub/shares/url.json?' \
-        'domain=%s&pubid=%s&period=%s' % (ADDTHIS_DOMAIN, ADDTHIS_PUBID,
-        ADDTHIS_PERIOD)
+        'domain=%s&pubid=%s&period=%s&service=facebook_like' % (ADDTHIS_DOMAIN,
+            ADDTHIS_PUBID, ADDTHIS_PERIOD)
 
     request = urllib2.Request(url)
     auth = base64.encodestring('%s:%s' % (ADDTHIS_USERNAME,

@@ -17,20 +17,28 @@
                                 getIcon nocall:plone_view/getIcon;"
                     tal:repeat="obj view/most_liked">
     <dd tal:define="oddrow repeat/obj/odd;
-                    item_icon python:getIcon(obj);"
+                    item_icon python:getIcon(obj['brain']);"
          tal:attributes="class python:oddrow and 'portletItem even' or 'portletItem odd'">
 
         <a href=""
            class="tile"
-           tal:attributes="href obj/getURL;
-                           title obj/Description">
+           tal:attributes="href obj/url;
+                           title obj/desc">
             <img tal:replace="structure item_icon/html_tag" />
-            <span tal:replace="obj/pretty_title_or_id">
+            <span tal:replace="obj/title">
             Plone 2.1 announced!
             </span>
          </a>
-            <span class="portletItemDetails"
-                  tal:content="python:toLocalizedTime(obj.Date)">May 5</span>
+         <div class="fbLikeCounter">
+           <img alt="fb shares"
+                src="++resource++tbfac.content/fb_shares_counter.jpg"
+                tal:attributes="src string:${context/portal_url}/${attrs/src}" />
+           <tal:count replace="obj/shares" />
+         </div>
+         <span class="portletItemDetails"
+               tal:content="python:toLocalizedTime(obj['date'])">
+           May 5
+         </span>
 
     </dd>
     </tal:mostliked>
