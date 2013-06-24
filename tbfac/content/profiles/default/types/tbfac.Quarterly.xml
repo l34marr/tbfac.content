@@ -7,7 +7,7 @@
   <property name="title" i18n:translate="">Quarterly</property>
   <property name="description"
     i18n:translate="">TBFAC Quarterly Type</property>
-  <property name="icon_expr">string:${portal_url}/document_icon.png</property>
+  <property name="content_icon">++resource++tbfac.content/quarterly.png</property>
   <property name="factory">tbfac.content.quarterly</property>
   <property name="global_allow">True</property>
   <property name="filter_content_types">False</property>  
