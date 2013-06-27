@@ -330,7 +330,7 @@ msgstr "首頁磚表單"
 
 #: ./profiles/default/types/tbfac.Article.xml
 msgid "TBFAC Article Type"
-msgstr "<ol><li style=\"list-style-type: decimal;\">藝術無遠弗屆，歡迎大家在此暢談，但若發表任何涉及廣告、毀謗等非藝術相關或違法圖文及影音，本站有責任維護談論品質並刪除。</li><li style=\"list-style-type: decimal;\">確定張貼文章後表示您同意並授權給本網站(ArTalks：)永久使用，以及他人社群分享功能。</li><li style=\"list-style-type: decimal;\">文章內容皆屬張貼者個人言論自由，不代表本站立場；若觸及相關法令，張貼者將為個人行為負完全的法律責任。</li><li style=\"list-style-type: decimal;\">轉載私人圖文或影音必須取得授權並標示出處，若有侵權問題須由張貼者負完全的法律責任。</li></ol>"
+msgstr "<ol style=\"margin-left: 30px;\"><li style=\"list-style-type: decimal;\">藝術無遠弗屆，歡迎大家在此暢談，但若發表任何涉及廣告、毀謗等非藝術相關或違法圖文及影音，本站有責任維護談論品質並刪除。</li><li style=\"list-style-type: decimal;\">確定張貼文章後表示您同意並授權給本網站(ArTalks：)永久使用，以及他人社群分享功能。</li><li style=\"list-style-type: decimal;\">文章內容皆屬張貼者個人言論自由，不代表本站立場；若觸及相關法令，張貼者將為個人行為負完全的法律責任。</li><li style=\"list-style-type: decimal;\">轉載私人圖文或影音必須取得授權並標示出處，若有侵權問題須由張貼者負完全的法律責任。</li></ol>"
 
 #: ./profiles/default/types/tbfac.Committee.xml
 msgid "TBFAC Committee Type"
