@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tbfac.content\n"
-"POT-Creation-Date: 2013-06-28 01:22+0000\n"
-"PO-Revision-Date: 2013-06-28 09:39+0800\n"
+"POT-Creation-Date: 2013-06-28 07:15+0000\n"
+"PO-Revision-Date: 2013-06-28 15:16+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -218,7 +218,7 @@ msgstr "活動訊息"
 msgid "Jury"
 msgstr "提名觀察人"
 
-#: ./quarterly_templates/view.pt:15
+#: ./quarterly_templates/view.pt:27
 msgid "Jury:"
 msgstr "提名觀察人："
 
@@ -334,6 +334,10 @@ msgstr "方框標題"
 #: ./profiles/default/types/tbfac.Quarterly.xml
 msgid "Quarterly"
 msgstr "季提名報告"
+
+#: ./quarterly_templates/view.pt:34
+msgid "Rationale:"
+msgstr "提名理由簡述："
 
 #: ./committee.py:51
 msgid "RecommendGroup"

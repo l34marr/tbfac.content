@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-06-28 01:22+0000\n"
+"POT-Creation-Date: 2013-06-28 07:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -221,7 +221,7 @@ msgstr ""
 msgid "Jury"
 msgstr ""
 
-#: ./quarterly_templates/view.pt:15
+#: ./quarterly_templates/view.pt:27
 msgid "Jury:"
 msgstr ""
 
@@ -336,6 +336,10 @@ msgstr ""
 
 #: ./profiles/default/types/tbfac.Quarterly.xml
 msgid "Quarterly"
+msgstr ""
+
+#: ./quarterly_templates/view.pt:34
+msgid "Rationale:"
 msgstr ""
 
 #: ./committee.py:51
