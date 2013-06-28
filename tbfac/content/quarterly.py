@@ -42,6 +42,12 @@ class IQuarterly(form.Schema, IImageScaleTraversable):
         title=_(u"Title"),
     )
 
+    info = RelationChoice(
+        title=_(u"Info"),
+        source=ObjPathSourceBinder(object_provides=IInfo.__identifier__),
+        required=False,
+    )
+
     text = RichText(
         title=_(u"Body"),
         required=False,

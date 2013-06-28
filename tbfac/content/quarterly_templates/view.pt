@@ -10,15 +10,25 @@
 <metal:main fill-slot="content-core">
   <metal:content-core define-macro="content-core">
 
-<p>
-  <span tal:condition="view/authorname">
-  <tal:field i18n:translate="">Author:</tal:field>
+<div tal:condition="context/info"
+ tal:define="obj python:context.info.to_object">
+  <img src="#" alt="" style="float: left"
+   tal:attributes="src string:${obj/absolute_url}/@@download/image;
+                   alt string:${obj/Title}" />
+  <p tal:content="obj/title">Info Title</p>
+  <p><tal:start replace="obj/startDate">Start Date</tal:start>
+     <tal:end condition="obj/endDate"> -
+     <span tal:replace="obj/endDate" /></tal:end></p>
+  <span tal:content="python: obj.venue[0].to_object.Title()">Venue</span>
+</div>
+<div class="visualClear"><!-- --></div>
+<span tal:condition="view/authorname">
+  <tal:field i18n:translate="">Jury:</tal:field>
   <span tal:replace="view/authorname">Name</span>,
-  </span>
-  <span class="dcoumentModified">
+</span>
+<span class="dcoumentModified">
   <span tal:replace="python:view.toLocalizedTime(context.CreationDate(),long_format=1)">August 16, 2001 at 23:35:59</span>
-  </span>
-</p>
+</span>
 <span tal:condition="context/text">
  <span tal:replace="structure context/text/output">Text</span>
 </span>
