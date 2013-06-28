@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tbfac.content\n"
-"POT-Creation-Date: 2013-04-02 05:53+0000\n"
-"PO-Revision-Date: 2013-03-19 11:29+0800\n"
+"POT-Creation-Date: 2013-06-28 01:22+0000\n"
+"PO-Revision-Date: 2013-06-28 09:39+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -14,15 +14,23 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: tbfac.content\n"
 
-#: ./info_templates/view.pt:78
+#: ./info_templates/view.pt:79
 msgid "About the Event"
 msgstr "關於展演"
 
-#: ./portlets/infovenuesmap.py:153
+#: ./portlets/infovenuesmap.py:164
 msgid "Add Info Venues Map portlet"
 msgstr "新增地圖方框"
 
-#: ./info_templates/view.pt:64
+#: ./portlets/latestreview.py:105
+msgid "Add Latest Review Portlet"
+msgstr "新增最新評論方框"
+
+#: ./portlets/mostliked.py:151
+msgid "Add Most Liked Portlet"
+msgstr "新增最多按讚方框"
+
+#: ./info_templates/view.pt:65
 #: ./venue.py:39
 msgid "Address"
 msgstr "活動地址"
@@ -41,7 +49,6 @@ msgstr "張貼者"
 
 #: ./article_templates/view.pt:15
 #: ./folder_templates/view.pt:67
-#: ./quarterly_templates/view.pt:15
 msgid "Author:"
 msgstr "張貼者："
 
@@ -90,12 +97,12 @@ msgid "Committee"
 msgstr "委員會委員"
 
 #: ./info.py:115
-#: ./info_templates/view.pt:100
+#: ./info_templates/view.pt:102
 msgid "Contact Name"
 msgstr "活動聯絡人"
 
 #: ./info.py:110
-#: ./info_templates/view.pt:95
+#: ./info_templates/view.pt:97
 msgid "Contact Phone"
 msgstr "活動聯絡電話"
 
@@ -104,7 +111,7 @@ msgid "Dancing"
 msgstr "舞蹈"
 
 #: ./info.py:66
-#: ./info_templates/view.pt:54
+#: ./info_templates/view.pt:55
 msgid "Date Details"
 msgstr "詳細時間說明"
 
@@ -117,13 +124,25 @@ msgstr "例：5/15 (五) ～ 5/16 (六)，19:30；5/16 (六) ～ 5/17 (日)，14
 msgid "Description"
 msgstr "簡介"
 
+#: ./portlets/latestreview.py:106
+msgid "Display list of latest Other Juries Reviews."
+msgstr "顯示其他提名觀察人的評論。"
+
 #: ./info.py:52
 msgid "Drama"
 msgstr "戲劇"
 
-#: ./portlets/infovenuesmap.py:166
+#: ./portlets/infovenuesmap.py:177
 msgid "Edit Info Venues Map portlet"
 msgstr "編輯地圖方框"
+
+#: ./portlets/latestreview.py:114
+msgid "Edit Latest Review Portlet"
+msgstr "編輯最新評論方框"
+
+#: ./portlets/mostliked.py:160
+msgid "Edit Most Liked Portlet"
+msgstr "編輯最多按讚方框"
 
 #: ./info.py:62
 #: ./info_templates/view.pt:48
@@ -134,8 +153,12 @@ msgstr "結束展演日期"
 msgid "Event URL"
 msgstr "活動網址"
 
+#: ./portlets/mostliked.py:45
+msgid "Events"
+msgstr "標題"
+
 #: ./info.py:99
-#: ./info_templates/view.pt:83
+#: ./info_templates/view.pt:85
 msgid "Fee Details"
 msgstr "費用說明"
 
@@ -155,13 +178,18 @@ msgstr "藝論"
 msgid "Group"
 msgstr "分類"
 
-#: ./portlets/infovenuesmap.py:44
+#: ./portlets/infovenuesmap.py:45
 msgid "Height"
 msgstr "高度"
 
-#: ./portlets/infovenuesmap.py:45
+#: ./portlets/infovenuesmap.py:46
 msgid "Height for maps, specified as an absolute (like '450px' or '15em'), or relative (like '100%') size."
 msgstr "以 450px 或 100% 方式指定地圖高度"
+
+#: ./portlets/latestreview.py:26
+#: ./portlets/mostliked.py:28
+msgid "How many items to list."
+msgstr "顯示的數量。"
 
 #: ./vocabularies.py:18
 msgid "Hsinchu City"
@@ -181,6 +209,7 @@ msgid "If no referenced Info items to select, please manually fill them in the n
 msgstr "若選單無該評論展演，則在下列「自行填寫評論展演」文字欄位中新增。"
 
 #: ./profiles/default/types/tbfac.Info.xml
+#: ./quarterly.py:46
 msgid "Info"
 msgstr "活動訊息"
 
@@ -188,6 +217,10 @@ msgstr "活動訊息"
 #: ./profiles/default/types/tbfac.Jury.xml
 msgid "Jury"
 msgstr "提名觀察人"
+
+#: ./quarterly_templates/view.pt:15
+msgid "Jury:"
+msgstr "提名觀察人："
 
 #: ./vocabularies.py:27
 msgid "Kaohsiung City"
@@ -200,6 +233,10 @@ msgstr "基隆市"
 #: ./vocabularies.py:34
 msgid "Kinmen County"
 msgstr "金門縣"
+
+#: ./portlets/latestreview.py:43
+msgid "Latest Review"
+msgstr "最新評論"
 
 #: ./advert.py:28
 #: ./info.py:125
@@ -252,6 +289,11 @@ msgstr "提名"
 msgid "NominatorGroup"
 msgstr "提名團"
 
+#: ./portlets/latestreview.py:25
+#: ./portlets/mostliked.py:27
+msgid "Number of items to display"
+msgstr "顯示的數量"
+
 #: ./committee.py:51
 msgid "ObserverGroup"
 msgstr "觀察團"
@@ -283,6 +325,11 @@ msgstr "照片"
 #: ./vocabularies.py:28
 msgid "Pingtung County"
 msgstr "屏東縣"
+
+#: ./portlets/latestreview.py:20
+#: ./portlets/mostliked.py:22
+msgid "Portlet Header"
+msgstr "方框標題"
 
 #: ./profiles/default/types/tbfac.Quarterly.xml
 msgid "Quarterly"
@@ -392,12 +439,16 @@ msgstr "上方文字"
 msgid "Text Above the Title."
 msgstr "標題上方的文字。"
 
-#: ./portlets/infovenuesmap.py:23
+#: ./portlets/infovenuesmap.py:24
 msgid "This portlet displays a map of Info Venues locations."
 msgstr "顯示展演訊息的地點資訊"
 
+#: ./portlets/mostliked.py:152
+msgid "This portlet lists Most Liked objects."
+msgstr "用來顯示最多按讚項目列表。"
+
 #: ./info.py:105
-#: ./info_templates/view.pt:89
+#: ./info_templates/view.pt:91
 msgid "Ticket URL"
 msgstr "售票網址"
 
@@ -437,12 +488,12 @@ msgid "Use comma to separate multiple Info data."
 msgstr "如為兩節目以上展演項目，請用「、」分隔。例：《羅密歐與茱麗葉》、《馬克白》"
 
 #: ./info.py:80
-#: ./info_templates/view.pt:61
+#: ./info_templates/view.pt:62
 #: ./profiles/default/types/tbfac.Venue.xml
 msgid "Venue"
 msgstr "活動地點"
 
-#: ./portlets/infovenuesmap.py:34
+#: ./portlets/infovenuesmap.py:35
 msgid "Venues"
 msgstr "活動地點"
 
