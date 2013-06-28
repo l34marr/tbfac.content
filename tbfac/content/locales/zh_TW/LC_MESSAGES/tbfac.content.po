@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tbfac.content\n"
-"POT-Creation-Date: 2013-06-28 07:15+0000\n"
-"PO-Revision-Date: 2013-06-28 15:16+0800\n"
+"POT-Creation-Date: 2013-06-28 07:35+0000\n"
+"PO-Revision-Date: 2013-06-28 15:36+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -119,6 +119,10 @@ msgstr "詳細時間說明"
 msgid "Date Details Description"
 msgstr "例：5/15 (五) ～ 5/16 (六)，19:30；5/16 (六) ～ 5/17 (日)，14:30。"
 
+#: ./quarterly_templates/view.pt:20
+msgid "Dates:"
+msgstr "作品呈現時間："
+
 #: ./committee.py:60
 #: ./jury.py:43
 msgid "Description"
@@ -213,12 +217,16 @@ msgstr "若選單無該評論展演，則在下列「自行填寫評論展演」
 msgid "Info"
 msgstr "活動訊息"
 
+#: ./quarterly_templates/view.pt:18
+msgid "Info Title:"
+msgstr "作品名稱："
+
 #: ./committee.py:51
 #: ./profiles/default/types/tbfac.Jury.xml
 msgid "Jury"
 msgstr "提名觀察人"
 
-#: ./quarterly_templates/view.pt:27
+#: ./quarterly_templates/view.pt:30
 msgid "Jury:"
 msgstr "提名觀察人："
 
@@ -335,7 +343,7 @@ msgstr "方框標題"
 msgid "Quarterly"
 msgstr "季提名報告"
 
-#: ./quarterly_templates/view.pt:34
+#: ./quarterly_templates/view.pt:37
 msgid "Rationale:"
 msgstr "提名理由簡述："
 
@@ -496,6 +504,10 @@ msgstr "如為兩節目以上展演項目，請用「、」分隔。例：《羅
 #: ./profiles/default/types/tbfac.Venue.xml
 msgid "Venue"
 msgstr "活動地點"
+
+#: ./quarterly_templates/view.pt:24
+msgid "Venue:"
+msgstr "作品呈現地點："
 
 #: ./portlets/infovenuesmap.py:35
 msgid "Venues"

@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-06-28 07:15+0000\n"
+"POT-Creation-Date: 2013-06-28 07:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,6 +122,10 @@ msgstr ""
 msgid "Date Details Description"
 msgstr ""
 
+#: ./quarterly_templates/view.pt:20
+msgid "Dates:"
+msgstr ""
+
 #: ./committee.py:60
 #: ./jury.py:43
 msgid "Description"
@@ -216,12 +220,16 @@ msgstr ""
 msgid "Info"
 msgstr ""
 
+#: ./quarterly_templates/view.pt:18
+msgid "Info Title:"
+msgstr ""
+
 #: ./committee.py:51
 #: ./profiles/default/types/tbfac.Jury.xml
 msgid "Jury"
 msgstr ""
 
-#: ./quarterly_templates/view.pt:27
+#: ./quarterly_templates/view.pt:30
 msgid "Jury:"
 msgstr ""
 
@@ -338,7 +346,7 @@ msgstr ""
 msgid "Quarterly"
 msgstr ""
 
-#: ./quarterly_templates/view.pt:34
+#: ./quarterly_templates/view.pt:37
 msgid "Rationale:"
 msgstr ""
 
@@ -498,6 +506,10 @@ msgstr ""
 #: ./info_templates/view.pt:62
 #: ./profiles/default/types/tbfac.Venue.xml
 msgid "Venue"
+msgstr ""
+
+#: ./quarterly_templates/view.pt:24
+msgid "Venue:"
 msgstr ""
 
 #: ./portlets/infovenuesmap.py:35

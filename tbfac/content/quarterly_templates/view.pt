@@ -15,11 +15,14 @@
   <img src="#" alt="" style="float: left"
    tal:attributes="src string:${obj/absolute_url}/@@download/image;
                    alt string:${obj/Title}" />
-  <p tal:content="obj/title">Info Title</p>
-  <p><tal:start replace="obj/startDate">Start Date</tal:start>
+  <p><tal:field i18n:translate="">Info Title:</tal:field>
+     <span tal:content="obj/title">Info Title</span></p>
+  <p><tal:field i18n:translate="">Dates:</tal:field>
+     <span tal:replace="obj/startDate">Start Date</span>
      <tal:end condition="obj/endDate"> -
      <span tal:replace="obj/endDate" /></tal:end></p>
-  <span tal:content="python: obj.venue[0].to_object.Title()">Venue</span>
+  <p><tal:field i18n:translate="">Venue:</tal:field>
+  <span tal:content="python: obj.venue[0].to_object.Title()">Name</span>
 </tal:info>
 </div>
 <div class="visualClear"><!-- --></div>
