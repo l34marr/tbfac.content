@@ -48,6 +48,7 @@ class UshahidiMapView(base.UshahidiMapView):
                     if geometry == 'Point' and longitude and latitude:
                         markers.append({
                             'uid': IUUID(venue),
+                            'search_uid': brain.UID,
                             'url': brain.getURL(),
                             'title': brain.Title,
                             'tags': brain.Subject or [],
