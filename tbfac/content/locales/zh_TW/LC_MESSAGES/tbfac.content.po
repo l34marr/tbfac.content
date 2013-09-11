@@ -341,7 +341,7 @@ msgstr "方框標題"
 
 #: ./profiles/default/types/tbfac.Quarterly.xml
 msgid "Quarterly"
-msgstr "季提名報告"
+msgstr "季提名名單"
 
 #: ./quarterly_templates/view.pt:37
 msgid "Rationale:"
@@ -413,7 +413,7 @@ msgstr "提名表單"
 
 #: ./profiles/default/types/tbfac.Quarterly.xml
 msgid "TBFAC Quarterly Type"
-msgstr "季提名報告表單"
+msgstr "季提名名單表單"
 
 #: ./profiles/default/types/tbfac.Review.xml
 msgid "TBFAC Review Type"
