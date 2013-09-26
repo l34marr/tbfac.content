@@ -26,7 +26,7 @@ setup(name='tbfac.content',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'plone.app.dexterity [grok]',
+          'plone.app.dexterity [grok, relations]',
           'z3c.jbot',
           # 'plone.app.event [ploneintegration,archetypes,dexterity]',
           'plone.namedfile [blobs]',
@@ -37,6 +37,7 @@ setup(name='tbfac.content',
           'simplejson',
           'collective.geo.mapwidget',
           'geopy',
+          'plone.app.kss',
       ],
       entry_points="""
       # -*- Entry points: -*-

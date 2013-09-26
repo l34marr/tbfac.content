@@ -96,3 +96,6 @@ class View(grok.View):
         author = self.author()
         return author and author['fullname'] or self.creator()
 
+    def Title(self):
+        return "Default Title"
+
