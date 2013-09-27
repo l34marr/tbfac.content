@@ -27,7 +27,16 @@ class FixCatalogView(BrowserView):
                 # remove old interface
                 del to_map[oldSchema]
 
+
             if oldSchema in from_map:
                 from_map[Schema] = from_map[oldSchema]
                 #remove old interface
                 del from_map[oldSchema]
+
+            # fix existing relations
+            for k, v in catalog._reltoken_name_TO_objtokenset.items():
+                if k[1] in ('to_interfaces_flattened',
+                            'from_interfaces_flattened'):
+                    if oldSchema in v:
+                        v.remove(oldSchema)
+                        v.add(Schema)
