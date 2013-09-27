@@ -9,6 +9,14 @@
       directory="templates" />
 
 
+  <browser:page
+      for="*"
+      name="fixcatalog"
+      class="tbfac.content.browser.views.FixCatalogView"
+      permission="zope.Public"
+      layer="tbfac.content.interfaces.IPackageLayer"
+      />
+
   <configure package="collective.geo.ushahidi.browser">
   <browser:page
       for="*"
