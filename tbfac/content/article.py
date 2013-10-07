@@ -18,6 +18,8 @@ from plone.app.textfield import RichText
 from z3c.relationfield.schema import RelationList, RelationChoice
 from plone.formwidget.contenttree import ObjPathSourceBinder
 
+from collective import dexteritytextindexer
+
 from tbfac.content import MessageFactory as _
 from tbfac.content.info import IInfo
 from Products.CMFCore.utils import getToolByName
@@ -42,6 +44,7 @@ class IArticle(form.Schema, IImageScaleTraversable):
         title=_(u"Title"),
     )
 
+    dexteritytextindexer.searchable('author')
     author = schema.TextLine(
         title=_(u"Author"),
         required=True,
