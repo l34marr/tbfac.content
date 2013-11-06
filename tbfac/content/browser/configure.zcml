@@ -13,7 +13,7 @@
       for="*"
       name="fixcatalog"
       class="tbfac.content.browser.views.FixCatalogView"
-      permission="zope.Public"
+      permission="cmf.ManagePortal"
       layer="tbfac.content.interfaces.IPackageLayer"
       />
 
