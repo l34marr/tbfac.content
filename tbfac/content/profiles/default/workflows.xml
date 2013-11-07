@@ -5,5 +5,8 @@
   <type type_id="tbfac.Info">
    <bound-workflow workflow_id="simple_contribution"/>
   </type>
+  <type type_id="tbfac.Article">
+   <bound-workflow workflow_id="simple_contribution"/>
+  </type>
  </bindings>
 </object>
