@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<object name="portal_workflow" meta_type="Plone Workflow Tool">
+ <object name="simple_contribution" meta_type="Workflow"/>
+ <bindings>
+  <type type_id="tbfac.Info">
+   <bound-workflow workflow_id="simple_contribution"/>
+  </type>
+  <type type_id="tbfac.Article">
+   <bound-workflow workflow_id="simple_contribution"/>
+  </type>
+ </bindings>
+</object>
