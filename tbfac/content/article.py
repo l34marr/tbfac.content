@@ -40,6 +40,7 @@ class IArticle(form.Schema, IImageScaleTraversable):
     
     #form.model("models/article.xml")
 
+    dexteritytextindexer.searchable('title')
     title = schema.TextLine(
         title=_(u"Title"),
     )
@@ -67,6 +68,7 @@ class IArticle(form.Schema, IImageScaleTraversable):
         required=False,
     )
 
+    dexteritytextindexer.searchable('text')
     text = RichText(
         title=_(u"Body"),
         required=False,
