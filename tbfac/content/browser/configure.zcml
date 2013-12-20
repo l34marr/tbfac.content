@@ -1,131 +1,115 @@
 <configure
-    xmlns="http://namespaces.zope.org/zope"
-    xmlns:browser="http://namespaces.zope.org/browser"
-    xmlns:i18n="http://namespaces.zope.org/i18n"
-    i18n_domain="tbfac.content">
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:i18n="http://namespaces.zope.org/i18n"
+  i18n_domain="tbfac.content">
 
-   <include package="z3c.jbot" file="meta.zcml" />
-    <browser:templateOverrides
-      directory="templates" />
+  <include package="z3c.jbot" file="meta.zcml" />
 
+  <browser:templateOverrides
+    directory="templates" />
 
   <browser:page
-      for="*"
-      name="fixcatalog"
-      class="tbfac.content.browser.views.FixCatalogView"
-      permission="cmf.ManagePortal"
-      layer="tbfac.content.interfaces.IPackageLayer"
-      />
+    for="*"
+    name="fixcatalog"
+    class="tbfac.content.browser.views.FixCatalogView"
+    permission="cmf.ManagePortal"
+    layer="tbfac.content.interfaces.IPackageLayer" />
 
   <configure package="collective.geo.ushahidi.browser">
   <browser:page
-      for="*"
-      name="ushahidi-map-view"
-      class="tbfac.content.browser.ushahidi_map_view.UshahidiMapView"
-      template="templates/map_view.pt"
-      permission="zope.Public"
-      layer="tbfac.content.interfaces.IPackageLayer"
-      />
+    for="*"
+    name="ushahidi-map-view"
+    class="tbfac.content.browser.ushahidi_map_view.UshahidiMapView"
+    template="templates/map_view.pt"
+    permission="zope.Public"
+    layer="tbfac.content.interfaces.IPackageLayer" />
   <browser:page
-      for="*"
-      name="ushahidi-json-cluster"
-      class="tbfac.content.browser.ushahidi_map_view.UshahidiMapView"
-      attribute="getJSONCluster"
-      permission="zope.Public"
-      layer="tbfac.content.interfaces.IPackageLayer"
-      />
+    for="*"
+    name="ushahidi-json-cluster"
+    class="tbfac.content.browser.ushahidi_map_view.UshahidiMapView"
+    attribute="getJSONCluster"
+    permission="zope.Public"
+    layer="tbfac.content.interfaces.IPackageLayer" />
   <browser:page
-      for="*"
-      name="ushahidi-json"
-      class="tbfac.content.browser.ushahidi_map_view.UshahidiMapView"
-      attribute="getJSON"
-      permission="zope.Public"
-      layer="tbfac.content.interfaces.IPackageLayer"
-      />
+    for="*"
+    name="ushahidi-json"
+    class="tbfac.content.browser.ushahidi_map_view.UshahidiMapView"
+    attribute="getJSON"
+    permission="zope.Public"
+    layer="tbfac.content.interfaces.IPackageLayer" />
   <browser:page
-      for="*"
-      name="ushahidi-json-layer"
-      class="tbfac.content.browser.ushahidi_map_view.UshahidiMapView"
-      attribute="getJSONLayer"
-      permission="zope.Public"
-      layer="tbfac.content.interfaces.IPackageLayer"
-      />
+    for="*"
+    name="ushahidi-json-layer"
+    class="tbfac.content.browser.ushahidi_map_view.UshahidiMapView"
+    attribute="getJSONLayer"
+    permission="zope.Public"
+    layer="tbfac.content.interfaces.IPackageLayer" />
   <browser:page
-      for="*"
-      name="ushahidi-timeline"
-      class="tbfac.content.browser.ushahidi_map_view.UshahidiMapView"
-      attribute="getTimeline"
-      permission="zope.Public"
-      layer="tbfac.content.interfaces.IPackageLayer"
-      />
+    for="*"
+    name="ushahidi-timeline"
+    class="tbfac.content.browser.ushahidi_map_view.UshahidiMapView"
+    attribute="getTimeline"
+    permission="zope.Public"
+    layer="tbfac.content.interfaces.IPackageLayer" />
   </configure>
 
-    <include package="collective.geo.kml" />
-    <adapter
-        factory=".kmldocument.Info"
-        for="..info.IInfo
-             zope.publisher.interfaces.browser.IBrowserRequest"
-        provides="collective.geo.kml.interfaces.IFeature"
-        />
-    <browser:page
-        for="plone.app.folder.folder.IATUnifiedFolder"
-        name="kml-document"
-        class=".kmldocument.KMLFolderDocument"
-        layer="collective.geo.kml.interfaces.IGeoKmlLayer"
-        permission="zope2.View"
-        />
+  <include package="collective.geo.kml" />
+  <adapter
+    factory=".kmldocument.Info"
+    for="..info.IInfo
+         zope.publisher.interfaces.browser.IBrowserRequest"
+    provides="collective.geo.kml.interfaces.IFeature" />
+  <browser:page
+    for="plone.app.folder.folder.IATUnifiedFolder"
+    name="kml-document"
+    class=".kmldocument.KMLFolderDocument"
+    layer="collective.geo.kml.interfaces.IGeoKmlLayer"
+    permission="zope2.View" />
 
-    <browser:viewlet
-        for="..behaviors.recommendations.IRecommendable"
-        name="tbfac.recommendations"
-        class=".viewlets.RecommendationsViewlet"
-        manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
-        permission="zope.Public"
-        />
+  <browser:viewlet
+    for="..behaviors.recommendations.IRecommendable"
+    name="tbfac.recommendations"
+    class=".viewlets.RecommendationsViewlet"
+    manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
+    permission="zope.Public" />
 
-    <browser:page
-        for="..behaviors.recommendations.IRecommendable"
-        name="toggle-recommendation"
-        class=".viewlets.RecommendationsView"
-        attribute="toggleRecommendation"
-        permission="tbfac.AddRecommendation"
-        />
+  <browser:page
+    for="..behaviors.recommendations.IRecommendable"
+    name="toggle-recommendation"
+    class=".viewlets.RecommendationsView"
+    attribute="toggleRecommendation"
+    permission="tbfac.AddRecommendation" />
 
-    <browser:page
-        for="..behaviors.recommendations.IRecommendable"
-        name="recommendations_macro"
-        class=".viewlets.RecommendationsView"
-        attribute="renderViewlet"
-        permission="zope.Public"
-        />
+  <browser:page
+    for="..behaviors.recommendations.IRecommendable"
+    name="recommendations_macro"
+    class=".viewlets.RecommendationsView"
+    attribute="renderViewlet"
+    permission="zope.Public" />
 
-    <browser:resource
-        file="js/main.js"
-        name="tbfac.content_main.js"
-        />
+  <browser:resource
+    file="js/main.js"
+    name="tbfac.content_main.js" />
 
-    <!-- GEO Map related registrations -->
-    <browser:page
-        for="..info.IInfo"
-        name="infovenuesmap.kml"
-        class=".infovenuesmap_view.InfoVenuesMapKMLView"
-        template="templates/infovenuesmap_kml.pt"
-        permission="zope2.View"
-        />
+  <!-- GEO Map related registrations -->
+  <browser:page
+    for="..info.IInfo"
+    name="infovenuesmap.kml"
+    class=".infovenuesmap_view.InfoVenuesMapKMLView"
+    template="templates/infovenuesmap_kml.pt"
+    permission="zope2.View" />
 
-    <browser:page
-        name="infovenuesmap-layer"
-        for="..info.IInfo"
-        template="templates/infovenuesmap_layer.pt"
-        permission="zope.Public"
-        />
+  <browser:page
+    for="..info.IInfo"
+    name="infovenuesmap-layer"
+    template="templates/infovenuesmap_layer.pt"
+    permission="zope.Public" />
 
-    <adapter
-        for=".interfaces.IInfoVenuesMapView
-             zope.interface.Interface
-             ..info.IInfo
-             zope.interface.Interface"
-        factory=".maplayer.KMLMapLayers"
-        />
+  <adapter
+    for=".interfaces.IInfoVenuesMapView
+         ..info.IInfo
+         zope.interface.Interface"
+    factory=".maplayer.KMLMapLayers" />
 
 </configure>
