@@ -104,6 +104,11 @@
   </tal:contactName>
 </p>
 
+<div tal:define="v_counts context/v_counts|nothing;">
+<tal:field i18n:translate="">瀏覽數</tal:field>:
+<span tal:replace="v_counts" />
+</div>
+
   </metal:content-core>
 </metal:main>
 

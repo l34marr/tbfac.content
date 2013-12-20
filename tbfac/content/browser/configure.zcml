@@ -16,6 +16,18 @@
     permission="cmf.ManagePortal"
     layer="tbfac.content.interfaces.IPackageLayer" />
 
+  <browser:page
+    for="*"
+    name="addthisadd"
+    permission="cmf.ManagePortal"
+    class=".views.AddThisAdd" />
+
+  <browser:page
+    for="*"
+    name="onetime"
+    permission="cmf.ManagePortal"
+    class=".views.OneTime" />
+
   <configure package="collective.geo.ushahidi.browser">
   <browser:page
     for="*"
