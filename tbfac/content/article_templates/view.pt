@@ -12,7 +12,8 @@
 
 <p>
   <span tal:condition="context/author">
-  <tal:field i18n:translate="">Author:</tal:field>
+  <tal:field i18n:translate="author_talk" condition="python: 'forum' not in context.absolute_url()">Author:</tal:field>
+  <tal:field i18n:translate="author_forum" condition="python: 'forum' in context.absolute_url()">Author:</tal:field>
   <span tal:replace="context/author">Name</span>,
   </span>
   <span class="dcoumentModified">
