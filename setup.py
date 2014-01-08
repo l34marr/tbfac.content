@@ -37,7 +37,7 @@ setup(name='tbfac.content',
           'simplejson',
           'collective.geo.mapwidget',
           'geopy',
-          'plone.app.kss',
+          #'plone.app.kss',
       ],
       entry_points="""
       # -*- Entry points: -*-
