@@ -24,6 +24,7 @@ from tbfac.content import MessageFactory as _
 from tbfac.content.info import IInfo
 from Products.CMFCore.utils import getToolByName
 
+from plone.formwidget.autocomplete import AutocompleteMultiFieldWidget
 
 # Interface class; used to define content-type schema.
 
@@ -51,6 +52,7 @@ class IArticle(form.Schema, IImageScaleTraversable):
         required=True,
     )
 
+    form.widget(info_ref=AutocompleteMultiFieldWidget)
     info_ref = RelationList(
         title=_(u"Referenced Info"),
         description=_(u"If no referenced Info items to select, please manually fill them in the next field."),
