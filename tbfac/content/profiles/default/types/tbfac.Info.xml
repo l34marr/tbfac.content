@@ -21,11 +21,10 @@
  <property name="add_permission">tbfac.AddInfo</property>
  <property name="klass">tbfac.content.info.Info</property>
  <property name="behaviors">
-  <element value="plone.app.content.interfaces.INameFromTitle" />
+  <element value="tbfac.content.behaviors.createdid.INameFromCreated" />
   <element value="plone.app.dexterity.behaviors.metadata.IBasic" />
   <element value="plone.app.dexterity.behaviors.metadata.ICategorization" />
   <element value="plone.app.dexterity.behaviors.metadata.IOwnership" />
-  <element value="tbfac.content.behaviors.recommendations.IRecommendations" />
  </property>
  <property name="schema">tbfac.content.info.IInfo</property>
  <property
