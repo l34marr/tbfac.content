@@ -120,6 +120,7 @@
 
   <adapter
     for=".interfaces.IInfoVenuesMapView
+         zope.interface.Interface
          ..info.IInfo
          zope.interface.Interface"
     factory=".maplayer.KMLMapLayers" />
