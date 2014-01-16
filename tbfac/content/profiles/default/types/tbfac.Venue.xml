@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <object name="tbfac.Venue"
-   meta_type="Dexterity FTI"
-   i18n:domain="tbfac.content" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+  meta_type="Dexterity FTI"
+  i18n:domain="tbfac.content" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
 
   <!-- Basic metadata -->
   <property name="title" i18n:translate="">Venue</property>
@@ -21,8 +21,8 @@
   <property name="klass">tbfac.content.venue.Venue</property>
 
   <property name="behaviors">
-     <element value="plone.app.content.interfaces.INameFromTitle" />
-     <element value="plone.app.dexterity.behaviors.metadata.IBasic"/>
+    <element value="tbfac.content.behaviors.createdid.INameFromCreated" />
+    <element value="plone.app.dexterity.behaviors.metadata.IBasic" />
    </property>
 
   <!-- View information -->
@@ -30,7 +30,7 @@
   <property name="immediate_view">view</property>
   <property name="default_view">view</property>
   <property name="view_methods">
-   <element value="view"/>
+    <element value="view" />
   </property>
   <property name="default_view_fallback">False</property>
   <property name="add_permission">cmf.AddPortalContent</property>
