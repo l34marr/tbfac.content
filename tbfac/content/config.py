@@ -11,3 +11,4 @@ ADDTHIS_PASSWORD = '******'
 ADDTHIS_CACHE_TIME = 6 * 60 * 60
 ADDTHIS_API_ADD = 'https://api.addthis.com/analytics/1.0/pub/clicks/url.json?pubid=myid&period=day'
 ONETIME_FILE = '/myfolder/myfile.csv'
+V_COUNT_FILE = '/myfolder/myfile.log'
