@@ -9,7 +9,7 @@ function(){
       })
     }),
     strategies: [new OpenLayers.Strategy.Fixed()],
-    projection: cgmap.createDefaultOptions().displayProjection
+    projection: widget.map.displayProjection
   });
 
   // add events
