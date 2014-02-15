@@ -38,6 +38,7 @@ setup(name='tbfac.content',
           'collective.geo.mapwidget',
           'geopy',
           #'plone.app.kss',
+          'collective.dexteritytextindexer'
       ],
       entry_points="""
       # -*- Entry points: -*-
