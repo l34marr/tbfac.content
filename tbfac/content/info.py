@@ -28,6 +28,29 @@ from Products.ATContentTypes.utils import dt2DT
 
 # Interface class; used to define content-type schema.
 
+from Acquisition import aq_inner
+from zope.component import getUtility
+from zope.intid.interfaces import IIntIds
+from zope.security import checkPermission
+from zc.relation.interfaces import ICatalog
+
+
+def back_references(source_object, attribute_name):
+    """Return back references from source object on specified attribute_name.
+    """
+    catalog = getUtility(ICatalog)
+    intids = getUtility(IIntIds)
+    result = []
+    for rel in catalog.findRelations(
+                   dict(to_id=intids.getId(aq_inner(source_object)),
+                        from_attribute=attribute_name)
+               ):
+        obj = intids.queryObject(rel.from_id)
+        if obj is not None and checkPermission('zope2.View', obj):
+            result.append(obj)
+    return result
+
+
 class IInfo(form.Schema, IImageScaleTraversable):
     """
     TBFAC Info Type
@@ -144,7 +167,6 @@ class Info(dexterity.Item):
     
     # Add your class methods and properties here
 
-
 # View class
 # The view will automatically use a similarly named template in
 # info_templates.
@@ -215,4 +237,8 @@ class View(grok.View):
                     'address': obj.address
                 })
         return venues
+
+    def findBackReferences(self):
+        backReferences = back_references(self.context, 'info_ref')
+        return backReferences
 

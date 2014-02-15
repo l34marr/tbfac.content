@@ -25,9 +25,10 @@
   <tal:field i18n:translate="">Reviewed Infos</tal:field>:
   </span>
   <span tal:condition="context/info_ref">
-   <tal:infos repeat="info view/relatedInfos">
-    <span tal:content="info/title" />
-   </tal:infos>
+    <tal:infos repeat="info context/info_ref">
+    <a tal:attributes="href info/to_object/absolute_url"
+       tal:content="info/to_object/title">Info Title</a>
+    </tal:infos>
   </span>
   <span tal:condition="context/info_rvw">
   <span tal:replace="context/info_rvw">Name</span>
@@ -36,6 +37,26 @@
 <span tal:condition="context/text">
  <span tal:replace="structure context/text/output">Text</span>
 </span>
+
+<tal:back_ref define="back_refs python:view.findBackReferences()"
+     condition="back_refs">
+  <h2><strong>相關評論</strong></h2>
+  <p></p>
+  <tal:repeat repeat="back_ref back_refs">
+    <p>
+      <a tal:content="back_ref/Title" tal:attributes="href back_ref/absolute_url"></a>
+
+      <tal:reviewType tal:condition="python:back_ref.portal_type == 'tbfac.Review'">
+        <span tal:define="portal_membership python:context.portal_membership;
+                          owner python:portal_membership.getMemberById(str(back_ref.getOwner()))"
+              tal:replace="python:'--%s' % owner.getProperty('fullname')" />
+      </tal:reviewType>
+      <tal:articleType tal:condition="python:back_ref.portal_type == 'tbfac.Article'">
+        <span tal:replace="string:--${back_ref/author}" />
+      </tal:articleType>
+    </p>
+  </tal:repeat>
+</tal:back_ref>
 
   </metal:content-core>
 </metal:main>

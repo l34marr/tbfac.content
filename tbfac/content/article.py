@@ -26,6 +26,29 @@ from Products.CMFCore.utils import getToolByName
 
 from plone.formwidget.autocomplete import AutocompleteMultiFieldWidget
 
+from Acquisition import aq_inner
+from zope.component import getUtility
+from zope.intid.interfaces import IIntIds
+from zope.security import checkPermission
+from zc.relation.interfaces import ICatalog
+
+
+def back_references(source_object, attribute_name):
+    """Return back references from source object on specified attribute_name.
+    """
+    catalog = getUtility(ICatalog)
+    intids = getUtility(IIntIds)
+    result = []
+    for rel in catalog.findRelations(
+                   dict(to_id=intids.getId(aq_inner(source_object)),
+                        from_attribute=attribute_name)
+               ):
+        obj = intids.queryObject(rel.from_id)
+        if obj is not None and checkPermission('zope2.View', obj):
+            result.append(obj)
+    return result
+
+
 # Interface class; used to define content-type schema.
 
 class IArticle(form.Schema, IImageScaleTraversable):
@@ -122,4 +145,16 @@ class View(grok.View):
                     'title': obj.title,
                 })
         return infos
+
+    def findBackReferences(self):
+        backReferences = list()
+        if self.context.info_ref is None:
+            return backReferences
+        for i in range(len(self.context.info_ref)):
+            backReferences += back_references(self.context.info_ref[i].to_object, 'info_ref')
+        backReferences = list(set(backReferences))
+        for i in range(len(backReferences)-1, -1, -1):
+            if self.context == backReferences[i]:
+                backReferences.pop(i)
+        return backReferences
 
