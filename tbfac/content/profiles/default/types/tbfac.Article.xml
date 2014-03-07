@@ -20,7 +20,7 @@
   <property name="add_permission">tbfac.AddArticle</property>
 
   <property name="behaviors">
-   <element value="plone.app.content.interfaces.INameFromTitle" />
+   <element value="tbfac.content.behaviors.createdid.INameFromCreated" />
    <element value="collective.dexteritytextindexer.behavior.IDexterityTextIndexer" />
    <element value="plone.app.referenceablebehavior.referenceable.IReferenceable" />
    </property>
